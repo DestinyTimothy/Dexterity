@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dexterity - Work with us</title>
+</head>
+<body>
+    <section class="main">
+
+        <section class="header">
+            <a href="#" id="dropDownBtn"><img src="images/btn.png" alt="button" class="btn1" onclick="toggleMenu()"></a>
+
+            <img src="images/dextr.png" alt="button" id="btn2">
+        </section>
+
+        <section class="menu" id="subMenu">
+            <div>
+                <div class="menu_option">
+                    <h1 class="option"><a href="index.html">Home</a></h1>
+                    <img src="images/menu arrow button.png" alt="arrow" id="arrow_btn">
+                </div>
+
+                <div class="menu_option">
+                    <h1 class="option"><a href="Work with us.html">Work with us</a></h1>
+                    <img src="images/menu arrow button.png" alt="arrow" id="arrow_btn">
+                </div>
+
+                <div class="menu_option">
+                    <h1 class="option"><a href="Learn with us.html">Learn with us</a></h1>
+                    <img src="images/menu arrow button.png" alt="arrow" id="arrow_btn">
+                </div>
+
+                <div class="menu_option">
+                    <h1 class="option"><a href="Contact us.html">Contact</a></h1>
+                    <img src="images/menu arrow button.png" alt="arrow" id="arrow_btn">
+                </div>
+            </div>
+        </section>
+
+        <script>
+            let subMenu = document.getElementById("subMenu")
+    
+        function toggleMenu(){
+                subMenu.classList.toggle("open-menu");
+        }
+        </script>
+
+    </section>

@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    box-shadow: 0  10px 25px  4px rgba(0, 0, 0, 0.397); 
+}
+
+.main {
+    margin: 10px;   
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/dextr\ bg.jpg);
+    background-position: center;
+    background-size: contain;
+} 
+
+
+/* this is for the back button, the triangle buttons */
+.header .btn1{
+    width: 50px;
+    height: 30px;
+    margin: 24px 0 0 50px;
+    transition: 3s;
+}
+
+.header #btn2{
+    width: 130px;
+    height:40px;
+    margin: 20px 50px 20px 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 0px 20px;
+    border-radius: 20px ;
+}
+
+#arrow_btn {
+    width: 10px;
+    height: 15px;
+    padding-top: 20px;
+}
+
+.menu_option {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    border-radius: 30px; 
+    padding: 6px 10px;
+}
+
+
+.menu {
+    background-color: black;
+    position: absolute;
+    border-radius: 30px;
+    margin-top: 7px;
+    box-shadow: 5px  8px 15px 3px rgba(0, 0, 0, 0.397); 
+    display: none;
+}
+
+.menu.open-menu{
+    display: block;
+}
+
+/* the space between each letter */
+
+.menu h1{
+    padding: 10px;
+} 
+
+/* this is for the logo, the Dexterity Logo */
+
+.text_img {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    margin: 0px 30px;
+}
+
+
+/* THE TEXT IMAGES AND THEIR HOVER EFFECTS  */
+
+
+/* WEB DESIGN */
+
+.text_img .img_text1 img {
+    width: 350px;
+    transition: 0.5s;
+}
+
+.text_img .img_text1 img:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+/* DEXTERITY */
+
+.text_img .img_text2 img {
+    width: 570px;
+    transition: 0.5s;
+}
+.text_img .img_text2 img:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+/* GRAPHIC DESIGN */
+
+.text_img .img_text3 img {
+    width: 350px;
+    transition: 0.5s;
+}
+.text_img .img_text3 img:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+
+/* THIS IS FOR THE TILTING IMAGE SAMPLE */
+
+#phone_sample {
+    display: none;
+}
+
+.body #img_sample {
+    width: 1100px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 0.6s ease-out;
+    transform: rotateX(0deg) rotateY(0deg);
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.tilt-box-wrap {
+    position: relative;
+    transition: all 0.6s ease-out;
+    perspective: 1000px;
+}
+
+.tilt-box-wrap:hover{
+    transition:all 0.3s linear ;
+    transform: scale(1.1);
+}
+
+.t_over{
+    width: 33.333%;
+    height: 33.333%;
+    position: absolute;
+    z-index: 1;
+}
+
+/* 3D hover effect */
+
+.t_over:nth-child(1){ left: 0; top: 0; }
+.t_over:nth-child(2){ left: 33.333%; top: 0; }
+.t_over:nth-child(3){ left: 66.666%; top: 0; }
+.t_over:nth-child(4){ left: 0; top: 33.333%; }
+.t_over:nth-child(5){ left: 33.333%; top: 33.333%; }
+.t_over:nth-child(6){ left: 66.666%; top: 33.333%; }
+.t_over:nth-child(7){ left: 0; top: 66.666%; }
+.t_over:nth-child(8){ left: 33.333%; top: 66.666%; }
+.t_over:nth-child(9){ left: 66.666%; top: 66.666%; }
+
+.t_over:nth-child(1):hover ~ #img_sample{transform: rotateX(-20deg) rotateY(20deg)}
+.t_over:nth-child(2):hover ~ #img_sample{transform: rotateX(-20deg) rotateY(0deg)}
+.t_over:nth-child(3):hover ~ #img_sample{transform: rotateX(-20deg) rotateY(-20deg)}
+.t_over:nth-child(4):hover ~ #img_sample{transform: rotateX(0deg) rotateY(20deg)}
+.t_over:nth-child(5):hover ~ #img_sample{transform: rotateX(0deg) rotateY(0deg)}
+.t_over:nth-child(6):hover ~ #img_sample{transform: rotateX(0deg) rotateY(-20deg)}
+.t_over:nth-child(7):hover ~ #img_sample{transform: rotateX(20deg) rotateY(20deg)}
+.t_over:nth-child(8):hover ~ #img_sample{transform: rotateX(20deg) rotateY(0deg)}
+.t_over:nth-child(9):hover ~ #img_sample{transform: rotateX(20deg) rotateY(-20deg)}
+/* ------------------------------------------------------------------------- */
+
+.webpage{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.webpage h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 30px; 
+    padding: 60px 0px;
+    grid-column: 2 / 2;
+}
+
+.webpage #quote{
+    font-size: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   
+}
+
+
+/* CARDSSSSSSSSSSSSSS */
+
+.work-n-learn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.work-n-learn a{
+    text-decoration: none;
+    color: black;
+}
+
+.work-n-learn h1{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    padding: 30px;
+}
+
+.work-n-learn h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    padding: 30px;
+}
+
+.work-n-learn img {
+    display: block;
+    margin: 0px auto;
+    width: 400px;
+    height: 230px;
+    border-radius: 30px;
+}
+
+.work-card  {
+    margin: 0px 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 5px  8px 15px 3px rgba(0, 0, 0, 0.397); 
+}
+
+.learn-card {
+    margin: 0px 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 5px  8px 15px 3px rgba(0, 0, 0, 0.397); 
+}
+
+
+/* MEDIA QUERY */
+
+
+
+
+@media screen and (max-width: 1300px){
+    .text_img .img_text1 img {
+        display: none;
+    }
+    .text_img .img_text2 img {
+        width: 500px;
+    }
+    .text_img .img_text3 img {
+        display: none;
+    }
+
+    .header .btn1{
+        width: 30px;
+        height: 20px;
+        margin: 24px 0 0 50px;
+    }
+
+    .header #btn2{
+        width: 80px;
+        height:27px;
+        margin: 20px 50px 20px 20px;
+    }
+
+    .body #img_sample {
+        display: block;
+        margin: 0 auto;
+        width: 1000px;
+    }
+
+    #phone_sample {
+        display: none;
+    }
+    
+    .work-n-learn img {
+    display: block;
+    margin: 0px auto;
+    width: 350px;
+    height: 200px;
+    }
+
+    .work-card  {
+        margin: 0px 100px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        box-shadow: 5px  8px 15px 3px rgba(0, 0, 0, 0.397); 
+    }
+
+    .learn-card {
+        margin: 0px 100px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        box-shadow: 5px  8px 15px 3px rgba(0, 0, 0, 0.397); 
+    }
+    
+}
+
+@media screen and (max-width: 1000px){
+    .text_img .img_text2 img {
+        width: 500px;
+    }
+    
+    .body #img_sample {
+        display: block;
+        margin: 0 auto;
+        width: 800px;
+    }
+
+    #phone_sample {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 800px){
+    .text_img .img_text2 img {
+        width: 450px;
+    }
+
+    .body #img_sample {
+        display: none;
+    }
+
+    #phone_sample {
+        display: block;
+        margin: 0 auto;
+        width: 400px;
+    }
+    /* THIS IS FOR THE WRITE UP ABOUT DEXTERITY */
+
+    .webpage {
+        margin: 0px -300px;
+    }
+
+    .webpage h1{
+        font-size: 30px; 
+    }
+    
+    /* THIS IS FOR THE CARDS */
+
+    .work-n-learn {
+        display: block;
+        margin: 10px -50px;
+        padding-bottom: 30px;
+    }
+
+    .work-n-learn img {
+        display: block;
+        margin: 0 auto;
+        width: 400px;
+        height: 250px;
+        border-radius: 30px;
+    }
+
+    .work-card  {
+        margin: 50px 100px;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 600px){
+    .text_img .img_text2 img {
+        width: 300px;
+    }
+    
+    #phone_sample {
+        display: block;
+        margin: 0 auto;
+        width: 340px;
+    }
+
+    /* THIS IS FOR THE WRITE UP ABOUT DEXTERITY */
+
+    .webpage {
+        margin: 0px -300px;
+    }
+
+    .webpage h1{
+        font-size: 23px; 
+    }
+
+    /* --------------------------------------- */
+
+    /* THIS IS FOR THE CARDS */
+
+    .work-n-learn {
+        display: block;
+        margin: 10px -50px;
+        padding-bottom: 30px;
+    }
+
+    .work-n-learn img {
+        display: block;
+        margin: 0 auto;
+        width: 250px;
+        height: 150px;
+        border-radius: 30px;
+    }
+
+    .work-card  {
+        margin: 50px 100px;
+    }
+
+}
+
+

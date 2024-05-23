@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dexterity</title>
+</head>
+<body>
+    <section class="main">
+
+        <section class="header">
+            <a href="#" id="dropDownBtn"><img src="images/btn.png" alt="button" class="btn1" onclick="toggleMenu()"></a>
+
+            <img src="images/dextr.png" alt="button" id="btn2">
+        </section>
+
+        <section class="menu" id="subMenu">
+            <div>
+                <div class="menu_option">
+                    <h1 class="option"><a href="index.html">Home</a></h1>
+                    <img src="images/menu arrow button.png" alt="arrow" id="arrow_btn">
+                </div>
+
+                <div class="menu_option">
+                    <h1 class="option"><a href="Work with us.html">Work with us</a></h1>
+                    <img src="images/menu arrow button.png" alt="arrow" id="arrow_btn">
+                </div>
+
+                <div class="menu_option">
+                    <h1 class="option"><a href="Learn with us.html">Learn with us</a></h1>
+                    <img src="images/menu arrow button.png" alt="arrow" id="arrow_btn">
+                </div>
+
+                <div class="menu_option">
+                    <h1 class="option"><a href="Contact us.html">Contact</a></h1>
+                    <img src="images/menu arrow button.png" alt="arrow" id="arrow_btn">
+                </div>
+            </div>
+        </section>
+
+        <section class="body">
+
+            <div class="text_img">
+                    <div class="img_text1"><img src="images/dextr text img 2.png" alt=""></div>
+                    <div class="img_text2"><img src="images/dextr text img 3.png" alt=""></div>
+                    <div class="img_text3"><img src="images/dextr text img 1.png" alt=""></div>
+            </div>
+
+
+            <div class="sample_images">
+            <div class="tilt-box-wrap">
+                    <span class="t_over"></span>
+                    <span class="t_over"></span>
+                    <span class="t_over"></span>
+                    <span class="t_over"></span>
+                    <span class="t_over"></span>
+                    <span class="t_over"></span>
+                    <span class="t_over"></span>
+                    <span class="t_over"></span>
+                    <span class="t_over"></span>
+                    <img src="images/dextr sample collage.png" id="img_sample">
+            </div>
+
+            <div>
+                    <img src="images/dextr sample collage for phone.png" id="phone_sample">
+            </div>
+
+            </div>
+            
+        </section>
+
+
+        <section>
+            <div>
+                <div class="webpage">
+                    <h1>
+                        <span id="quote">"</span><br>
+                        Dexterity is a Digital Platform Aimed at Providing Top of The Line Digital service's by Nigerians, for Nigerians. At  Dexterity we teach what we do! Dexterity provides Online and Physical classes for anyone to learn Digital skills such as Graphic Design, Web Development and so much more.<br>
+                        <span id="quote">"</span>
+                    </h1>
+                </div>
+
+
+
+                <div class="work-n-learn">
+
+                    <div class="work-card">
+                        <a href="Work with us.html">
+                            <h1>Work with us.</h1> 
+                            <img src="images/Handshake.png" alt="handshake">
+                            <h2>If you need a website for your business, or your looking for a <strike>logo</strike> statement peice the embodies your cause, you are at the right place   </h2>
+                        </a>
+                    </div>
+
+                    <div class="learn-card">
+                        <a href="Learn with us.html">
+                            <h1>Learn with us.</h1>
+                            <img src="images/Plant.jpg" alt="plant">
+                            <h2>Join our wide community of students from all over Nigerian. A safe space to learn, network and grow.</h2>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    <script>
+        let subMenu = document.getElementById("subMenu")
+
+    function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+    }
+    </script>
+</body>
+</html>
