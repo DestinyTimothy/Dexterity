@@ -24,15 +24,14 @@ body {
 } 
 
 
-/* this is for the back button, the triangle buttons */
-.header .btn1{
-    width: 50px;
-    height: 30px;
+/* this is for the back button, the menu buttons */
+.fa-bars{
+    color: white;
+    font-size: 30px;
     margin: 24px 0 0 50px;
-    transition: 3s;
 }
 
-.header #btn2{
+.header #dextr{
     width: 130px;
     height:40px;
     margin: 20px 50px 20px 20px;
@@ -45,13 +44,7 @@ body {
     font-weight: bolder;
     font-size: 20px;
     padding: 0px 20px;
-    border-radius: 20px ;
-}
-
-#arrow_btn {
-    width: 10px;
-    height: 15px;
-    padding-top: 20px;
+    border-radius: 20px;
 }
 
 .menu_option {
@@ -62,6 +55,10 @@ body {
     padding: 6px 10px;
 }
 
+.fa-greater-than {
+    padding-top: 16px;
+    color: white;
+}
 
 .menu {
     background-color: black;
@@ -84,69 +81,54 @@ body {
 
 /* this is for the logo, the Dexterity Logo */
 
-.text_img {
+
+
+.front_page {
     display: flex;
     justify-content: space-between;
+    margin:30px 30px 30px 70px;
+}
+
+.text_img {
     padding-bottom: 15px;
     padding-top: 20px;
-    margin: 0px 30px;
 }
 
-
-/* THE TEXT IMAGES AND THEIR HOVER EFFECTS  */
-
-
-/* WEB DESIGN */
-
-.text_img .img_text1 img {
-    width: 350px;
-    transition: 0.5s;
-}
-
-.text_img .img_text1 img:hover {
-    transform: scale(1.2);
-    z-index: 2;
-}
 
 /* DEXTERITY */
 
-.text_img .img_text2 img {
-    width: 570px;
-    transition: 0.5s;
-}
-.text_img .img_text2 img:hover {
-    transform: scale(1.1);
-    z-index: 2;
+.text_img .dexterity h1{
+    font-family: "Zilla Slab", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 120px;
 }
 
-/* GRAPHIC DESIGN */
 
-.text_img .img_text3 img {
-    width: 350px;
-    transition: 0.5s;
+.text_img .intro_text {
+    padding-top: 40px;
 }
-.text_img .img_text3 img:hover {
-    transform: scale(1.2);
-    z-index: 2;
+
+.text_img .intro_text h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 27px;
+
 }
 
 
 /* THIS IS FOR THE TILTING IMAGE SAMPLE */
 
-#phone_sample {
-    display: none;
-}
-
-.body #img_sample {
-    width: 1100px;
-    display: block;
-    margin: 0 auto;
+#phone_sample1 {
+    width: 380px;
     position: relative;
     transition: all 0.6s ease-out;
     transform: rotateX(0deg) rotateY(0deg);
     perspective: 1000px;
     transform-style: preserve-3d;
 }
+
+#phone_sample2{display: none;}
 
 .tilt-box-wrap {
     position: relative;
@@ -178,35 +160,16 @@ body {
 .t_over:nth-child(8){ left: 33.333%; top: 66.666%; }
 .t_over:nth-child(9){ left: 66.666%; top: 66.666%; }
 
-.t_over:nth-child(1):hover ~ #img_sample{transform: rotateX(-20deg) rotateY(20deg)}
-.t_over:nth-child(2):hover ~ #img_sample{transform: rotateX(-20deg) rotateY(0deg)}
-.t_over:nth-child(3):hover ~ #img_sample{transform: rotateX(-20deg) rotateY(-20deg)}
-.t_over:nth-child(4):hover ~ #img_sample{transform: rotateX(0deg) rotateY(20deg)}
-.t_over:nth-child(5):hover ~ #img_sample{transform: rotateX(0deg) rotateY(0deg)}
-.t_over:nth-child(6):hover ~ #img_sample{transform: rotateX(0deg) rotateY(-20deg)}
-.t_over:nth-child(7):hover ~ #img_sample{transform: rotateX(20deg) rotateY(20deg)}
-.t_over:nth-child(8):hover ~ #img_sample{transform: rotateX(20deg) rotateY(0deg)}
-.t_over:nth-child(9):hover ~ #img_sample{transform: rotateX(20deg) rotateY(-20deg)}
+.t_over:nth-child(1):hover ~ #phone_sample1{transform: rotateX(-20deg) rotateY(20deg)}
+.t_over:nth-child(2):hover ~ #phone_sample1{transform: rotateX(-20deg) rotateY(0deg)}
+.t_over:nth-child(3):hover ~ #phone_sample1{transform: rotateX(-20deg) rotateY(-20deg)}
+.t_over:nth-child(4):hover ~ #phone_sample1{transform: rotateX(0deg) rotateY(20deg)}
+.t_over:nth-child(5):hover ~ #phone_sample1{transform: rotateX(0deg) rotateY(0deg)}
+.t_over:nth-child(6):hover ~ #phone_sample1{transform: rotateX(0deg) rotateY(-20deg)}
+.t_over:nth-child(7):hover ~ #phone_sample1{transform: rotateX(20deg) rotateY(20deg)}
+.t_over:nth-child(8):hover ~ #phone_sample1{transform: rotateX(20deg) rotateY(0deg)}
+.t_over:nth-child(9):hover ~ #phone_sample1{transform: rotateX(20deg) rotateY(-20deg)}
 /* ------------------------------------------------------------------------- */
-
-.webpage{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.webpage h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    font-size: 30px; 
-    padding: 60px 0px;
-    grid-column: 2 / 2;
-}
-
-.webpage #quote{
-    font-size: 100px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   
-}
 
 
 /* CARDSSSSSSSSSSSSSS */
@@ -236,8 +199,8 @@ body {
 
 .work-n-learn img {
     display: block;
-    margin: 0px auto;
-    width: 400px;
+    width: 90%;
+    margin: 0px 20px;
     height: 230px;
     border-radius: 30px;
 }
@@ -261,171 +224,117 @@ body {
 
 
 
-
 @media screen and (max-width: 1300px){
-    .text_img .img_text1 img {
-        display: none;
-    }
-    .text_img .img_text2 img {
-        width: 500px;
-    }
-    .text_img .img_text3 img {
-        display: none;
+    .text_img .dexterity h1{
+        font-size: 100px;
     }
 
-    .header .btn1{
-        width: 30px;
-        height: 20px;
-        margin: 24px 0 0 50px;
+    .fa-bars{
+        font-size: 25px;
+        margin: 22px 0 0 50px;
     }
-
-    .header #btn2{
+    
+    .header #dextr{
         width: 80px;
         height:27px;
         margin: 20px 50px 20px 20px;
     }
 
-    .body #img_sample {
-        display: block;
-        margin: 0 auto;
-        width: 1000px;
-    }
-
-    #phone_sample {
-        display: none;
-    }
-    
+   
     .work-n-learn img {
-    display: block;
-    margin: 0px auto;
-    width: 350px;
-    height: 200px;
+       display: block;
+       margin: 0px auto;
     }
 
-    .work-card  {
-        margin: 0px 100px;
-        background-color: rgb(255, 255, 255);
-        border-radius: 30px;
-        box-shadow: 5px  8px 15px 3px rgba(0, 0, 0, 0.397); 
-    }
-
-    .learn-card {
-        margin: 0px 100px;
-        background-color: rgb(255, 255, 255);
-        border-radius: 30px;
-        box-shadow: 5px  8px 15px 3px rgba(0, 0, 0, 0.397); 
-    }
-    
 }
 
 @media screen and (max-width: 1000px){
-    .text_img .img_text2 img {
-        width: 500px;
+    .text_img .dexterity h1{
+       text-align: center;
     }
     
-    .body #img_sample {
+    .front_page {
         display: block;
         margin: 0 auto;
-        width: 800px;
     }
-
-    #phone_sample {
+    
+    #phone_sample2 {
+        display: block;
+        margin: 0 auto;
+        width: 450px;
+        padding: 30px 0px;
+    }
+    
+    #phone_sample1 {
         display: none;
     }
-
+    
+    .work-n-learn {
+        display: block;
+        margin: 10px 50px;
+        padding-bottom: 30px;
+    }
+    
+    .work-card  {
+        margin: 50px 100px;
+    }
 
 }
+
 
 @media screen and (max-width: 800px){
-    .text_img .img_text2 img {
-        width: 450px;
-    }
 
-    .body #img_sample {
-        display: none;
-    }
-
-    #phone_sample {
-        display: block;
-        margin: 0 auto;
-        width: 400px;
-    }
-    /* THIS IS FOR THE WRITE UP ABOUT DEXTERITY */
-
-    .webpage {
-        margin: 0px -300px;
-    }
-
-    .webpage h1{
-        font-size: 30px; 
+    .text_img .dexterity h1{
+       text-align: center;
+       font-size: 90px
     }
     
-    /* THIS IS FOR THE CARDS */
-
-    .work-n-learn {
-        display: block;
-        margin: 10px -50px;
-        padding-bottom: 30px;
-    }
-
     .work-n-learn img {
         display: block;
         margin: 0 auto;
-        width: 400px;
-        height: 250px;
         border-radius: 30px;
     }
-
+    
     .work-card  {
-        margin: 50px 100px;
+        margin: 50px 50px;
+    }
+    .learn-card {
+        margin: 50px 50px;
+    }
+    .text_img .intro_text h1 {
+        margin-left: 60px;
+        font-size: 24px;
     }
 
-
-    
 }
 
+
 @media screen and (max-width: 600px){
-    .text_img .img_text2 img {
-        width: 300px;
+    .text_img .dexterity h1{
+        font-size: 66px;
+    }
+    #phone_sample2 {
+        width: 350px;
     }
     
-    #phone_sample {
-        display: block;
-        margin: 0 auto;
-        width: 340px;
-    }
-
-    /* THIS IS FOR THE WRITE UP ABOUT DEXTERITY */
-
-    .webpage {
-        margin: 0px -300px;
-    }
-
-    .webpage h1{
-        font-size: 23px; 
-    }
-
-    /* --------------------------------------- */
-
-    /* THIS IS FOR THE CARDS */
-
-    .work-n-learn {
-        display: block;
-        margin: 10px -50px;
-        padding-bottom: 30px;
-    }
-
-    .work-n-learn img {
-        display: block;
-        margin: 0 auto;
-        width: 250px;
-        height: 150px;
-        border-radius: 30px;
-    }
-
     .work-card  {
-        margin: 50px 100px;
+        margin: 80px -30px;
     }
+    
+     .learn-card {
+        margin: 80px -30px;
+    }
+        
+    .work-n-learn img {
+        height: 200px;
+    }
+    
+    .text_img .intro_text h1 {
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    
+    
 
 }
 

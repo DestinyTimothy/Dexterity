@@ -25,14 +25,13 @@ body {
 
 
 /* this is for the back button, the triangle buttons */
-.header .btn1{
-    width: 50px;
-    height: 30px;
+.fa-bars{
+    color: white;
+    font-size: 30px;
     margin: 24px 0 0 50px;
-    transition: 3s;
 }
 
-.header #btn2{
+.header #dextr{
     width: 130px;
     height:40px;
     margin: 20px 50px 20px 20px;
@@ -48,10 +47,9 @@ body {
     border-radius: 20px ;
 }
 
-#arrow_btn {
-    width: 10px;
-    height: 15px;
-    padding-top: 20px;
+.fa-greater-than {
+    padding-top: 16px;
+    color: white;
 }
 
 .menu_option {
