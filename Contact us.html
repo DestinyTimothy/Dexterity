@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Contact us.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-    <title>Dexterity - Contact us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+
+
+
+    <title>Dexterity - Contact Us</title>
 </head>
 <body>
     <section class="main">
@@ -19,24 +26,88 @@
         <section class="menu" id="subMenu">
             <div>
                 <div class="menu_option">
-                    <h1 class="option"><a href="index.html">Home</a></h1>
-                    <i class="fa-solid fa-greater-than"></i>
+                    <a href="index.html">
+                        <h1 class="option">Home</h1>
+                        <i class="fa-solid fa-greater-than"></i>
+                    </a>
                 </div>
 
                 <div class="menu_option">
-                    <h1 class="option"><a href="Work with us.html">Work with us</a></h1>
-                    <i class="fa-solid fa-greater-than"></i>
+                    <a href="Work with us.html">
+                        <h1 class="option">Work with us</h1>
+                        <i class="fa-solid fa-greater-than"></i>
+                    </a>
                 </div>
 
                 <div class="menu_option">
-                    <h1 class="option"><a href="Learn with us.html">Learn with us</a></h1>
-                    <i class="fa-solid fa-greater-than"></i>                    
+                    <a href="Learn with us.html">
+                        <h1 class="option">Learn with us</h1>
+                        <i class="fa-solid fa-greater-than"></i>
+                    </a>
                 </div>
 
                 <div class="menu_option">
-                    <h1 class="option"><a href="Contact us.html">Contact</a></h1>
-                    <i class="fa-solid fa-greater-than"></i>
+                    <a href="Contact us.html">
+                        <h1 class="option">Contact</h1>
+                        <i class="fa-solid fa-greater-than"></i>
+                    </a>
                 </div>
+            </div>
+        </section>
+        <secction class="front-page">
+
+            <div id="front-page-image">
+                <h1 id="workwithus">Contact Us</h1>
+                <img src="images/contact us.png" id="work-img" >
+            </div>
+
+            <div class="the-form">
+                <form action="https://formspree.io/f/xnqeyozd" method="post">
+                    <div>
+                        <input type="text" name="fname" placeholder=" First Name:" id="fname" required/>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <input type="text" name="lname" placeholder=" Last Name:" id="lname" required/>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <input type="text" name="E-mail" placeholder=" Please enter a valid E-mail address" id="e-mail" required/>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <textarea name="text" id="textarea" placeholder=" Tell us what you need:" id="text" required></textarea>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <button type="submit" id="btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </secction>
+
+        <br>
+
+        <section class="footer">
+            <div class="footer-text">
+                <h1> Join the Community</h1>
+                <h2>Join our wide community of students from all over Nigerian. A safe space to learn, network and grow.</h2>
+                <div class="links">
+                    <div id="link"><a href="https://www.instagram.com/dextr_tech?igsh=bzRjOHNrNDMxcW14"><i class="fa-brands fa-instagram"> </i> Instagram</a></div>
+                    <div id="link"><a href="#"><i class="fa-brands fa-x-twitter"> </i> (F.K.A Twitter)</a></div>
+                    <div id="link"><a href="#"><i class="fa-brands fa-whatsapp"> </i> WhatsApp</a></div>
+                    <div id="link"><a href="#"><i class="fa-regular fa-envelope"> </i> E-mail</a></div>
+                </div>
+                <p>2024 - Dexterity - All rights reserved</p>
             </div>
         </section>
 

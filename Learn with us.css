@@ -42,24 +42,31 @@ body {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
-    font-size: 20px;
-    padding: 0px 20px;
-    border-radius: 20px ;
+    font-size: 17px;
+    border-radius: 20px;
+}
+
+.menu_option a{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px; 
+    padding: 6px 0px;
+    margin: 0px 25px;
+}
+
+.menu_option h1{
+    padding-right: 10px;
+}
+
+.menu_option{
+    padding: 5px 0px;
 }
 
 .fa-greater-than {
     padding-top: 16px;
     color: white;
+    padding-left: 20px;
 }
-
-.menu_option {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 20px;
-    border-radius: 30px; 
-    padding: 6px 10px;
-}
-
 
 .menu {
     background-color: black;

@@ -4,7 +4,7 @@
 }
 
 .header{
-    background-color: black;
+    background-color:#284861;
     display: flex;
     justify-content: space-between;
     border-radius: 30px;
@@ -16,11 +16,7 @@
 }
 
 body {
-    min-height: 100vh;
-    width: 100%;
-    background-image: url(images/dextr\ bg.jpg);
-    background-position: center;
-    background-size: contain;
+    background-color: white;
 } 
 
 
@@ -42,28 +38,34 @@ body {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
-    font-size: 20px;
-    padding: 0px 20px;
-    border-radius: 20px ;
+    font-size: 17px;
+    border-radius: 20px;
 }
 
-
-.menu_option {
+.menu_option a{
     display: flex;
     justify-content: space-between;
-    margin-right: 20px;
     border-radius: 30px; 
-    padding: 6px 10px;
+    padding: 6px 0px;
+    margin: 0px 25px;
+}
+
+.menu_option h1{
+    padding-right: 10px;
+}
+
+.menu_option{
+    padding: 5px 0px;
 }
 
 .fa-greater-than {
     padding-top: 16px;
     color: white;
+    padding-left: 20px;
 }
 
-
 .menu {
-    background-color: black;
+    background-color: #284861;
     position: absolute;
     border-radius: 30px;
     margin-top: 7px;
@@ -80,3 +82,335 @@ body {
 .menu h1{
     padding: 10px;
 } 
+
+
+/* ------------------------------------------------------------------------------------------------- */
+
+.front-page {
+    margin: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.front-page h1{
+    font-family: "Zilla Slab", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 80px;
+    text-align: center;
+    color:#284861;
+}
+
+.front-page #work-img {
+    width: 500px;
+}
+
+
+
+/* THE FORM */
+.the-form {
+    border: 2px solid black;
+    background-color: #3f6e92;
+    border-radius: 40px;
+}
+
+form {
+    padding: 30px;
+}
+
+form input {
+    width: 450px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+form textarea {
+    width: 450px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+form button {
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 10px 30px;
+    background-color: #2a4d69;
+    border-radius: 20px;
+    color: white;
+}
+
+#se-we-off h1 {
+    font-family: "Zilla Slab", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    color: #284861;
+    text-align: center;
+    margin: 0px -10px;
+    padding-bottom: 60px;
+    padding-top: 100px;
+}
+
+/* CARDSSSSSSSSSS */
+
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0px 30px 150px 30px;
+    background-color: white;
+    margin: 0px -10px -10px -10px;
+    gap: 30px;
+}
+
+.card {
+    background-color: rgb(58, 58, 58);
+    border-radius: 10px;
+    box-shadow: 5px  8px 15px 3px rgba(0, 0, 0, 0.397); 
+}
+
+.card h1{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+}
+
+.card-elements {
+    padding: 30px;
+}
+
+.card-elements i{
+    color: white;
+    padding: 20px 0px;
+}
+
+.fa-palette {font-size: 60px;}
+.fa-laptop-code{font-size: 60px;}
+.fa-users-gear {font-size: 60px;}
+.fa-hand-holding-dollar {font-size: 60px;}
+
+/* ----------------- FOOTER -----------------*/
+
+.footer {
+    margin-top: 20px;
+    background-color: rgb(77, 77, 77);
+    color: white;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.footer .footer-text h1{
+    font-family: "Zilla Slab", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 80px;
+    padding-top: 30px;
+}
+
+.footer-text h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:400;
+}
+
+.footer-text p{
+    text-align: center;
+    margin-top: 150px; 
+    margin-bottom: -200px; 
+    font-size: 17px;
+}
+
+.footer .footer-text {
+    margin: 200px 100px;
+}
+
+
+#link {
+    padding-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+.links a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+}
+
+/* size of the icons on the footer */
+
+.fa-instagram {font-size: 30px;}
+.fa-x-twitter {font-size: 27px;}
+.fa-whatsapp {font-size: 30px;}
+.fa-envelope {font-size: 30px;}
+ 
+
+@media screen and (max-width: 1300px){
+    .fa-bars{
+        font-size: 25px;
+        margin: 22px 0 0 50px;
+    }
+     .header #dextr{
+        width: 80px;
+        height:27px;
+        margin: 20px 50px 20px 20px;
+    }
+    .front-page {
+        margin: 50px 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+@media screen and (max-width: 1070px){
+    .front-page {
+        margin: 50px 100px;
+        display: block;
+    }
+    .front-page #work-img {
+        display: block;
+        width: 500px;
+        margin: 80px auto;
+    }
+    .front-page h1{
+        font-size: 80px;
+    }
+    .the-form {
+        display: block;
+        margin: 0px 70px;
+    }
+    
+    form input {
+        width: 100%;
+    }
+
+    form textarea {
+        width: 100%;
+    }
+    
+    .cards {
+        display: block;
+        padding: 0px 30px 150px 30px;
+        background-color: white;
+        margin: 0 200px;
+        gap: 30px;
+    }
+    
+    .card{
+        padding: 70px 0px;
+        margin: 50px 0px;
+    }
+    
+/*      THIS IS FOR THE FOOOOOOOOOOOOOTER*/
+    
+    
+    .footer {
+        margin-top: -200px;
+    }
+    
+    .footer .footer-text {
+        margin: 200px 50px;
+    }
+    .footer .footer-text h1{
+        font-size: 40px;
+    }
+    .footer-text h2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+    }
+    .links {
+        display: block;
+    }
+    .links a{
+        font-size: 15px;
+    }
+
+    .footer-text p{
+        font-size: 13px;
+    }
+    
+    .fa-instagram {font-size: 20px;}
+    .fa-x-twitter {font-size: 19px;}
+    .fa-whatsapp {font-size: 20px;}
+    .fa-envelope {font-size: 20px;}
+ 
+}
+
+@media screen and (max-width: 800px){
+    .front-page h1{
+        font-size: 80px;
+    }
+    .the-form {
+        display: block;
+        margin: 0px 0px;
+    }
+    .cards {
+        display: block;
+        padding: 0px 30px 150px 30px;
+        background-color: white;
+        margin: 0 100px;
+        gap: 30px;
+    }
+    
+    .card{
+        padding: 70px 0px;
+        margin: 50px 0px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .front-page h1{
+        font-size: 50px;
+        margin: 0px -50px;
+    }
+    .the-form {
+        margin: 0px -90px;
+    }
+    .front-page #work-img {
+        width: 250px;
+        margin: 60px auto; 
+    }
+    
+    #front-page-image {
+        margin: 0px -50px;
+    }
+    
+    #se-we-off h1 {
+        font-size: 30px;
+    }
+    
+    .cards {
+        display: block;
+        padding: 0px 30px 150px 30px;
+        background-color: white;
+        margin: 0 40px;
+        gap: 30px;
+    }
+    
+    .card{
+        padding: 0px 0px;
+        margin: 50px 0px;
+    }
+    .card h1{
+        font-size: 20px;
+    }
+    
+    .fa-palette {font-size: 40px;}
+    .fa-laptop-code{font-size: 40px;}
+    .fa-users-gear {font-size: 40px;}
+    .fa-hand-holding-dollar {font-size: 40px;}
+
+
+}
