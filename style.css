@@ -7,10 +7,10 @@
 
 
 /* ---------MAIN-------COLORS------------ */
-.header { background-color: #111e29;}      /*HEADER*/
-.text_img .dexterity h1{ color: #111e29; }   /*DEXTERITY*/
-body { background-color: white;}         /*BODY BACKGROUND*/
-.text_img .intro_text { background-color: #adcbe3;}
+.header { background-color: rgb(11, 11, 54);}      /*HEADER*/
+.text_img .dexterity h1{ color:  #00bdff; }   /*DEXTERITY*/
+body { background-color:  white;}         /*BODY BACKGROUND*/
+.text_img .intro_text { background-color: rgb(11, 11, 54);}
 /* ------------------------------------ */
 
 
@@ -75,7 +75,7 @@ body { background-color: white;}         /*BODY BACKGROUND*/
 }
 
 .menu {
-    background-color: #111e29;
+    background-color: rgb(11, 11, 54);
     position: absolute;
     border-radius: 30px;
     margin-top: 7px;
@@ -93,10 +93,7 @@ body { background-color: white;}         /*BODY BACKGROUND*/
     padding: 10px;
 } 
 
-
-
-/* this is for the logo, the Dexterity Logo */
-
+/* ------------------------------------------------------------------------------------------------------------------------ */
 
 .front_page {
     display: flex;
@@ -129,7 +126,7 @@ body { background-color: white;}         /*BODY BACKGROUND*/
 }
 
 .text_img .intro_text h1 {
-
+  color: white;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -415,6 +412,7 @@ body { background-color: white;}         /*BODY BACKGROUND*/
 @media screen and (max-width: 600px){
     .text_img .dexterity h1{
         font-size: 66px;
+        color:  #0b0c2e;
     }
     #phone_sample2 {
         width: 350px;
