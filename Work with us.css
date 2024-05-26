@@ -4,7 +4,7 @@
 }
 
 .header{
-    background-color:#284861;
+    background-color:#111e29;
     display: flex;
     justify-content: space-between;
     border-radius: 30px;
@@ -65,7 +65,7 @@ body {
 }
 
 .menu {
-    background-color: #284861;
+    background-color: #111e29;
     position: absolute;
     border-radius: 30px;
     margin-top: 7px;
@@ -98,7 +98,7 @@ body {
     font-style: normal;
     font-size: 80px;
     text-align: center;
-    color:#284861;
+    color: #111e29;
 }
 
 .front-page #work-img {
