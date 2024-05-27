@@ -20,9 +20,9 @@
     <section class="main">
 
         <section class="header">
-            <a href="#" id="dropDownBtn"><i class="fa fa-bars" onclick="toggleMenu()"></i></a>
+            <i class="fa fa-bars" onclick="toggleMenu()"></i>
 
-            <img src="images/dextr.png" alt="button" id="dextr">
+            <a href="index.html"><img src="images/dextr.png" alt="button" id="dextr"></a>
         </section>
 
         <section class="menu" id="subMenu">
@@ -56,76 +56,54 @@
                 </div>
             </div>
         </section>
-        <secction class="front-page">
 
-            <div id="front-page-image">
-                <h1 id="workwithus">Work With Us</h1>
-                <img src="images/work-img.png" id="work-img" >
-            </div>
+        <section>
+            <section class="front-page">
 
-            <div class="the-form">
-                <form action="https://formspree.io/f/xnqeyozd" method="post">
-                    <div>
-                        <input type="text" name="fname" placeholder=" First Name:" id="fname" required/>
-                    </div>
+                <section id="front-page-image">
 
-                    <br>
+                    <h1 id="workwithus">Work With Us</h1>
+                    <img src="images/work-img.png" id="work-img">
 
-                    <div>
-                        <input type="text" name="lname" placeholder=" Last Name:" id="lname" required/>
-                    </div>
-
-                    <br>
-
-                    <div>
-                        <input type="text" name="E-mail" placeholder=" Please enter a valid E-mail address" id="e-mail" required/>
-                    </div>
-
-                    <br>
-
-                    <div>
-                        <textarea name="text" id="textarea" placeholder=" Tell us what you need:" id="text" required></textarea>
-                    </div>
-
-                    <br>
-
-                    <div>
-                        <button type="submit" id="btn">Submit</button>
-                    </div>
-                </form>
-            </div>
-
-        </secction>
-
-
-        <div id="se-we-off"><h1>Services We Offer.</h1></div>
-        <section class="cards">
-
-            <div class="card">
-                <div class="card-elements">
-                    <i class="fa fa-palette"></i>
-                    <h1>Graphic Design</h1>
+                </section>
+                
+                <div id="se-we-off">
+                    <h1>Services We Offer</h1>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-elements">
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <h1>Web Development</h1>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-elements">
-                    <i class="fa-solid fa-users-gear"></i>
-                    <h1>Product Design</h1>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-elements">
-                    <i class="fa-solid fa-hand-holding-dollar"></i>
-                    <h1>Become a Sponsor</h1>
-                </div>
-            </div>
+
+                <section class="cards">
+                    
+                    <div class="card">
+                        <div class="card-elements">
+                            <i class="fa fa-palette"></i>
+                            <h1>Graphic Design</h1>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-elements">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <h1>Web Development</h1>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-elements">
+                            <i class="fa-solid fa-users-gear"></i>
+                            <h1>Product Design</h1>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-elements">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                            <h1>Become a Sponsor</h1>
+                        </div>
+                    </div>
+                    <button id="contact-btn"><a href="Contact us.html">Contact us</a></button>
+
+                </section>
+    
+            </section>
         </section>
+
 
         <section class="footer">
             <div class="footer-text">
@@ -140,6 +118,7 @@
                 <p>2024 - Dexterity - All rights reserved</p>
             </div>
         </section>
+        
 
         <script>
             let subMenu = document.getElementById("subMenu")
