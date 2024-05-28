@@ -203,7 +203,7 @@ body {
     }
     #text{
         border-radius: 20px;
-        margin: 0px 50px;
+        margin: 0px 30px;
     }
 
     #text h2{
@@ -215,7 +215,7 @@ body {
         text-align: center;
     }
     .links #link a  {
-        font-size: 14px;
+        font-size: 16px;
     }
     .not-available #btn a {
         font-size: 20px;
