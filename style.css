@@ -9,10 +9,10 @@
 /* ---------MAIN-------COLORS------------ */
 .header { background-color: rgb(1, 46, 59);}      /*HEADER*/
 .text_img .dexterity h1{ color:  white; }   /*DEXTERITY*/
-body { background-color:  rgb(0, 102, 138);}         /*BODY BACKGROUND*/
 .text_img .intro_text { background-color: rgb(0, 64, 84);}
-/* ------------------------------------ */
+/* ------------------------------------ */  
 
+body { background-color:   rgb(0, 102, 138);}         /*BODY BACKGROUND*/
 
 
 
@@ -408,10 +408,14 @@ body { background-color:  rgb(0, 102, 138);}         /*BODY BACKGROUND*/
 
 
 @media screen and (max-width: 800px){
+    body {
+        background-color: rgb(232, 243, 252);
+    }
 
     .text_img .dexterity h1{
        text-align: center;
-       font-size: 90px
+       font-size: 90px;
+       color: rgb(1, 46, 59);
     }
     
     .work-n-learn img {
@@ -443,7 +447,6 @@ body { background-color:  rgb(0, 102, 138);}         /*BODY BACKGROUND*/
 @media screen and (max-width: 600px){
     .text_img .dexterity h1{
         font-size: 66px;
-        color: white;
     }
     #phone_sample2 {
         width: 350px;

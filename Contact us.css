@@ -138,9 +138,9 @@ form button {
     margin: 0 auto;
     font-size: 20px;
     padding: 10px 30px;
-    background-color: rgb(0, 102, 138);
+    background-color: aliceblue;
     border-radius: 20px;
-    color: white;
+    color: rgb(1, 46, 59);
 }
 
 
@@ -295,8 +295,13 @@ form button {
 }
 
 @media screen and (max-width: 800px){
+    body {
+        background-color: rgb(232, 243, 252);
+    }
+
     .front-page h1{
         font-size: 80px;
+        color: rgb(1, 46, 59);
     }
     .the-form {
         display: block;
