@@ -136,26 +136,31 @@ body { background-color:  aliceblue;}         /*BODY BACKGROUND*/
 
 }
 
+.intro_text a{
+    color: white;
+}
+
 
 /* ========= THE BUTTONS ========= */
 
 #buttons {
+    align-items: center;
     display: flex;
-    justify-content: space-between;
-    margin: 20px 100px;
+    justify-content: center;
+    margin: 30px;
 }
 
 #buttons a {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     text-decoration: none;
     font-size: 18px;
-    color: white;
-    padding: 10px;
-    background-color: rgba(0, 255, 255, 0.164);
-    border: 1px solid rgba(0, 255, 255, 0.164);
+    color: rgb(1, 46, 59);
+    padding: 10px 20px;
+    background-color: rgba(240, 248, 255, 0.74);
+    border: 1px solid aliceblue;
     border-radius: 10px;
 }
 
@@ -370,12 +375,10 @@ body { background-color:  aliceblue;}         /*BODY BACKGROUND*/
        display: block;
        margin: 0px auto;
     }
-    #buttons {
-        display: flex;
-        justify-content: space-between;
-        margin: 20px 10px;
-    }
     
+    
+    
+        
     #buttons a {
         font-size: 16px;
     }
@@ -421,9 +424,7 @@ body { background-color:  aliceblue;}         /*BODY BACKGROUND*/
     
 /*     ========== THE BUTTONS ========== */
     
-    #buttons {
-        margin: 20px 150px;
-    }
+
     
     #buttons a {
         font-size: 16px;
@@ -470,9 +471,6 @@ body { background-color:  aliceblue;}         /*BODY BACKGROUND*/
 
 
 @media screen and (max-width: 800px){
-    body {
-        background-color: white;
-    }
 
     .text_img .dexterity h1{
        text-align: center;
@@ -549,14 +547,16 @@ body { background-color:  aliceblue;}         /*BODY BACKGROUND*/
 /*    ========= THE BUTTONS ========  */
     
     #buttons {
-        margin: 50px 15px;
+        margin: 50px 20px;
     }
     
     #buttons a {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 600;
+        color: white;
+        background-color: rgba(14, 111, 141, 0.829);
+        border: 0px;
     }
-
     
     .work-card  {
         margin: 80px -30px;

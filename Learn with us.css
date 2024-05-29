@@ -16,7 +16,7 @@
 }
 
 body {
-    background-color: rgb(0, 102, 138);
+    background-color: aliceblue;
 } 
 
 
@@ -91,7 +91,7 @@ body {
     font-style: normal;
     font-size: 50px;
     text-align: center;
-    color: white;
+    color: rgb(1, 46, 59);
     margin: 70px 0px;
 }
 
@@ -199,7 +199,7 @@ body {
 
 @media screen and (max-width: 650px){
     body {
-        background-color: white;
+        background-color: aliceblue;
     }
     .not-available h1 {
         font-size: 28px;
