@@ -8,11 +8,12 @@
 
 /* ---------MAIN-------COLORS------------ */
 .header { background-color: rgb(1, 46, 59);}      /*HEADER*/
-.text_img .dexterity h1{ color:  white; }   /*DEXTERITY*/
+.text_img .dexterity h1{ color:  rgb(1, 46, 59); }   /*DEXTERITY*/
 .text_img .intro_text { background-color: rgb(0, 64, 84);}
 /* ------------------------------------ */  
 
-body { background-color:   rgb(0, 102, 138);}         /*BODY BACKGROUND*/
+
+body { background-color:  aliceblue;}         /*BODY BACKGROUND*/
 
 
 
@@ -136,6 +137,34 @@ body { background-color:   rgb(0, 102, 138);}         /*BODY BACKGROUND*/
 }
 
 
+/* ========= THE BUTTONS ========= */
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 100px;
+}
+
+#buttons a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 255, 255, 0.164);
+    border: 1px solid rgba(0, 255, 255, 0.164);
+    border-radius: 10px;
+}
+
+#buttons a:hover {
+    color: white;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 255, 0);
+    transition: 0.5s;
+}
+
+
 /* THIS IS FOR THE TILTING IMAGE SAMPLE */
 
 #phone_sample1 {
@@ -245,12 +274,15 @@ body { background-color:   rgb(0, 102, 138);}         /*BODY BACKGROUND*/
 
 /* ----------------- FOOTER -----------------*/
 
+
 .footer {
     margin-top: 20px;
-    background-color: rgb(77, 77, 77);
+    background-color: rgb(3, 55, 71);
     color: white;
     margin-left: -10px;
     margin-right: -10px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
 }
 .footer .footer-text h1{
     font-family: "Zilla Slab", serif;
@@ -297,10 +329,19 @@ body { background-color:   rgb(0, 102, 138);}         /*BODY BACKGROUND*/
 
 /* size of the icons on the footer */
 
-.fa-instagram {font-size: 30px;}
-.fa-x-twitter {font-size: 27px;}
-.fa-whatsapp {font-size: 30px;}
-.fa-envelope {font-size: 30px;}
+.fa-instagram {
+    font-size: 30px;
+ }
+.fa-x-twitter {
+    font-size: 27px;
+}
+
+.fa-whatsapp {
+    font-size: 30px;
+}
+.fa-envelope {
+    font-size: 30px;
+}
  
 /* MEDIA QUERY */
 
@@ -327,10 +368,19 @@ body { background-color:   rgb(0, 102, 138);}         /*BODY BACKGROUND*/
        display: block;
        margin: 0px auto;
     }
+    #buttons {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 10px;
+    }
+    
+    #buttons a {
+        font-size: 16px;
+    }
 
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1100px){
     .text_img .dexterity h1{
        text-align: center;
     }
@@ -340,7 +390,7 @@ body { background-color:   rgb(0, 102, 138);}         /*BODY BACKGROUND*/
         border: 0px;
         border-top-right-radius: 0px;
         border-bottom-left-radius: 0px;
-        background-color: rgb(1, 46, 59);
+        background-color: rgb(3, 55, 71);
     }
     
     .text_img .intro_text h1 {
@@ -365,6 +415,16 @@ body { background-color:   rgb(0, 102, 138);}         /*BODY BACKGROUND*/
     
     #phone_sample1 {
         display: none;
+    }
+    
+/*     ========== THE BUTTONS ========== */
+    
+    #buttons {
+        margin: 20px 150px;
+    }
+    
+    #buttons a {
+        font-size: 16px;
     }
     
     .work-n-learn {
@@ -424,6 +484,16 @@ body { background-color:   rgb(0, 102, 138);}         /*BODY BACKGROUND*/
         border-radius: 30px;
     }
     
+    /*     ========== THE BUTTONS ========== */
+    
+    #buttons {
+        margin: 50px 80px;
+    }
+    
+    #buttons a {
+        font-size: 18px;
+    }
+    
     .work-card  {
         margin: 50px 50px;
     }
@@ -461,7 +531,7 @@ body { background-color:   rgb(0, 102, 138);}         /*BODY BACKGROUND*/
         color: white;
     }
     .text_img .intro_text {
-        background-color:  rgb(0, 64, 84);
+        background-color:  rgb(3, 55, 71);
         padding:100px 0px;
         margin: 0px -10px;
         margin-top: 50px;
@@ -472,6 +542,17 @@ body { background-color:   rgb(0, 102, 138);}         /*BODY BACKGROUND*/
         border: 0px;
         border-top-right-radius: 0px;
         border-bottom-left-radius: 0px;
+    }
+    
+/*    ========= THE BUTTONS ========  */
+    
+    #buttons {
+        margin: 50px 45px;
+    }
+    
+    #buttons a {
+        font-size: 13px;
+        font-weight: 600;
     }
 
     
