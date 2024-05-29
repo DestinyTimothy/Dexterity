@@ -198,6 +198,9 @@ body {
 }
 
 @media screen and (max-width: 650px){
+    body {
+        background-color: white;
+    }
     .not-available h1 {
         font-size: 28px;
     }
