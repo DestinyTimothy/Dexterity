@@ -515,6 +515,10 @@ body { background-color:  aliceblue;}         /*BODY BACKGROUND*/
 
 
 @media screen and (max-width: 600px){
+    body {
+        background-color: whitesmoke;
+    }
+    
     .text_img .dexterity h1{
         font-size: 66px;
     }
@@ -547,7 +551,7 @@ body { background-color:  aliceblue;}         /*BODY BACKGROUND*/
 /*    ========= THE BUTTONS ========  */
     
     #buttons {
-        margin: 50px 20px;
+        margin-bottom:0px ;
     }
     
     #buttons a {
