@@ -200,7 +200,7 @@ body {
 /* size of the icons on the footer */
 
 .fa-instagram {font-size: 30px;}
-.fa-x-twitter {font-size: 27px;}
+.fa-facebook {font-size: 27px;}
 .fa-whatsapp {font-size: 30px;}
 .fa-envelope {font-size: 30px;}
  
@@ -269,7 +269,7 @@ body {
     }
     
     .fa-instagram {font-size: 20px;}
-    .fa-x-twitter {font-size: 19px;}
+    .fa-facebook {font-size: 19px;}
     .fa-whatsapp {font-size: 20px;}
     .fa-envelope {font-size: 20px;}
 }

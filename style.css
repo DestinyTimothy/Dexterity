@@ -339,7 +339,7 @@ body { background-color:  aliceblue;}         /*BODY BACKGROUND*/
 .fa-instagram {
     font-size: 30px;
  }
-.fa-x-twitter {
+.fa-facebook {
     font-size: 27px;
 }
 
@@ -463,7 +463,7 @@ body { background-color:  aliceblue;}         /*BODY BACKGROUND*/
     }
     
     .fa-instagram {font-size: 20px;}
-    .fa-x-twitter {font-size: 19px;}
+    .fa-facebook {font-size: 20px;}
     .fa-whatsapp {font-size: 20px;}
     .fa-envelope {font-size: 20px;}
  
@@ -516,7 +516,7 @@ body { background-color:  aliceblue;}         /*BODY BACKGROUND*/
 
 @media screen and (max-width: 600px){
     body {
-        background-color: whitesmoke;
+        background-color: aliceblue;
     }
     
     .text_img .dexterity h1{
