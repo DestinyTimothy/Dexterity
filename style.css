@@ -488,7 +488,7 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
 
     .text_img {
         text-align: left;
-        padding-left: 25px;
+        padding: 20px 0 30px 20px;
     }
     
     #preloader {
@@ -499,12 +499,13 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
 
     .fa-bars{
         font-size: 20px;
-        margin: 13px 0px 0px 30px;
+        margin: auto 30px;
     }
     
     .header #dextr{
         width: 70px;
         height:24px;
+        padding-top: 2px;
         margin: 10px 25px 10px 0;
     }
 
@@ -517,6 +518,7 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
     .text_img .intro_text h1 {
         font-size: 13px;
         line-height: 20px;
+        font-weight: 500;
     }
     
     #phone_sample1 {
@@ -526,7 +528,7 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
     
     
     
-/*    ========= THE BUTTONS ========  */
+/*    ========= THE BUTTON ========  */
 
     
     #buttons a {
@@ -534,15 +536,18 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
         font-weight: 600;
     }
     
+
+
+    
     
 /*   =========== THE CARDS ==========   */
     
     .work-card  {
-        margin: 80px 40px;
+        margin: 80px 0px;
     }
     
      .learn-card {
-        margin: 80px 40px;
+        margin: 80px 0px;
     }
         
     .work-n-learn img {
