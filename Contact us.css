@@ -310,16 +310,22 @@ form button {
 }
 
 @media screen and (max-width: 650px){
+    /* ------------ the header ------------- */
+
     .fa-bars{
         font-size: 20px;
-        margin: 13px 0px 0px 30px;
+        margin: auto 30px;
     }
     
     .header #dextr{
         width: 70px;
         height:24px;
+        padding-top: 2px;
         margin: 10px 25px 10px 0;
     }
+
+    /* ----------------------------------- */
+    
 
     .front-page h1{
         font-size: 50px;
