@@ -4,7 +4,7 @@
 }
 
 .header{
-    background-color: rgb(1, 46, 59);
+    background-color: rgb(51, 51, 51);
     display: flex;
     justify-content: space-between;
     border-radius: 30px;
@@ -16,7 +16,7 @@
 }
 
 body {
-    background-color: aliceblue;
+    background-color: whitesmoke;
 } 
 
 
@@ -24,21 +24,23 @@ body {
 .fa-bars{
     color: white;
     font-size: 30px;
-    margin: 27px 0 0 50px;
+    margin: 25px 0 0 50px;
 }
 
 .header #dextr{
     width: 130px;
     height:40px;
-    margin: 22px 50px 20px 20px;
+    margin: 20px 40px 20px 0;
 }
 
 .menu a {
     text-decoration: none;
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bolder;
-    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;    
+    font-size: 13px;
     border-radius: 20px;
 }
 
@@ -65,7 +67,7 @@ body {
 }
 
 .menu {
-    background-color: rgb(1, 46, 59);
+    background-color: rgb(50, 51, 51);
     position: absolute;
     border-radius: 30px;
     margin-top: 7px;
@@ -98,7 +100,7 @@ body {
     font-style: normal;
     font-size: 80px;
     text-align: center;
-    color: rgb(1, 46, 59);
+    color: rgb(51, 51, 51);
 }
 
 .front-page #work-img {
@@ -109,7 +111,7 @@ body {
 
 /* THE FORM */
 .the-form {
-    background-color: rgb(1, 46, 59);
+    background-color: rgb(50, 51, 51);
     border-radius: 40px;
     margin-bottom: 20px;
 }
@@ -122,7 +124,7 @@ form input {
     width: 450px;
     height: 40px;
     border-radius: 20px;
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 form textarea {
@@ -138,7 +140,7 @@ form button {
     margin: 0 auto;
     font-size: 20px;
     padding: 10px 30px;
-    background-color: aliceblue;
+    background-color: whitesmoke;
     border-radius: 20px;
     color: rgb(1, 46, 59);
 }
@@ -149,8 +151,8 @@ form button {
 .footer {
     color: white;
     margin-left: -10px;
-    margin-right: -10px; 
-    background-color: rgb(3, 55, 71);
+    margin-right: -10px;
+    background-color: rgb(50, 51, 51);
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
@@ -299,27 +301,26 @@ form button {
 @media screen and (max-width: 800px){
     .front-page h1{
         font-size: 80px;
-        color: rgb(1, 46, 59);
     }
     .the-form {
         display: block;
         margin: 0px 0px;
     }
-    .cards {
-        display: block;
-        padding: 0px 30px 150px 30px;
-        background-color: white;
-        margin: 0 100px;
-        gap: 30px;
-    }
-    
-    .card{
-        padding: 70px 0px;
-        margin: 50px 0px;
-    }
+
 }
 
 @media screen and (max-width: 650px){
+    .fa-bars{
+        font-size: 20px;
+        margin: 13px 0px 0px 30px;
+    }
+    
+    .header #dextr{
+        width: 70px;
+        height:24px;
+        margin: 10px 25px 10px 0;
+    }
+
     .front-page h1{
         font-size: 50px;
         margin: 0px -50px;
@@ -334,26 +335,6 @@ form button {
     
     #front-page-image {
         margin: 0px -50px;
-    }
-    
-    #se-we-off h1 {
-        font-size: 30px;
-    }
-    
-    .cards {
-        display: block;
-        padding: 0px 30px 150px 30px;
-        background-color: white;
-        margin: 0 40px;
-        gap: 30px;
-    }
-    
-    .card{
-        padding: 0px 0px;
-        margin: 50px 0px;
-    }
-    .card h1{
-        font-size: 20px;
     }
     
     .fa-palette {font-size: 40px;}
