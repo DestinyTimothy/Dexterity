@@ -56,6 +56,8 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
     margin: 20px 40px 20px 0;
 }
 
+/* =========== M E N U ===========*/
+
 .menu a {
     text-decoration: none;
     color: white;
@@ -63,30 +65,31 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;    
-    font-size: 14px;
+    font-size: 17px;
     border-radius: 20px;
 }
 
-.menu_option a{
-    display: flex;
-    justify-content: space-between;
-    border-radius: 30px; 
-    padding: 6px 0px;
-    margin: 0px 25px;
+/* ---------------------------------*/
+.home h1{
+    background-color: white;
+    border-radius: 15px;
+    color: rgb(50,51,51);
 }
+/* ---------------------------------*/
 
-.menu_option h1{
-    padding-right: 10px;
-}
+
+.menu h1{
+    padding: 10px 20px;
+    text-align: center;
+} 
+
+.menu h1:hover{
+    background-color: gray;
+    border-radius: 15px;
+} 
 
 .menu_option{
-    padding: 5px 0px;
-}
-
-.fa-greater-than {
-    padding-top: 16px;
-    color: white;
-    padding-left: 20px;
+        padding: 10px 30px;
 }
 
 .menu {
@@ -101,12 +104,6 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
 .menu.open-menu{
     display: block;
 }
-
-/* the space between each letter */
-
-.menu h1{
-    padding: 10px;
-} 
 
 /* ------------------------------------------------------------------------------------------------------------------------ */
 
@@ -128,9 +125,10 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
     padding-top: 30px; 
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
     font-size: 90px;
+    color: rgb(25, 26, 26);
 }
 
 .text_img .intro_text h1 {
@@ -246,7 +244,9 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
 
 .work-n-learn h1{
     font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     font-weight: bolder;
     padding: 30px 0 0 30px;
 }
@@ -487,8 +487,8 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
 @media screen and (max-width: 650px){
 
     .text_img {
-        text-align: left;
-        padding: 20px 0 30px 20px;
+        text-align: center;
+        padding: 20px 0 30px 0;
     }
     
     #preloader {
@@ -512,7 +512,7 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
     /* ----------------------------------- */
     
     .text_img .dexterity h1{
-        font-size: 44px;
+        font-size: 48px;
     }
     
     .text_img .intro_text h1 {
@@ -534,6 +534,7 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
     #buttons a {
         font-size: 13px;
         font-weight: 600;
+        background-color: rgb(41, 40, 40);
     }
     
 
