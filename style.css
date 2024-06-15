@@ -178,7 +178,8 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
 /* THIS IS FOR THE TILTING IMAGE SAMPLE */
 
 #phone_sample1 {
-    width: 370px;
+    width: 430px;
+    margin-top: 30px;
     position: relative;
     transition: all 0.6s ease-out;
     transform: rotateX(0deg) rotateY(0deg);
@@ -488,13 +489,24 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
 
     .text_img {
         text-align: center;
-        padding: 20px 0 30px 0;
+        padding: 10px 0 0 0;
     }
     
     #preloader {
         background-size: 100%;
     }
     
+    
+    /* =========== M E N U ===========*/
+
+    .menu a {
+        font-size: 13px;
+    }
+    
+    .menu_option{
+        padding: 10px 15px;
+    }
+
     /* ------------ the header ------------- */
 
     .fa-bars{
@@ -548,12 +560,16 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
     }
     
      .learn-card {
-        margin: 80px 15px;
+        margin: 0 15px;
     }
         
     .work-n-learn img {
         height: 180px;
         border-radius: 11px;
+    }
+    
+    .work-n-learn h1{
+        font-size: 25px;
     }
     
     .work-n-learn h2{
@@ -562,7 +578,7 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
         font-weight: 300;
         font-style: normal;
         padding: 30px;
-        font-size: 17px;
+        font-size: 13px;
     }
 }
 

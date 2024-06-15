@@ -42,7 +42,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;    
-    font-size: 17px;
+    font-size: 14px;
     border-radius: 20px;
 }
 
@@ -320,6 +320,17 @@ form button {
         padding-top: 2px;
         margin: 10px 25px 10px 0;
     }
+    
+            /* =========== M E N U ===========*/
+
+    .menu a {
+        font-size: 12px;
+    }
+    
+    .menu_option{
+        padding: 10px 15px;
+    }
+
 
     /* ----------------------------------- */
     
