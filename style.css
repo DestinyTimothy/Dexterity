@@ -121,13 +121,20 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
 
 /* DEXTERITY */
 
+#Dexterity {
+    font-family: "Zilla Slab", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 130px;
+}
+
 .text_img .dexterity h1{
     padding-top: 30px; 
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 300;
     font-style: normal;
-    font-size: 90px;
+    font-size: 70px;
     color: rgb(25, 26, 26);
 }
 
@@ -233,17 +240,17 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
 
 /* CARDSSSSSSSSSSSSSS */
 
-.work-n-learn {
+.p-s-l {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.work-n-learn a{
+.p-s-l a{
     text-decoration: none;
     color: white;
 }
 
-.work-n-learn h1{
+.p-s-l h1{
     font-size: 30px;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -252,7 +259,7 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
     padding: 30px 0 0 30px;
 }
 
-.work-n-learn h2{
+.p-s-l h2{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -262,7 +269,7 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
     color: white;
 }
 
-.work-n-learn img {
+.p-s-l img {
     display: block;
     width: 90%;
     margin: 0 auto;
@@ -270,22 +277,121 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
     border-radius: 15px;
 }
 
-.work-card  {
-    margin: 0px 100px;
+.card  {
+    margin: 0px 20px;
     padding: 0 0 20px 0;
     background-color: rgb(35, 36, 36);
     border-radius: 17px;
     box-shadow: 5px  8px 15px 3px rgba(0, 0, 0, 0.397); 
+    opacity: 0;
+    transform: translateX(0);
+    transition: transform 1s ease, opacity 1s ease;
 }
 
-.learn-card {
-    margin: 0px 100px;
-    padding: 0 0 20px 0;
+
+.card-left {
+    transform: translateX(7%);
+}
+
+.card-right {
+    transform: translateX(7%);
+}
+
+.card.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ==================== Services we offer ================== */
+
+
+#se-we-off h1{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    color: rgb(25, 26, 26);
+    margin-top: 100px;
+    padding: 50px 0 150px 0;
+}
+
+/* ================== Services Cards ====================== */
+
+.cards {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    white-space: nowrap;
+    scroll-snap-type:x mandatory;
+}
+
+.scroll-card {
+    margin: 0px 10px;
+    width: 250px;
     background-color: rgb(35, 36, 36);
     border-radius: 17px;
     box-shadow: 5px  8px 15px 3px rgba(0, 0, 0, 0.397); 
+    flex: 0 0 auto;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: center;
 }
 
+.cards h2{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 50px 0 50px 0;
+}
+
+.card-elements {
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.fa-palette {font-size: 50px; color: blueviolet;}
+.fa-backward-fast{font-size: 50px; color: rgb(255, 251, 0)}
+.fa-laptop-code{font-size: 50px; color: rgb(8, 206, 255);}
+.fa-users-gear {font-size: 50px; color: rgb(255, 165, 47);}
+.fa-id-badge{font-size: 50px; color: rgb(187, 126, 245);}
+.fa-file-contract{font-size: 50px; color: rgb(24, 223, 24);}
+
+
+/* ----------------- Contact us Button --------------- */
+
+
+.btn a{
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    background-color: rgb(35, 36, 36);
+    border: 2px solid rgb(35, 36, 36);
+    color: whitesmoke;
+    font-size: 22px;
+    text-align: center;
+    padding: 12px;
+    border-radius: 15px;
+    display: block;
+    margin: 50px 560px;
+    transition: 0.5s;
+}
+
+.btn a:hover {
+    background-color: whitesmoke;
+    color: rgb(35, 36, 36);
+    border: 2px solid rgb(35, 36, 36);
+
+
+}
 
 /* ----------------- FOOTER -----------------*/
 
@@ -354,8 +460,20 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
 
 
 @media screen and (max-width: 1300px){
+    #Dexterity {
+        font-family: "Zilla Slab", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 110px;
+    }
+    
     .text_img .dexterity h1{
-        font-size: 80px;
+        font-size: 70px;
+    }
+    
+    #phone_sample1 {
+        width: 400px;
+        padding: 30px 0px;
     }
 
     .fa-bars{
@@ -373,10 +491,23 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
     #buttons a {
         font-size: 16px;
     }
+    
+    .btn a{
+        font-size: 22px;
+        margin: 50px 430px;
+    }
 
 }
 
 @media screen and (max-width: 1100px){
+    #Dexterity {
+        font-size: 130px;
+    }
+    
+    .text_img .dexterity h1{
+        font-size: 80px;
+    }
+    
     .text_img {
         padding-top: 50px;
         text-align: center;
@@ -407,25 +538,52 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
         font-size: 16px;
     }
     
-    .work-n-learn {
+    .p-s-l {
         display: block;
         margin: 0 auto;
     }
     
-    .work-n-learn img {
+    .p-s-l img {
 
         width: 87%;
         height: 250px;
         border-radius: 15px;
     }
     
-    .work-card  {
+    .card  {
         margin: 50px 200px;
+       transition: transform 0.5s ease, opacity 0.5s ease;
+
     }
     
-    .learn-card  {
-        margin: 50px 200px;
+
+    .card-left {
+        transform: translateX(-30%);
     }
+
+    .card-right {
+        transform: translateX(30%);
+    }
+
+    .card.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    
+/*   Services we Offer    */
+    
+    .btn a{
+        font-size: 18px;
+        margin: 50px 310px;
+    }
+    
+    #se-we-off h1{
+        font-size: 40px;
+        padding: 80px 0;
+    }
+
+/*   Footer   */
     
     .footer {
         margin-top: 200px;
@@ -459,33 +617,57 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
 
 
 @media screen and (max-width: 800px){
+    #Dexterity {
+        font-size: 100px;
+    }
     
     .text_img .dexterity h1{
-        font-size: 70px;
+        font-size: 60px;
     }
     .links {
         display: block;
         padding-top: 70px;
     }
         
-    .work-n-learn img {
+    .p-s-l img {
         width: 87%;
         height: 250px;
         border-radius: 15px;
     }
     
-    .work-card  {
+    .card  {
         margin: 50px 100px;
     }
     
-    .learn-card  {
-        margin: 50px 100px;
+    /*   Services we Offer    */
+    
+    .btn a{
+        font-size: 18px;
+        margin: 50px 230px;
+    }
+    
+    #se-we-off h1{
+        font-size: 40px;
+        padding: 80px 0;
+    }
+
+    .card-left {
+        transform: translateX(-18%);
+    }
+
+    .card-right {
+        transform: translateX(18%);
+    }
+
+    .card.visible {
+        opacity: 1;
+        transform: translateX(0);
     }
 
 }
 
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 600px){
 
     .text_img {
         text-align: center;
@@ -523,18 +705,25 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
 
     /* ----------------------------------- */
     
+    #Dexterity {
+        font-size: 70px;
+    }
+    
     .text_img .dexterity h1{
-        font-size: 48px;
+        font-size: 27px;
+        font-weight: 300;
     }
     
     .text_img .intro_text h1 {
         font-size: 13px;
         line-height: 20px;
         font-weight: 500;
+        margin: 15px 0 60px 0;
     }
     
     #phone_sample1 {
-        width: 350px;
+        width: 330px;
+
     }
     
     
@@ -555,31 +744,53 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
     
 /*   =========== THE CARDS ==========   */
     
-    .work-card  {
+    .card  {
         margin: 80px 15px;
     }
-    
-     .learn-card {
-        margin: 0 15px;
-    }
-        
-    .work-n-learn img {
+ 
+    .p-s-l img {
         height: 180px;
         border-radius: 11px;
     }
     
-    .work-n-learn h1{
+    .p-s-l h1{
         font-size: 25px;
     }
     
-    .work-n-learn h2{
+    .p-s-l h2{
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
         font-weight: 300;
         font-style: normal;
         padding: 30px;
-        font-size: 13px;
+        font-size: 15.3px;
     }
+    
+        /*   Services we Offer    */
+    
+    .btn a{
+        font-size: 18px;
+        margin: 50px 100px;
+    }
+    
+    #se-we-off h1{
+        font-size: 30px;
+        padding: 60px 0;
+    }
+    
+    .card-left {
+        transform: translateX(-5%);
+    }
+
+    .card-right {
+        transform: translateX(5%);
+    }
+
+    .card.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
 }
 
 

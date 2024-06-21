@@ -47,17 +47,11 @@
                     </div>
     
                     <div class="menu_option">
-                        <a href="Work with us.html">
-                            <h1 class="option">Work with us</h1>
+                        <a href="#se-we-off">
+                            <h1 class="option">Our Services</h1>
                         </a>
                     </div>
-    
-                    <div class="menu_option">
-                        <a href="Learn with us.html">
-                            <h1 class="option">Learn with us</h1>
-                        </a>
-                    </div>
-    
+
                     <div class="menu_option">
                         <a href="Contact us.html">
                             <h1 class="option">Contact</h1>
@@ -72,14 +66,13 @@
                 
                     <section>
                         <div class="text_img">
-                            <div class="dexterity"><h1>Welcome To<br>Dexterity</h1></div>
+                            <div class="dexterity"><h1>Welcome To<br><span id="Dexterity">Dexterity.</span></h1></div>
                             <div>
                                 <img src="images/dextr sample collage for phone.png" id="phone_sample2"> 
                             </div>
                             <div class="intro_text">
                                 <h1>
-                                    A Tech Community that focuses on <br>
-                                    <i>People, Services & Learning. </i>                         
+                                    A Tech Company Driven by Young Minds                          
                                 </h1>
                             </div>
                             <div id="buttons">
@@ -112,27 +105,93 @@
 
         <section>
             <div>
-                <div class="work-n-learn">
+                <div class="p-s-l">
 
-                    <div class="work-card">
-                        <a href="Work with us.html">
-                            <h1>Work with us.</h1> 
-                            <h2>From conceptualization to execution, our team of dedicated professionals are eager to help you with anything in our diverse suite of digital services.</h2>
-                            <img src="images/Handshake.jpg" alt="handshake">
+                    <div class="card card-left">
+                        <a href="#footer">
+                            <h1>Community.</h1> 
+                            <h2>Join the community, where we discuss diverse topics, partake in weekly challenges, and lots more. A safe space to learn, network and grow.</h2>
+                            <img src="images/b50d55c343a9f0dfba41b769df6656d4.jpg" alt="plant">
                         </a>
                     </div>
 
-                    <div class="learn-card">
-                        <a href="Learn with us.html">
-                            <h1>Learn with us.</h1>
-                            <h2>This service isn't available <i>yet</i>. We're still working on creating an Interactive and social learning environment. Until then, you can Join the community.</h2>
-                            <img src="images/Plant.jpg" alt="plant">
+                    <div class="card card-right">
+                        <a href="#se-we-off">
+                            <h1>Services.</h1>
+                            <h2>From conceptualization to execution, our team of young creative minds are eager to help you with anything in our diverse suite of digital services.</h2>
+                            <img src="images/workwithus.png" alt="handshake">
+                        </a>
+                    </div>
+
+                    <div class="card card-left">
+                        <a href="#">
+                            <h1>Learning.</h1>
+                            <h2> We're creating an Interactive and social learning environment, but this service isn't available <i>yet</i>. Until then, you can Join the community where we share learning resources. </h2>
+                            <img src="images/548881c6738bad9ba6ca457271c605c5.jpg" alt="work with us">
                         </a>
                     </div>
 
                 </div>
             </div>
         </section>
+
+        <section id="se-we-off">
+
+            <h1>Services We Offer.</h1>
+
+            <section class="cards">
+                    
+                <div class="scroll-card">
+                    <div class="card-elements">
+                        <i class="fa fa-palette"></i>
+                        <h2>Graphic Design</h1>
+                    </div>
+                </div>
+                
+                <div class="scroll-card">
+                    <div class="card-elements">
+                        <i class="fa-solid fa-backward-fast"></i>
+                        <h2>Video Editing</h1>
+                    </div>
+                </div>
+
+                <div class="scroll-card">
+                    <div class="card-elements">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h2>Website Dev</h1>
+                    </div>
+                </div>
+
+                <div class="scroll-card">
+                    <div class="card-elements">
+                        <i class="fa-solid fa-users-gear"></i>
+                        <h2>Product Design</h1>
+                    </div>
+                </div>
+
+                <div class="scroll-card">
+                    <div class="card-elements">
+                        <i class="fa-solid fa-file-contract"></i>
+                        <h2>Testing / Critic</h1>
+                    </div>
+                </div>
+
+                <div class="scroll-card">
+                    <div class="card-elements">
+                        <i class="fa-regular fa-id-badge"></i>
+                        <h2>Branding</h1>
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="btn">
+                <a href="Contact us.html">Contact Us</a>
+            </div>
+        </section>
+
+
+
 
         <section class="footer" id="footer">
             <div class="footer-text">
@@ -150,23 +209,6 @@
 
     </section>
     
-    <script>
-        let subMenu = document.getElementById("subMenu")
-
-        function toggleMenu(){
-                subMenu.classList.toggle("open-menu");
-        }
-
-        var loader = document.getElementById("preloader");
-
-        window.addEventListener("load", function(){
-                setTimeout(function(){
-                    loader.style.display = "none"
-                }, 1500)
-        })
-
-
-
-    </script>
+    <script src="Main.js"></script>
 </body>
 </html>

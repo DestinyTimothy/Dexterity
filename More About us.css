@@ -16,8 +16,24 @@
 }
 
 body {
-    background-color: rgb(131, 127, 127);
+    background: linear-gradient(rgb(43, 255, 0), blue);
+    background-size: 100% 200%;
+    animation: bg 12s ease infinite;
 } 
+
+/* ================================================ */
+
+
+@keyframes bg{
+    0% { background-position: 0% 50%;}
+    50% { background-position: 100% 100%;}
+    100% { background-position: 0% 50%;}
+}
+
+
+
+
+
 
 
 /* this is for the back button, the triangle buttons */
@@ -97,6 +113,7 @@ body {
 
 
 .the-body {
+    /* text-align: center; */
     background-color: white;
     padding: 50px;
     margin: 0px -10px -200px -10px;
@@ -104,23 +121,6 @@ body {
     border-top-right-radius: 40px;
     padding-bottom: 200px;
 }
-
-.about-us{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-
-.about-us ul a{
-    text-decoration: none;
-    color: rgb(50, 51, 51);
-    font-family: "Zilla Slab", serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 20px;
-
-}
-
 
 /* ---------- about us text----------- */
     
@@ -225,19 +225,13 @@ body {
 }
 
 @media screen and (max-width: 1070px){
+
+
+
     #more-about-us{
         font-size: 50px;
     }
     
-    .about-us ul a{
-        font-size: 20px;
-
-    }
-    .about-us{
-        display: block;
-
-    }
-
 
     /*      THIS IS FOR THE FOOOOOOOOOOOOOTER*/
     
@@ -276,7 +270,17 @@ body {
 
 
 @media screen and (max-width: 600px){
+
+    /* body {
+        width: 100%;
+        background-image: url(images/4285c5aa0e01bdf03d8ef17a46bf0c18.jpg);
+        background-position: center;
+        background-size: cover;
+    } 
+     */
         /* ------------ the header ------------- */
+
+
 
         .fa-bars{
             font-size: 20px;
@@ -304,21 +308,15 @@ body {
         /* ----------------------------------- */
         
     .the-body {
+        text-align: center;
         padding: 40px 25px 200px 25px;
     }
 
     #more-about-us{
         font-size: 40px;
     }
-    
-    .about-us ul {
-        padding-left: 30px;
-    }
-    
-    .about-us ul a {
-        font-size: 16.5px;
 
-    }
+    
         /* ---------- about us text----------- */
     
     #about-text h1{
