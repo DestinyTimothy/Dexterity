@@ -320,12 +320,12 @@ body {
         /* ---------- about us text----------- */
     
     #about-text h1{
-        font-size: 30px;
+        font-size: 23px;
         margin-bottom: 20px;
     }
 
     #about-text p{
         padding: 0px;
-        font-size: 16.5px;
+        font-size: 13px;
     }
 }

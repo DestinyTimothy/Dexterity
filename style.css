@@ -350,11 +350,11 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
 }
 
 .card-elements {
-    padding-top: 50px;
+    padding:50px 0 0 0 ;
     color: white;
     text-align: center;
     display: block;
-    margin: 0 auto;
+    
 }
 
 
@@ -706,7 +706,7 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
     /* ----------------------------------- */
     
     #Dexterity {
-        font-size: 70px;
+        font-size: 60px;
     }
     
     .text_img .dexterity h1{
@@ -769,8 +769,10 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
         /*   Services we Offer    */
     
     .btn a{
-        font-size: 18px;
-        margin: 50px 100px;
+        border-radius: 10px;
+        margin: 50px 115px;
+        font-size: 13px;
+        padding: 8px;
     }
     
     #se-we-off h1{
@@ -790,6 +792,36 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
         opacity: 1;
         transform: translateX(0);
     }
+    
+    #se-we-off h1{
+        font-size: 23px;
+    }
+    
+    .cards h2{
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        font-weight: 600;
+        font-size: 15px;
+        padding: 30px 0 0 0;
+    }
+    
+    .scroll-card {
+        width: 190px;
+    }
+    
+    .card-elements {
+        padding:34px 0 34px 0 ;
+        color: white;
+        text-align: center;
+    }
+
+
+    .fa-palette {font-size: 30px; color: blueviolet;}
+    .fa-backward-fast{font-size: 30px; color: rgb(255, 251, 0)}
+    .fa-laptop-code{font-size: 30px; color: rgb(8, 206, 255);}
+    .fa-users-gear {font-size: 30px; color: rgb(255, 165, 47);}
+    .fa-id-badge{font-size: 30px; color: rgb(187, 126, 245);}
+    .fa-file-contract{font-size: 30px; color: rgb(24, 223, 24);}
 
 }
 
