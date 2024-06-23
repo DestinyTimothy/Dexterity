@@ -118,6 +118,9 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
     padding-top: 20px;
 }
 
+#break {
+    display: none;
+}
 
 /* DEXTERITY */
 
@@ -146,8 +149,6 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
   font-weight: 400;
   font-style: normal;
   font-size: 19px;
-  line-height: 30px;
-
 }
 
 .intro_text a{
@@ -302,6 +303,71 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
     transform: translateX(0);
 }
 
+/* ==================== COMMUNITY BLOCK===================== */
+
+.comm-block {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+#comm-block-img {
+    padding: 150px 0 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.comm-text {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-challenge p{
+    font-weight: 350;
+    font-size: 19px;
+    padding-bottom: 50px;
+}
+
+.winner-details {
+    color: white;
+    background-color: rgb(35, 36, 36);
+    border-radius: 30px;
+}
+
+.winner-details img {
+    border-radius: 30px;
+    border: 3px solid #089bd9;
+}
+
+.winner-details h3{
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+}
+
+.winner-profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    
+}
+
+.winner-points ul li{
+    padding: 7px 0 0 0;
+}
+
+.winner-points ul{
+    padding: 0 0 0 10px;
+}
+
+/* DEMARCATION */
+
+#demarcation {
+    display: none;
+}
+
+
+
 /* ----------------- FOOTER -----------------*/
 
 
@@ -408,13 +474,14 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
 
 }
 
+
 @media screen and (max-width: 1100px){
     #Dexterity {
-        font-size: 130px;
+        font-size: 110px;
     }
     
     .text_img .dexterity h1{
-        font-size: 80px;
+        font-size: 60px;
     }
     
     .text_img {
@@ -490,6 +557,12 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
     #se-we-off h1{
         font-size: 40px;
         padding: 80px 0;
+    }
+    
+/*   ================= Community Block ==================   */
+    
+    #comm-block-img img{
+        width: 600px
     }
 
 /*   Footer   */
@@ -573,11 +646,59 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
         transform: translateX(0);
     }
 
+    /*   ================= Community Block ==================   */
+    
+    #comm-block-img img{
+        width: 500px
+    }
+    
+    .comm-text {
+        width: 500px;
+    }
+    
+    .winner-details img{
+        width: 160px;
+        border-radius: 30px;
+    }
+    
+    .winner-details h3{
+        font-size: 20px;
+    } 
+    
+        
+    .winner-profile {
+        display: block;
+        padding: 20px; 
+    }
+    
+    .winner-points ul{
+        text-align: left;
+    }
+    
+    .winner-points ul li{
+        padding: 20px 0 0 0;
+    }
+
+    .winner-points ul{
+        padding: 0 0 0 20px;
+    }
+        /* DEMARCATION */
+
+    #demarcation {
+        display: block;
+    }
 }
 
 
 @media screen and (max-width: 600px){
 
+    
+    #break {
+        display: block;
+        line-height: 0px;
+
+    }
+    
     .text_img {
         text-align: center;
         padding: 10px 0 0 0;
@@ -642,7 +763,8 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
 
     
     #buttons a {
-        font-size: 13px;
+        font-size: 10px;
+        padding: 10px;
         font-weight: 600;
         background-color: rgb(41, 40, 40);
     }
@@ -674,63 +796,44 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
         padding: 30px;
         font-size: 15.3px;
     }
+
+        /*   ================= Community Block ==================   */
     
-        /*   Services we Offer    */
-    
-    .btn a{
-        border-radius: 10px;
-        margin: 50px 115px;
-        font-size: 13px;
-        padding: 8px;
+    #comm-block-img {
+        padding: 50px 0px;
     }
     
-    #se-we-off h1{
-        font-size: 30px;
-        padding: 60px 0;
+    #comm-block-img img{
+        width: 320px
     }
     
-    .card-left {
-        transform: translateX(-5%);
+    .comm-text {
+        width: 320px;
+    }
+    
+    .winner-details img{
+        width: 150px;
+        border-radius: 16px;
+    }
+    
+    .winner-details h3{
+        font-size: 16px;
+    }         
+    
+    .about-challenge p{
+        font-weight: 350;
+        font-size: 16px;
+        padding-bottom: 50px;
+    }
+    
+    .winner-details {
+        border-radius: 20px;
+    }
+    
+    .winner-points ul{
+        font-size: 14px
     }
 
-    .card-right {
-        transform: translateX(5%);
-    }
-
-    .card.visible {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    
-    #se-we-off h1{
-        font-size: 23px;
-    }
-    
-    .cards h2{
-        font-family: "Montserrat", sans-serif;
-        color: white;
-        font-weight: 600;
-        font-size: 15px;
-        padding: 30px 0 0 0;
-    }
-    
-    .scroll-card {
-        width: 190px;
-    }
-    
-    .card-elements {
-        padding:34px 0 34px 0 ;
-        color: white;
-        text-align: center;
-    }
-
-
-    .fa-palette {font-size: 30px; color: blueviolet;}
-    .fa-backward-fast{font-size: 30px; color: rgb(255, 251, 0)}
-    .fa-laptop-code{font-size: 30px; color: rgb(8, 206, 255);}
-    .fa-users-gear {font-size: 30px; color: rgb(255, 165, 47);}
-    .fa-id-badge{font-size: 30px; color: rgb(187, 126, 245);}
-    .fa-file-contract{font-size: 30px; color: rgb(24, 223, 24);}
 
 }
 
