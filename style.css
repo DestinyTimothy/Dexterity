@@ -796,6 +796,21 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
         padding: 30px;
         font-size: 15.3px;
     }
+    
+    
+    .card-left {
+        transform: translateX(-18%);
+    }
+
+    .card-right {
+        transform: translateX(6%);
+    }
+
+    .card.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
 
         /*   ================= Community Block ==================   */
     
@@ -813,7 +828,8 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
     
     .winner-details img{
         width: 150px;
-        border-radius: 16px;
+        border-radius: 10px;
+        border: 2px solid skyblue;
     }
     
     .winner-details h3{
@@ -827,7 +843,7 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
     }
     
     .winner-details {
-        border-radius: 20px;
+        border-radius: 12px;
     }
     
     .winner-points ul{
