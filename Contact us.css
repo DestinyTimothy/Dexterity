@@ -108,18 +108,29 @@ body {
 
 
 .the-body {
-    display: flex;
-    justify-content: center;
     background-color: white;
-    padding: 50px;
+    padding: 50px 70px 50px 70px;
     margin: 0px -10px -300px -10px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     padding-bottom: 200px;
 }
 
+.page-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
-/* ============================ F0RM ============================== */
+#contactUsImage img{
+    width: 500px;
+}
+/* ============================ F0RM ==============================*/
+
+.the-form .name{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 
 /* THE FORM */
@@ -128,43 +139,57 @@ body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;    
-    background-color: rgb(212, 211, 211);
     border-radius: 40px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
+    /* background-color: blue; */
+}
+
+form .name input{
+    width: 225px;
+    height: 33px;
+    border-radius: 13px;
+    background-color: white;
+    border: 2px solid rgb(50, 51, 51);
+    box-shadow: 3px  3px  5px  5px rgba(133, 127, 127, 0.253);
+    margin: 6px 0 10px 0;
 }
 
 form {
     padding: 30px;
 }
 
-form input {
-    width: 450px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: whitesmoke;
+form input{
+    width: 480px;
+    height: 33px;
+    border-radius: 13px;
+    background-color: white;
+    border: 2px solid rgb(50, 51, 51);
+    box-shadow: 3px  3px  5px  5px rgba(133, 127, 127, 0.253);
+    margin: 6px 0 10px 0;
 }
 
 form textarea {
-    width: 450px;
+    width: 480px;
     height: 150px;
-    border-radius: 20px;
+    border-radius: 13px;
     background-color: white;
-    margin-top: 20px;
+    border: 2px solid rgb(50, 51, 51);
+    box-shadow: 3px  3px  5px  5px rgba(133, 127, 127, 0.253);
+    margin: 6px 0 10px 0;
 }
 
 form button {
-    
+    border: 2px solid rgb(50, 51, 51);
+    box-shadow: 3px  3px  5px  5px rgba(133, 127, 127, 0.253);
     display: block;
     margin: 0 auto;
     font-size: 20px;
-    padding: 10px 30px;
+    padding: 6px 100px;
     background-color: whitesmoke;
-    border-radius: 20px;
+    border-radius: 13px;
 }
-
-
 
 /* ----------------- FOOTER -----------------*/
 
@@ -178,7 +203,7 @@ form button {
     font-family: "Zilla Slab", serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 80px;
+    font-size: 50px;
     padding-top: 30px;
 }
 
@@ -241,18 +266,40 @@ form button {
         height:27px;
         margin: 20px 50px 20px 20px;
     }
-
+    
+    .the-body {
+            padding: 50px 0px 200px 0px;
+            margin: 0px -10px -300px -10px;
+    }
+    #contactUsImage img{
+        width: 500px;
+    }
 
 }
 
-@media screen and (max-width: 1070px){
-
-
-
+@media screen and (max-width: 1100px){
+    
+    #contactUsImage img{
+        width: 400px;
+    }
+    #contactUsImage {
+        display: flex;
+        justify-content: center;
+    }
+    
     #contactUs{
         font-size: 50px;
     }
+
+
+    .page-content {
+        display: block;
+    }
     
+    .the-body {
+        display: flex;
+        justify-content: center;
+    }
 
     /*      THIS IS FOR THE FOOOOOOOOOOOOOTER*/
     
@@ -315,52 +362,67 @@ form button {
         padding: 10px 15px;
     }
 
+     /* ----------------------------------- */
+
     
-    /* ----------------------------------- */
-        
-    .the-body {
-        padding: 40px 25px 200px 25px;
+   #contactUsImage img{
+        width: 230px;
+    }
+    
+    #contactUsImage {
+        display: flex;
+        justify-content: center;
     }
 
     #contactUs{
         font-size: 40px;
     }
-    
+
     /* ============ THE FORM =========== */
-    .the-form {
-        width: 300px;
-        border-radius: 30px;
-        margin-bottom: 20px;
+
+   .the-form .name{
+        display: block;
+    }
+  
+   .the-form {
+       width: 0px;
+       margin: 0 130px 0 130px ; 
     }
 
     form {
         padding: 30px;
     }
+    
+    form .name input{
+        width: 250px;
+        height: 33px;
+        border-radius: 15px;
+        border: 1px solid rgb(50, 51, 51);
+    }
 
     form input {
         width: 250px;
-        height: 30px;
+        height: 33px;
         border-radius: 15px;
         background-color: white;
+        border: 1px solid rgb(50, 51, 51);
     }
 
     form textarea {
         width: 250px;
         height: 130px;
-        border-radius: 14px;
+        border-radius: 15px;
         background-color: white;
-        margin-top: 20px;
+        border: 1px solid rgb(50, 51, 51);
     }
 
     form button {
         display: block;
         margin: 0 auto;
         font-size: 16px;
-        padding: 10px 10px;
-/*         background-color: whitesmoke; */
-        border-radius: 10px;
+        padding: 7px 110px;
+        border-radius: 15px;
         color: rgb(1, 46, 59);
-        
     }
 
 }

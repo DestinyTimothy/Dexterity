@@ -65,37 +65,56 @@
 
                 <section class="the-body">
 
+                    <section class="page-content">
+                        
+                        <div id="contactUsImage">
+                            <img src="images/9683be95791ff3429886d65ad73e58cd.jpg" alt="contact us">
+                        </div>
+
                         <div class="the-form">
                             <form action="https://formspree.io/f/xnqeyozd" method="post">
-                                <div>
-                                    <input type="text" name="fname" placeholder=" First Name:" id="fname" required/>
+
+                                <div class="name">
+                                    <div>
+                                        <label id="label">First Name :<br></label>
+                                        <input type="text" name="First name" id="fname" required/>
+                                    </div>
+
+                                    <div>
+                                        <label id="label">Last Name :<br></label>
+                                        <input type="text" name="Last name" id="lname" required/>
+                                    </div>
                                 </div>
 
                                 <br>
 
                                 <div>
-                                    <input type="text" name="lname" placeholder=" Last Name:" id="lname" required/>
+                                    <label id="label">E-mail :<br></label>
+                                    <input type="text" name="E-mail" id="e-mail" required/>
                                 </div>
 
                                 <br>
 
                                 <div>
-                                    <input type="text" name="E-mail" placeholder=" Please enter a valid E-mail address" id="e-mail" required/>
+                                    <label id="label">How can we help : <br></label>
+                                    <input type="text" name="lname" placeholder="Branding  | Web development | Graphic Design | Product Design | Testing/Critic | Video Editing" id="service" required/>
                                 </div>
 
                                 <br>
 
                                 <div>
-                                    <textarea name="text" id="textarea" placeholder=" Tell us what you need:" id="text" required></textarea>
+                                    <label id="label">Tell us more :<br></label>
+                                    <textarea name="text" id="textarea" id="text" required></textarea>
                                 </div>
 
                                 <br>
 
                                 <div>
-                                    <button type="submit" id="btn">submit</button>
+                                    <button type="submit" id="btn">Send</button>
                                 </div>
                             </form>
                         </div>
+                    </section>
                     
                 </section>
 
@@ -104,7 +123,7 @@
 
         <section class="footer">
             <div class="footer-text">
-                <h1> Join the Community</h1>
+                <h1> Follow our socials.</h1>
                 <h2>Join our wide community of creative minds from all over Nigerian. A safe space to learn, network and grow.</h2>
                 <div class="links">
                     <div id="link"><a href="https://chat.whatsapp.com/Iw9uMpHeZYzAW0weDP5sbi"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></div>
@@ -118,11 +137,12 @@
 
 
         <script>
-            let subMenu = document.getElementById("subMenu")
-    
-        function toggleMenu(){
-                subMenu.classList.toggle("open-menu");
-        }
+                    let subMenu = document.getElementById("subMenu")
+            
+                function toggleMenu(){
+                        subMenu.classList.toggle("open-menu");
+                }
+
         </script>
 
     </section>
