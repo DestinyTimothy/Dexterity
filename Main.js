@@ -4,6 +4,9 @@ function toggleMenu(){
         subMenu.classList.toggle("open-menu");
 }
 
+// ------------------------------------------------------------------------------------------------------
+
+
 var loader = document.getElementById("preloader");
 
 window.addEventListener("load", function(){
@@ -12,6 +15,7 @@ window.addEventListener("load", function(){
         }, 1500)
 })
 
+// ------------------------------------------------------------------------------------------------------
 
 document.addEventListener("DOMContentLoaded", function() {
     const cards = document.querySelectorAll(".card");

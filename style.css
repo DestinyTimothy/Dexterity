@@ -93,7 +93,7 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
 }
 
 .menu {
-    background-color: rgb(50, 51, 51);
+    background-color: rgba(50, 51, 51, 0.87);
     position: absolute;
     border-radius: 30px;
     margin-top: 7px;
@@ -129,6 +129,7 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
     font-weight: 700;
     font-style: normal;
     font-size: 130px;
+    pointer-events: none;
 }
 
 .text_img .dexterity h1{
@@ -139,6 +140,7 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
     font-style: normal;
     font-size: 70px;
     color: rgb(25, 26, 26);
+    pointer-events: none;
 }
 
 .text_img .intro_text h1 {
@@ -149,6 +151,8 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
   font-weight: 400;
   font-style: normal;
   font-size: 19px;
+  pointer-events: none;
+
 }
 
 .intro_text a{
@@ -239,7 +243,7 @@ body { background-color:  whitesmoke;}         /*BODY BACKGROUND*/
 /* ------------------------------------------------------------------------- */
 
 
-/* CARDSSSSSSSSSSSSSS */
+/* ----------- CARDS --------------*/
 
 .p-s-l {
     display: grid;
