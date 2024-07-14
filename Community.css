@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: rgb(50, 51, 51);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    box-shadow: 0  10px 25px  4px rgba(0, 0, 0, 0.397); 
+}
+
+.main {
+    margin: 10px;   
+}
+
+body {
+    background: linear-gradient(to right, purple, red, yellow);
+    background-size: 300% 100%;
+    animation: bg 15s ease infinite;
+} 
+
+/* ================================================ */
+
+
+@keyframes bg{
+    0% { background-position: 0% 50%;}
+    50% { background-position: 100% 100%;}
+    100% { background-position: 0% 50%;}
+}
+
+
+/* this is for the back button, the triangle buttons */
+.fa-bars{
+    color: white;
+    font-size: 30px;
+    margin: 25px 0 0 50px;
+}
+
+.header #dextr{
+    width: 130px;
+    height:40px;
+    margin: 20px 40px 20px 0;
+}
+
+/* ======================= M E N U ============================*/ 
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;    
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+/* ---------------------------------*/
+#comm h1{
+    background-color: white;
+    border-radius: 15px;
+    color: rgb(50,51,51);
+}
+/* ---------------------------------*/
+
+
+.menu h1{
+    padding: 10px 20px;
+    text-align: center;
+} 
+
+.menu h1:hover{
+    background-color: gray;
+    border-radius: 15px;
+} 
+
+.menu_option{
+        padding: 10px 30px;
+}
+
+.menu {
+    background-color: rgb(50, 51, 51);
+    position: absolute;
+    border-radius: 30px;
+    margin-top: 7px;
+    box-shadow: 5px  8px 15px 3px rgba(0, 0, 0, 0.397); 
+    display: none;
+}
+
+.menu.open-menu{
+    display: block;
+}
+
+
+/* ============================================================== */
+
+#servicesWeOffer{
+    font-family: "Zilla Slab", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    margin: 70px 0px;
+}
+
+
+.the-body {
+    background-image: url(images/14a07bea2682a6de8b60549511ee2e14.jpg);
+    background-position: center;
+    background-size: auto;
+    padding: 50px;
+    margin: 0px -10px -300px -10px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding-bottom: 200px;
+}
+
+/* ==================== COMMUNITY  ================== */
+
+.aboutChallengeWinner {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+
+.comm-text {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-challenge p{
+    font-weight: 350;
+    font-size: 19px;
+    padding-bottom: 50px;
+}
+
+.winner_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+}
+
+.winner_info h3{
+    padding: 20px 0px;
+    grid-column-start:span 2;
+}
+
+.winner-details {
+    color: white;
+    background-color: rgb(35, 36, 36);
+    border-radius: 30px;
+}
+
+.winner-details img {
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    border: 2px solid #089bd9;
+}
+
+.winner-details h3{
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+}
+
+.winner-profile {
+    padding: 30px;
+    
+}
+
+.winner-points ul li{
+    padding: 7px 0 0 0;
+}
+
+.winner-points ul{
+    padding: 0 0 0 10px;
+    text-align: left;
+}
+
+/* DEMARCATION */
+
+#demarcation {
+    display: none;
+}
+
+
+
+
+.jointhecomm {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.jointhecomm h1{
+    font-family: "Zilla Slab", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    margin-top: 100px;
+}
+
+.jointhecomm p{
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    margin: 24px 0px;
+}
+
+.jointhecomm a{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 16px;
+    padding: 9px 22px; 
+    border: 2px solid rgb(61, 61, 61);
+    background: linear-gradient(to right, purple, red, yellow);
+    background-size: 200% 100%;
+    animation: joincomm 6s ease infinite;
+}
+
+/* ================================================ */
+
+
+@keyframes joincomm{
+    0% { background-position: 0% 50%;}
+    50% { background-position: 100% 100%;}
+    100% { background-position: 0% 50%;}
+}
+
+
+.jointhecomm a:hover {
+    border: 2px solid orange;
+}
+
+
+/* ----------------- FOOTER -----------------*/
+
+.footer {
+    color: white;
+    margin-left: -10px;
+    margin-right: -10px;
+    background-color: rgb(50, 51, 51);
+}
+.footer .footer-text h1{
+    font-family: "Zilla Slab", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    padding-top: 30px;
+}
+
+.footer-text h2 {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.footer-text p{
+    text-align: center;
+    margin-top: 150px; 
+    margin-bottom: -200px; 
+    font-size: 17px;
+}
+
+.footer .footer-text {
+    margin: 200px 100px;
+}
+
+
+#link {
+    padding-bottom: 20px;
+}
+
+.links {
+    padding-top: 70px;
+}
+
+.links a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+.footer .upperhalf {
+    padding-bottom: 30px;
+}
+
+.quicklink a{
+    color: white;
+}
+
+.quicklink {
+    padding: 10px 0 0 0;
+}
+
+
+/* size of the icons on the footer */
+
+.fa-instagram {font-size: 20px;}
+.fa-facebook {font-size: 20px;}
+.fa-whatsapp {font-size: 20px;}
+.fa-envelope {font-size: 20px;}
+ 
+
+
+/* ------------------------------------------------------------------------------------------------- */
+
+
+
+@media screen and (max-width: 1300px){
+    .fa-bars{
+        font-size: 25px;
+        margin: 22px 0 0 50px;
+    }
+    .header #dextr{
+        width: 80px;
+        height:27px;
+        margin: 20px 50px 20px 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 1070px){
+
+
+
+    #servicesWeOffer{
+        font-size: 50px;
+    }
+    
+    .comm-text {
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .winner-details h3{
+        font-weight: 500;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .winner_info h3{
+        padding: 20px 0px;
+        grid-column-start:span 3;
+    }
+    
+    .jointhecomm {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .jointhecomm h1{
+        font-size: 40px;
+    }
+    
+    .jointhecomm p{
+        font-size: 17px;
+    }
+    
+    .jointhecomm a{
+        font-size: 17px;
+    }
+    
+    /*      THIS IS FOR THE FOOOOOOOOOOOOOTER*/
+    
+    
+    .footer {
+        margin-top: -200px;
+    }
+    
+    .footer .footer-text {
+        margin: 200px 50px;
+    }
+    .footer .footer-text h1{
+        font-size: 40px;
+    }
+    .footer-text h2 {
+        font-size: 16px;
+    }
+    .links {
+        display: block;
+    }
+    .links a{
+        font-size: 15px;
+    }
+
+    .footer-text p{
+        font-size: 13px;
+    }
+    
+    .fa-instagram {font-size: 20px;}
+    .fa-facebook {font-size: 19px;}
+    .fa-whatsapp {font-size: 20px;}
+    .fa-envelope {font-size: 20px;}
+}
+
+
+@media screen and (max-width: 600px){
+        /* ------------ the header ------------- */
+
+        .fa-bars{
+            font-size: 20px;
+            margin: auto 30px;
+        }
+        
+        .header #dextr{
+            width: 70px;
+            height:24px;
+            padding-top: 2px;
+            margin: 10px 25px 10px 0;
+        }
+    
+        /* =========== M E N U ===========*/
+
+    .menu a {
+        font-size: 12px;
+    }
+    
+    .menu_option{
+        padding: 10px 15px;
+    }
+
+    
+        /* ----------------------------------- */
+        
+    .the-body {
+        text-align: center;
+        padding: 40px 25px 200px 25px;
+        background-position: center;
+        background-size: auto;
+    }
+
+    #servicesWeOffer{
+        font-size: 40px;
+    }
+
+        /* ================== COMMUNITY ====================== */    
+    
+    .about-challenge p{
+        font-size: 16px;
+    }
+    
+    .comm-text {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .winner-details h3{
+        font-weight: 500;
+        font-size: 19px;
+        text-align: center;
+    }
+    
+    .winner_info h3{
+        text-align: left; 
+        padding: 15px 0px 15px 15px;
+        grid-column-start: span 5;
+    }
+    
+    .winner-details img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .jointhecomm {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .jointhecomm h1{
+        font-size: 30px;
+    }
+    
+    .jointhecomm p{
+        font-size: 16px;
+    }
+    
+    .jointhecomm a{
+        font-size: 17px;
+    }
+    
+    
+    /* F000000000000000000000000TER */
+
+    .footer .footer-text h1{
+        font-size: 27px;
+    }
+    .footer-text h2 {
+        font-size: 14px;
+    }
+}
