@@ -16,9 +16,9 @@
 }
 
 body {
-    background: linear-gradient(rgb(43, 255, 0), blue);
-    background-size: 100% 200%;
-    animation: bg 12s ease infinite;
+    background: linear-gradient(to right, purple, red, yellow);
+    background-size: 300% 100%;
+    animation: bg 15s ease infinite;
 } 
 
 /* ================================================ */
@@ -29,6 +29,7 @@ body {
     50% { background-position: 100% 100%;}
     100% { background-position: 0% 50%;}
 }
+
 
 
 /* this is for the back button, the triangle buttons */
@@ -91,7 +92,20 @@ body {
 
 .menu.open-menu{
     display: block;
+    animation: dropdown 0.5s ease-in-out;
 }
+
+@keyframes dropdown {
+    0%{
+        transform: translateX(-80px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 
 
 /* ============================================================== */
@@ -108,8 +122,10 @@ body {
 
 
 .the-body {
+    background-image: url(images/14a07bea2682a6de8b60549511ee2e14.jpg);
+    background-position: center;
+    background-size: auto;
     /* text-align: center; */
-    background-color: white;
     padding: 50px;
     margin: 0px -10px -300px -10px;
     border-top-left-radius: 40px;
@@ -124,54 +140,64 @@ body {
 .cards {
     display: flex;
     overflow-x: auto;
-    white-space: nowrap;
     scroll-snap-type:x mandatory;
     margin-top: 20px;
     border-radius: 25px;
 }
 
 .scroll-card {
+    padding: 30px 20px 10px;
     margin: 0px 10px;
-    width: 200px;
+    width: 250px;
+    height: 240px;
     background-color: rgb(35, 36, 36);
     border-radius: 17px;
     box-shadow: 4px  7px 9px 2px rgba(0, 0, 0, 0.397); 
     flex: 0 0 auto;
     border-radius: 25px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     scroll-snap-align: center;
 }
 
+
+.aboutsrv p{  
+    font-weight: 300;
+    padding: 20px 0 20px 0;
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
 .cards h2{
+    text-align: left;
     font-family: "Montserrat", sans-serif;
     color: white;
     font-weight: 600;
     font-size: 18px;
-    padding: 30px 0 30px 0;
+    padding: 9px 0px 15px 0px;
 }
 
 .cards a {
-    text-decoration: none;
-
+    text-decoration: none; 
 }
 
 .card-elements {
-    padding:30px 0 0 0 ;
     color: white;
     text-align: center;
-    display: block;
-    
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
-.fa-palette {font-size: 50px; color: blueviolet;}
-.fa-backward-fast{font-size: 50px; color: rgb(255, 251, 0)}
-.fa-laptop-code{font-size: 50px; color: rgb(8, 206, 255);}
-.fa-users-gear {font-size: 50px; color: rgb(255, 165, 47);}
-.fa-id-badge{font-size: 50px; color: rgb(187, 126, 245);}
-.fa-file-contract{font-size: 50px; color: rgb(24, 223, 24);}
+
+
+
+.fa-palette {font-size: 33px; color: blueviolet;}
+.fa-backward-fast{font-size: 33px; color: rgb(255, 251, 0)}
+.fa-laptop-code{font-size: 33px; color: rgb(8, 206, 255);}
+.fa-users-gear {font-size: 33px; color: rgb(255, 165, 47);}
+.fa-id-badge{font-size: 33px; color: rgb(187, 126, 245);}
+.fa-file-contract{font-size: 33px; color: rgb(24, 223, 24);}
 
 
 /* ----------------- Contact us Button --------------- */
@@ -364,7 +390,6 @@ body {
         /* ----------------------------------- */
         
     .the-body {
-        text-align: center;
         padding: 40px 25px 200px 25px;
     }
 
@@ -379,6 +404,11 @@ body {
         justify-content: center;
     }
     
+    .cards h2{
+        padding: 9px 0px 14px 0px;
+    }
+    
+    
     .cards {
         display: block;
         margin-top: 20px;
@@ -390,14 +420,27 @@ body {
         border-radius: 17px;
         box-shadow: 0px  10px 10px 0px rgba(0, 0, 0, 0.397); 
         border-radius: 25px;
-        align-items: center;
-        justify-content: center;
+    }
+    
+    .cards h2{
+        padding: 3px 0px 15px 0px;
     }
     
      .btn a{
         font-size: 15px;
     }
-
+    
+    .aboutsrv p{  
+        font-size: 14px;
+        font-weight: 300;
+    }
+    
+    .fa-palette {font-size: 25px; color: blueviolet;}
+    .fa-backward-fast{font-size: 25px; color: rgb(255, 251, 0)}
+    .fa-laptop-code{font-size: 25px; color: rgb(8, 206, 255);}
+    .fa-users-gear {font-size: 25px; color: rgb(255, 165, 47);}
+    .fa-id-badge{font-size: 25px; color: rgb(187, 126, 245);}
+    .fa-file-contract{font-size: 25px; color: rgb(24, 223, 24);}
     
     /* F000000000000000000000000TER */
 

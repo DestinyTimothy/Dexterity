@@ -91,8 +91,19 @@ body {
 
 .menu.open-menu{
     display: block;
+    animation: dropdown 0.5s ease-in-out;
 }
 
+@keyframes dropdown {
+    0%{
+        transform: translateX(-80px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 /* ============================================================== */
 
@@ -219,7 +230,6 @@ body {
     text-decoration: none;
     border-radius: 16px;
     padding: 9px 22px; 
-    border: 2px solid rgb(61, 61, 61);
     background: linear-gradient(to right, purple, red, yellow);
     background-size: 200% 100%;
     animation: joincomm 6s ease infinite;
@@ -467,7 +477,7 @@ body {
     .winner_info h3{
         text-align: left; 
         padding: 15px 0px 15px 15px;
-        grid-column-start: span 5;
+        grid-column-start: span 6;
     }
     
     .winner-details img {

@@ -42,6 +42,7 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
     justify-content: space-between;
     border-radius: 30px;
     box-shadow: 0  10px 25px  4px rgba(0, 0, 0, 0.397);
+    width: 98%;
 }
 
 .main {
@@ -59,7 +60,7 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
 .header #dextr{
     width: 130px;
     height:40px;
-    margin: 20px 40px 20px 0;
+    margin: 20px 40px 20px 200px;
 }
 
 /* =========== M E N U ===========*/
@@ -71,7 +72,7 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;    
-    font-size: 17px;
+    font-size: 20px;
     border-radius: 20px;
 }
 
@@ -82,7 +83,6 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
     color: rgb(50,51,51);
 }
 /* ---------------------------------*/
-
 
 .menu h1{
     padding: 10px 20px;
@@ -99,16 +99,28 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
 }
 
 .menu {
-    background-color: rgba(50, 51, 51, 0.87);
+    z-index: 100;
+    background-color: rgb(50, 51, 51);
     position: absolute;
     border-radius: 30px;
-    margin-top:  0px;
-    box-shadow: 5px  8px 15px 3px rgba(0, 0, 0, 0.397); 
+    margin-top:  10px;
     display: none;
 }
 
 .menu.open-menu{
     display: block;
+    animation: dropdown 0.5s ease-in-out;
+}
+
+@keyframes dropdown {
+    0%{
+        transform: translateX(-80px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------ */
@@ -775,7 +787,7 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
     }
     
     #phone_sample1 {
-        width: 330px;
+        width: 80%;
 
     }
     
