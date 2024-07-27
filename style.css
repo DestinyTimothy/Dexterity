@@ -470,7 +470,6 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
 /* MEDIA QUERY */
 
 
-
 @media screen and (max-width: 1300px){
     #Dexterity {
         font-family: "Zilla Slab", serif;
@@ -747,7 +746,7 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
     /* =========== M E N U ===========*/
 
     .menu a {
-        font-size: 13px;
+        font-size: 15px;
     }
     
     .menu_option{
@@ -771,24 +770,25 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
     /* ----------------------------------- */
     
     #Dexterity {
-        font-size: 60px;
+        font-size:18vw;
+        width: 100%;
     }
     
     .text_img .dexterity h1{
-        font-size: 27px;
-        font-weight: 300;
+        font-size: 6vw;
+        font-weight: 400;
     }
     
     .text_img .intro_text h1 {
-        font-size: 13px;
-        line-height: 20px;
+        font-size: 3.4vw;
+        line-height: 17px;
         font-weight: 500;
         margin: 15px 0 60px 0;
     }
     
     #phone_sample1 {
-        width: 90%;
-}
+        width: 95%;
+    }
     
     
     .home-page-bg {
@@ -804,7 +804,7 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
 
     
     #buttons a {
-        font-size: 10px;
+        font-size: 3.4vw;
         padding: 10px;
         font-weight: 600;
         background-color: rgb(41, 40, 40);
