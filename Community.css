@@ -459,7 +459,7 @@ body {
         /* ================== COMMUNITY ====================== */    
     
     .about-challenge p{
-        font-size: 16px;
+        font-size: 14px;
     }
     
     .comm-text {
@@ -470,19 +470,23 @@ body {
 
     .winner-details h3{
         font-weight: 500;
-        font-size: 19px;
+        font-size: 18px;
         text-align: center;
     }
     
     .winner_info h3{
         text-align: left; 
-        padding: 15px 0px 15px 15px;
+        padding: 11px 0px 11px 15px;
         grid-column-start: span 6;
     }
     
+    .winner-points ul li{
+        font-size: 14px;
+    }
+    
     .winner-details img {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
     
     .jointhecomm {
