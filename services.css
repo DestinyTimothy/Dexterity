@@ -20,7 +20,7 @@ hr {
 }
 
 body {
-    background: linear-gradient(to right, purple, red, yellow);
+    background: linear-gradient(to right, purple, blue, cyan);
     background-size: 300% 100%;
     animation: bg 15s ease infinite;
 } 
@@ -126,10 +126,10 @@ body {
 
 
 .the-body {
-    background-image: url(images/14a07bea2682a6de8b60549511ee2e14.jpg);
+     /*background-image: url(images/14a07bea2682a6de8b60549511ee2e14.jpg);*/
     background-position: center;
     background-size: auto;
-    /* text-align: center; */
+    background-color: rgb(255, 255, 255);
     padding: 50px;
     margin: 0px -10px -300px -10px;
     border-top-left-radius: 40px;
@@ -147,6 +147,7 @@ body {
     scroll-snap-type:x mandatory;
     margin-top: 20px;
     border-radius: 25px;
+
 }
 
 .scroll-card {

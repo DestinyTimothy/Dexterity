@@ -16,7 +16,7 @@
 }
 
 body {
-    background: linear-gradient(to right, purple, red, yellow);
+    background: linear-gradient(to right, purple, blue, cyan);
     background-size: 300% 100%;
     animation: bg 15s ease infinite;
 } 
@@ -55,6 +55,7 @@ body {
     font-style: normal;    
     font-size: 14px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 /* ---------------------------------*/
@@ -120,13 +121,15 @@ body {
 }
 
 
-.the-body {
+#darkModeSection {
     background-color: white;
+    color: black;
     padding: 50px 70px 50px 70px;
     margin: 0px -10px -300px -10px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     padding-bottom: 200px;
+    transition: 1.4s;
 }
 
 .page-content {
@@ -134,12 +137,14 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
+
 #contactUsImage img{
+    padding: 70px 0 30px 0;
     width: 500px;
 }
 /* ============================ F0RM ==============================*/
 
-.the-form .name{
+.main-form .name{
     display: flex;
     justify-content: space-between;
 }
@@ -147,7 +152,7 @@ body {
 
 
 /* THE FORM */
-.the-form {
+.main-form {
     width: 530px;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -159,7 +164,7 @@ body {
     /* background-color: blue; */
 }
 
-form .name input{
+.name input{
     width: 225px;
     height: 33px;
     border-radius: 13px;
@@ -177,11 +182,16 @@ form input{
     width: 480px;
     height: 33px;
     border-radius: 13px;
-    background-color: white;
     border: 2px solid rgb(50, 51, 51);
     box-shadow: 3px  3px  5px  5px rgba(133, 127, 127, 0.253);
     margin: 6px 0 10px 0;
 }
+
+
+
+
+
+
 
 form textarea {
     width: 480px;
@@ -272,7 +282,7 @@ form button {
 /* size of the icons on the footer */
 
 .fa-instagram {font-size: 20px;}
-.fa-facebook {font-size: 20px;}
+.fa-telegram {font-size: 20px;}
 .fa-whatsapp {font-size: 20px;}
 .fa-envelope {font-size: 20px;}
  
@@ -294,7 +304,7 @@ form button {
         margin: 20px 50px 20px 20px;
     }
     
-    .the-body {
+    #darkModeSection.light-mode {
             padding: 50px 0px 200px 0px;
             margin: 0px -10px -300px -10px;
     }
@@ -323,7 +333,7 @@ form button {
         display: block;
     }
     
-    .the-body {
+    #darkModeSection.light-mode {
         display: flex;
         justify-content: center;
     }
@@ -405,11 +415,11 @@ form button {
 
     /* ============ THE FORM =========== */
 
-   .the-form .name{
+   .main-form .name{
         display: block;
     }
   
-   .the-form {
+   .main-form {
        width: 0px;
        margin: 0 130px 0 130px ; 
     }
@@ -419,14 +429,14 @@ form button {
     }
     
     form .name input{
-        width: 250px;
+        width: 80vw;
         height: 33px;
         border-radius: 15px;
         border: 1px solid rgb(50, 51, 51);
     }
 
     form input {
-        width: 250px;
+        width: 80vw;
         height: 33px;
         border-radius: 15px;
         background-color: white;
@@ -434,7 +444,7 @@ form button {
     }
 
     form textarea {
-        width: 250px;
+        width: 80vw;
         height: 130px;
         border-radius: 15px;
         background-color: white;

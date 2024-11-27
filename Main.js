@@ -10,18 +10,11 @@ function toggleMenu(){
 // ------------------------------------------------------------------------------------------------------
 
 
-var loader = document.getElementById("preloader");
-
-window.addEventListener("load", function(){
-        setTimeout(function(){
-            loader.style.display = "none"
-        }, 1500)
-})
-
 // ------------------------------------------------------------------------------------------------------
 
 document.addEventListener("DOMContentLoaded", function() {
     const cards = document.querySelectorAll(".card");
+    const ad = document.querySelectorAll(".smileysFlyer");
 
     function checkCards() {
         const triggerBottom = window.innerHeight * 0.8;
@@ -39,4 +32,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.addEventListener("scroll", checkCards);
     checkCards(); // Initial check in case any cards are already in view
+
+    
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const imageContainer = document.querySelector('.image_container');
+
+    const handleScroll = () => {
+        const rect = imageContainer.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        // Check if the image container is in the viewport
+        if (rect.top < windowHeight && rect.bottom > 0) {
+            imageContainer.classList.add('fly-up');
+        }
+    };
+
+    window.addEventListener('scroll', handleScroll);
 });

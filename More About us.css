@@ -16,7 +16,7 @@
 }
 
 body {
-    background: linear-gradient(to right, purple, red, yellow);
+    background: linear-gradient(to right, purple, blue, cyan);
     background-size: 300% 100%;
     animation: bg 15s ease infinite;
 } 
@@ -111,6 +111,12 @@ body {
 
 /* ================================================================================ */
 
+
+.main-text {
+    width: 750px;
+    justify-content: center;
+}
+
 #more-about-us{
     font-family: "Zilla Slab", serif;
     font-weight: 700;
@@ -121,8 +127,17 @@ body {
     margin: 70px 0px;
 }
 
+#toggleBtn:hover {
+    cursor:pointer;
+}
 
-.the-body {
+
+.theme-btn {
+    background-color: black;
+    display: inline;
+}
+
+#darkModeSection.light-mode {
     /* text-align: center; */
     background-color: white;
     padding: 50px;
@@ -130,6 +145,22 @@ body {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     padding-bottom: 200px;
+    display: flex;
+    transition: 1.4s;
+    justify-content: center;
+}
+
+#darkModeSection.dark-mode {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    padding: 50px;
+    margin: 0px -10px -200px -10px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    transition: 1.4s;
 }
 
 /* ---------- about us text----------- */
@@ -138,15 +169,13 @@ body {
     font-family: "Zilla Slab", serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 45px;
-    color: rgb(50, 51, 51);
+    font-size: 45px;    
     margin-top: 50px;
     margin-bottom: 20px;
 }
 
 #about-text p{
     padding: 10px;
-    color: black;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -223,7 +252,7 @@ body {
 /* size of the icons on the footer */
 
 .fa-instagram {font-size: 20px;}
-.fa-facebook {font-size: 20px;}
+.fa-telegram {font-size: 20px;}
 .fa-whatsapp {font-size: 20px;}
 .fa-envelope {font-size: 20px;}
  
@@ -320,7 +349,12 @@ body {
     
         /* ----------------------------------- */
         
-    .the-body {
+    #darkModeSection.light-mode {
+        text-align: center;
+        padding: 40px 25px 200px 25px;
+    }
+
+    #darkModeSection.dark-mode {
         text-align: center;
         padding: 40px 25px 200px 25px;
     }

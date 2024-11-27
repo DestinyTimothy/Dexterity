@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Center Snapping Cards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    .card-container {
+      display: flex;
+      overflow-x: auto; /* Enable horizontal scrolling */
+      gap: 1rem;
+      width: 100%;
+      max-width: 600px;
+      scroll-snap-type: x mandatory;
+      scroll-padding: calc(50% - 100px); /* Centers cards perfectly */
+      scrollbar-width: none; /* Hide scrollbar in Firefox */
+    }
+
+    .card {
+      flex: 0 0 200px; /* Fixed card width */
+      background-color: #fff;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      text-align: center;
+      scroll-snap-align: center;
+    }
+
+    .card-container::-webkit-scrollbar {
+      display: none; /* Hide scrollbar in Webkit browsers */
+    }
+
+    .button-container {
+      margin-top: 1rem;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      border: none;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+    <div class="card">Card 4</div>
+    <div class="card">Card 5</div>
+  </div>
+
+  <div class="button-container">
+    <button onclick="scrollToPrevCard()">◀</button>
+    <button onclick="scrollToNextCard()">▶</button>
+  </div>
+
+  <script>
+    const container = document.querySelector('.card-container');
+    const cardWidth = document.querySelector('.card').offsetWidth + 16; // Card width + gap
+
+    function scrollToNextCard() {
+      container.scrollBy({ left: cardWidth, behavior: 'smooth' });
+    }
+
+    function scrollToPrevCard() {
+      container.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
+
+/*

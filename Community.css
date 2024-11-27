@@ -16,7 +16,7 @@
 }
 
 body {
-    background: linear-gradient(to right, purple, red, yellow);
+    background: linear-gradient(to right, purple, blue, cyan);
     background-size: 300% 100%;
     animation: bg 15s ease infinite;
 } 
@@ -119,7 +119,7 @@ body {
 
 
 .the-body {
-    background-image: url(images/14a07bea2682a6de8b60549511ee2e14.jpg);
+    background-color: white;
     background-position: center;
     background-size: auto;
     padding: 50px;
@@ -129,126 +129,332 @@ body {
     padding-bottom: 200px;
 }
 
-/* ==================== COMMUNITY  ================== */
+/* ==================== COMMUNITY REVIEWS ================== */
 
-.aboutChallengeWinner {
+.review-section h3{
     font-family: "Montserrat", sans-serif;
-    font-style: normal;
-}
-
-
-.comm-text {
-    width: 700px;
-    margin: 0 auto;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 40px;
+    background: linear-gradient(to right, purple, blue, cyan);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
 }
 
-.about-challenge p{
-    font-weight: 350;
-    font-size: 19px;
+.review-section {
+    text-align: center;
+}
+
+.review {
+    position: relative;
+    width: 340px;
+    height: 260px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px  5px 22px 3px rgba(0, 0, 0, 0.164);
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    margin-right: 20px;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.5s ease-out;
+    animation: pop-up 0.8s forwards;
+  }
+  
+  @keyframes pop-up {
+    from {
+      opacity: 0;
+      transform: scale(0.9) translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+  
+  .review.visible {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+
+
+.cover {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    scroll-snap-align: center;
+}
+
+#review-cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+
+
+.review h4{
+    font-size: 20px;
+    padding: 50px 0 15px 0;
+}
+
+.review p{
+    font-size: 17px;
+    padding: 10px 0;
+}
+
+
+.review img {
+    border: 5px solid blue;
+    width: 100px;
+    top: -50px; /* Move image up */
+    left: 50%;
+    position: absolute;
+    border-radius: 50%; /* For circular image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateX(-50%);
+} 
+
+
+/* ==================== Instagram  ================== */
+
+#ig-post h3{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 50px;
+    background: linear-gradient(to right, purple, blue, cyan);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     padding-bottom: 50px;
 }
 
-.winner_info {
+/* ----------------- smileys ad -----------------*/
+.smileys {
+    background-color: white;
+    margin:0 -10px;
+}
+
+#ad {
+    margin-top: 140px;
+    padding-top: 140px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-}
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    color: rgb(35, 36, 36);
+    padding-bottom: 140px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 9%;
 
-.winner_info h3{
-    padding: 20px 0px;
-    grid-column-start:span 2;
-}
-
-.winner-details {
-    color: white;
-    background-color: rgb(35, 36, 36);
-    border-radius: 30px;
-}
-
-.winner-details img {
-    width: 60px;
-    height: 60px;
-    border-radius: 40px;
-    border: 2px solid #089bd9;
-}
-
-.winner-details h3{
-    font-weight: 500;
-    font-size: 25px;
-    text-align: center;
-}
-
-.winner-profile {
-    padding: 30px;
-    
-}
-
-.winner-points ul li{
-    padding: 7px 0 0 0;
-}
-
-.winner-points ul{
-    padding: 0 0 0 10px;
-    text-align: left;
-}
-
-/* DEMARCATION */
-
-#demarcation {
-    display: none;
 }
 
 
 
-
-.jointhecomm {
-    width: 700px;
-    margin: 0 auto;
+.image_container img {
+    width: 400px;
+    box-shadow: 0px  5px 22px 3px rgba(0, 0, 0, 0.164); 
+    border-radius: 20px;
+    display: block;
 }
 
-.jointhecomm h1{
-    font-family: "Zilla Slab", serif;
+
+.image_container {
+    position: relative;
+    display: inline-block;
+    margin:0 auto;
+    opacity: 0; /* Start hidden */
+    transform: translateY(170px); /* Start below initial position */
+    transition: all 0.8s ease-out; /* Smooth animation */
+}
+
+.image_container.fly-up {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Fly up to its original position */
+}
+
+
+.smileys-text {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 700;
-    font-style: normal;
     font-size: 50px;
-    margin-top: 100px;
+    background: linear-gradient(to right, purple, blue, cyan);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.jointhecomm p{
+#ad p {
     font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-size: 20px;
-    margin: 24px 0px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 19px;
+    padding: 40px 80px 40px 0px;
 }
 
-.jointhecomm a{
+
+
+#ad a {
+    position: relative;
     font-family: "Montserrat", sans-serif;
-    color: white;
+    font-optical-sizing: auto;
+    font-weight: 400;
     font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
     text-decoration: none;
-    border-radius: 16px;
-    padding: 9px 22px; 
-    background: linear-gradient(to right, purple, red, yellow);
+    font-size: 18px;
+    color: white;
+    padding: 10px 20px;
+    background: linear-gradient(to right, rgb(17, 1, 156), rgb(0, 217, 255), purple);
+    border-radius: 10px;
     background-size: 200% 100%;
-    animation: joincomm 6s ease infinite;
+    transition: 0.4s;
+    top: 0;
 }
 
-/* ================================================ */
+#ad a:hover {
+    animation: join 2s ease;
+    font-size: 19px;
+}
 
-
-@keyframes joincomm{
+@keyframes join{
     0% { background-position: 0% 50%;}
     50% { background-position: 100% 100%;}
     100% { background-position: 0% 50%;}
 }
 
 
-.jointhecomm a:hover {
-    border: 2px solid orange;
+/* ----------------- community calls -----------------*/
+
+.community-call-section{
+    padding: 100px 0;
 }
 
+#comm-calls{
+    display: flex;
+    justify-content: space-between;
+}
+
+#comm-calls h1{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 50px;
+    background: linear-gradient(to right, purple, blue, cyan);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 70px;
+}
+
+.call_image{
+    width: 500px;
+    padding-right: 70px;
+    position: relative;
+    display: inline-block;
+    opacity: 0; /* Start hidden */
+    transform: translateY(170px); /* Start below initial position */
+    transition: all 0.8s ease-out; /* Smooth animation */
+}
+
+.call_image.fly-up {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Fly up to its original position */
+}
+
+
+#comm-calls p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 19px;
+    padding: 50px 70px 0px 70px;
+}
+
+/* ==================== COUNTER  ================== */
+
+.comm-mem-counter {
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+.comm-mem-counter h3{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 50px;
+    background: linear-gradient(to right, purple, blue, cyan);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.comm-mem-counter h4 {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 30px;
+    color:rgb(43, 43, 43);
+
+}
+
+.counter {
+    font-size: 100px;
+    color: rgb(43, 43, 43);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 130px;
+    padding: 40px 0;
+}
+
+/* ----------------- Join the community button -----------------*/
+
+#join-btn {
+        background: linear-gradient(to right, blue, red, blue);
+        display: flex;  /* Use flexbox */
+        align-items: center;  /* Vertically center */
+        justify-content: center;  /* Horizontally center */
+        margin: 70px auto;
+        padding: 10px 40px;
+        border-radius: 20px;
+        transition: 0.7s;
+        animation: txtbtn 7s ease infinite;
+        background-size: 300% 100%;
+        width: max-content; /* Ensures the div wraps around the content */
+} 
+
+
+
+@keyframes txtbtn {
+    0% { background-position: 0% 50%;}
+    50% { background-position: 100% 100%;}
+    100% { background-position: 0% 50%;}
+}
+
+
+
+#join-btn a{
+    text-decoration: none;
+    font-family: "Zilla Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 130px;
+    font-size: 30px;
+    color: white;
+    transition: 0.7s;
+}
+
+#join-btn:hover{
+    background: linear-gradient(to right, purple, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 /* ----------------- FOOTER -----------------*/
 
@@ -317,17 +523,16 @@ body {
 /* size of the icons on the footer */
 
 .fa-instagram {font-size: 20px;}
-.fa-facebook {font-size: 20px;}
+.fa-telegram {font-size: 20px;}
 .fa-whatsapp {font-size: 20px;}
 .fa-envelope {font-size: 20px;}
- 
+
 
 
 /* ------------------------------------------------------------------------------------------------- */
 
-
-
 @media screen and (max-width: 1300px){
+
     .fa-bars{
         font-size: 25px;
         margin: 22px 0 0 50px;
@@ -339,49 +544,87 @@ body {
     }
 
 
-}
-
-@media screen and (max-width: 1070px){
-
-
-
     #servicesWeOffer{
         font-size: 50px;
     }
     
-    .comm-text {
-        width: 500px;
-        margin: 0 auto;
-        text-align: center;
+    /*      THIS IS FOR THE TEXT*/
+    
+    .review-section h3{
+        font-weight: 700;
+        font-size: 4vw;
+    }
+    /*      THIS IS FOR THE reviews */
+    
+    .review p{
+        font-size: 1.4vw;
+        padding: 10px 0;
+    }
+    
+    .review {
+        position: relative;
+        width: 340px;
+        height: 220px;
     }
 
-    .winner-details h3{
-        font-weight: 500;
-        font-size: 20px;
-        text-align: center;
+    /*      THIS IS FOR smileys */
+    
+    #ad p {
+        font-size: 1.5vw;
+            padding: 40px 0px 40px 0px;
+    }
+    .smileys-text {
+        font-size: 3.7vw;
     }
     
-    .winner_info h3{
-        padding: 20px 0px;
-        grid-column-start:span 3;
+    .image_container img {
+        width: 37vw;
     }
     
-    .jointhecomm {
-        width: 500px;
-        margin: 0 auto;
-    }
-
-    .jointhecomm h1{
-        font-size: 40px;
+    #ad a {
+        font-size: 1.7vw;
     }
     
-    .jointhecomm p{
-        font-size: 17px;
+    /*      THIS IS FOR Weekly community */
+    
+    #comm-calls h1{
+        font-size: 3.7vw;
+            margin-left: 0px;
     }
     
-    .jointhecomm a{
-        font-size: 17px;
+    
+    #comm-calls p{
+        font-size: 1.5vw;
+        padding: 50px 70px 0px 24px;
+        text-align: left
     }
+    
+    
+    
+    .call_image{
+        width: 37vw;
+        padding-right: 0px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .comm-mem-counter h3{
+        font-size: 4.7vw;
+    }
+    .comm-mem-counter h4 {
+        font-size: 3vw;
+    }
+    #ig-post h3{
+        font-size: 4.7vw;
+    }
+    
     
     /*      THIS IS FOR THE FOOOOOOOOOOOOOTER*/
     
@@ -417,7 +660,7 @@ body {
 }
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 850px){
         /* ------------ the header ------------- */
 
         .fa-bars{
@@ -455,57 +698,108 @@ body {
     #servicesWeOffer{
         font-size: 40px;
     }
+    
+    /* ================== Reviews ====================== */    
+    
+    .review-section h3{
+        font-weight: 700;
+        font-size: 3vw;
+    }
+    
+    .cover {
+        display: flex;
+        justify-content: center;
+    }
 
-        /* ================== COMMUNITY ====================== */    
-    
-    .about-challenge p{
-        font-size: 14px;
-    }
-    
-    .comm-text {
+    #review-cards {
         width: 100%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .winner-details h3{
-        font-weight: 500;
-        font-size: 18px;
-        text-align: center;
-    }
-    
-    .winner_info h3{
-        text-align: left; 
-        padding: 11px 0px 11px 15px;
-        grid-column-start: span 6;
-    }
-    
-    .winner-points ul li{
-        font-size: 14px;
-    }
-    
-    .winner-details img {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .jointhecomm {
-        width: 100%;
+        height: auto;
+        display: block;
+        align-items: center;
+        justify-content: center;
         margin: 0 auto;
     }
+    
+    .review p{
+        font-size: 2.3vw;
+        padding: 10px 0;
+    }
+    
+    .review {
+        position: relative;
+        width: 50vw;
+        height: 220px;
+        margin: 80px auto;
+    }
+    
+    .review img {
+        width: 80px; 
+        border: 3px solid blue;
+    }
+    
+    /* ================== smileys ====================== */    
+    
 
-    .jointhecomm h1{
-        font-size: 30px;
+    #ad {
+        margin-top: 20px;
+        padding-top: 20px;
+        display: block;
+        padding-bottom: 40px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
     }
     
-    .jointhecomm p{
-        font-size: 16px;
+    #ad img{
+        width: 50vw;
+        margin-bottom: 40px;
+        margin-top: 40px;
     }
     
-    .jointhecomm a{
-        font-size: 17px;
+    #ad h1 {
+        font-size: 5vw;
     }
     
+    #ad p{
+        font-size: 2.5vw;
+    }
+    
+    #ad a{
+        font-size: 3vw;
+    }
+    
+    #ig-post h3{
+        font-size: 9vw;
+    }
+
+    /* ================== COMMUNITY  CALLS====================== */    
+
+    #comm-calls{
+        display: block;
+    }
+    #comm-calls h1{
+        font-size: 5vw;
+    }
+    #comm-calls p{
+        font-size: 2.5vw;
+        text-align: center;
+        padding: 50px 0px 50px 0px;
+    }
+    #comm-calls img{
+        width: 50vw;
+        margin-bottom: 40px
+    }
+    
+    /* ================== COMMUNITY ====================== */    
+    
+    .comm-mem-counter h3{
+        font-size: 7vw;
+    }
+    .comm-mem-counter h4 {
+        font-size: 3vw;
+    }
+    #join-btn a{
+        font-size: 5vw;
+    }
     
     /* F000000000000000000000000TER */
 
@@ -515,4 +809,159 @@ body {
     .footer-text h2 {
         font-size: 14px;
     }
+}
+
+
+
+
+@media screen and (max-width: 500px){
+    /* ------------ the header ------------- */
+
+    .fa-bars{
+        font-size: 20px;
+        margin: auto 30px;
+    }
+    
+    .header #dextr{
+        width: 70px;
+        height:24px;
+        padding-top: 2px;
+        margin: 10px 25px 10px 0;
+    }
+
+    /* =========== M E N U ===========*/
+
+.menu a {
+    font-size: 12px;
+}
+
+.menu_option{
+    padding: 10px 15px;
+}
+
+
+    /* ----------------------------------- */
+    
+.the-body {
+    text-align: center;
+    padding: 40px 25px 200px 25px;
+    background-position: center;
+    background-size: auto;
+}
+
+#servicesWeOffer{
+    font-size: 40px;
+}
+
+/* ================== Reviews ====================== */    
+
+.review-section h3{
+    font-weight: 700;
+    font-size: 4.7vw;
+}
+
+.cover {
+    display: flex;
+    justify-content: center;
+}
+
+#review-cards {
+    width: 100%;
+    height: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.review p{
+    font-size: 3.5vw;
+    padding: 10px 0;
+}
+
+.review {
+    position: relative;
+    width: 70vw;
+    height: 220px;
+    margin: 80px auto;
+}
+
+.review img {
+    width: 80px; 
+    border: 3px solid blue;
+}
+
+/* ================== smileys ====================== */    
+
+
+#ad {
+    margin-top: 20px;
+    padding-top: 20px;
+    display: block;
+    padding-bottom: 40px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+#ad img{
+    width: 80vw;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+#ad h1 {
+    font-size: 7vw;
+}
+
+#ad p{
+    font-size: 3.4vw;
+}
+
+#ad a{
+    font-size: 4vw;
+}
+
+#ig-post h3{
+    font-size: 9vw;
+}
+
+/* ================== COMMUNITY  CALLS====================== */    
+
+#comm-calls{
+    display: block;
+}
+#comm-calls h1{
+    font-size: 7vw;
+}
+#comm-calls p{
+    font-size: 3.4vw;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+}
+#comm-calls img{
+    width: 60vw;
+    margin-bottom: 40px
+}
+
+/* ================== COMMUNITY ====================== */    
+
+.comm-mem-counter h3{
+    font-size: 7vw;
+}
+.comm-mem-counter h4 {
+    font-size: 4vw;
+}
+#join-btn a{
+    font-size: 5.5vw;
+}
+    
+
+/* F000000000000000000000000TER */
+
+.footer .footer-text h1{
+    font-size: 27px;
+}
+.footer-text h2 {
+    font-size: 14px;
+}
 }

@@ -39,13 +39,6 @@
                     </a>
                 </div>
 
-
-                <div class="menu_option">
-                    <a href="services.html">
-                        <h1 class="option">Our Services</h1>
-                    </a>
-                </div>
-
                 <div class="menu_option">
                     <div class="contact">
                         <a href="Contact us.html">
@@ -60,6 +53,7 @@
                     </a>
                 </div>
 
+
             </div>
         </section>
 
@@ -69,18 +63,18 @@
 
                 <h1 id="contactUs">Contact us.</h1>
 
-                <section class="the-body">
+                <section id="darkModeSection" class="light-mode">
 
                     <section class="page-content">
                         
                         <div id="contactUsImage">
-                            <img src="images/9683be95791ff3429886d65ad73e58cd.jpg   " alt="contact us">
+                            <img src="images/email.jpg" alt="contact us">
                         </div>
 
-                        <div class="the-form">
-                            <form action="https://formspree.io/f/xnqeyozd" method="post">
+                        <div class="main-form">
+                            <form action="https://formspree.io/f/xnqeyozd" method="post" class="formLightMode">
 
-                                <div class="name">
+                                <div id="nameDarkMode" class="nameLightMode">
                                     <div>
                                         <label id="label">First Name :<br></label>
                                         <input type="text" name="First name" id="fname" required/>
@@ -102,14 +96,7 @@
                                 <br>
 
                                 <div>
-                                    <label id="label">How can we help : <br></label>
-                                    <input type="text" name="lname" placeholder="Branding  | Web development | Graphic Design | Product Design | Testing/Critic | Video Editing" id="service" required/>
-                                </div>
-
-                                <br>
-
-                                <div>
-                                    <label id="label">Tell us more :<br></label>
+                                    <label id="label">Leave us a message :<br></label>
                                     <textarea name="text" id="textarea" id="text" required></textarea>
                                 </div>
 
@@ -135,8 +122,8 @@
                     <h2>Join our wide community of creative minds from across Nigeria. A safe space to learn, network and grow.</h2>
                     <div class="links">
                         <div id="link"><a href="https://chat.whatsapp.com/Iw9uMpHeZYzAW0weDP5sbi"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></div>
-                        <div id="link"><a href="https://www.instagram.com/dextr_tech?igsh=bzRjOHNrNDMxcW14"><i class="fa-brands fa-instagram"> </i> Instagram</a></div>
-                        <div id="link"><a href="https://www.facebook.com/profile.php?id=61560297973355&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i> Facebook</a></div>
+                        <div id="link"><a href="https://www.instagram.com/dexterity.ig/profilecard/?igsh=OHB0cmpjeTlxemp5"><i class="fa-brands fa-instagram"> </i> Instagram</a></div>
+                        <div id="link"><a href="https://t.me/Dexterity_Telegram"><i class="fa-brands fa-telegram"></i> Telegram</a></div>
                         <div id="link"><a href="Contact us.html"><i class="fa-regular fa-envelope"> </i> E-mail</a></div>
                     </div>
                 </div>
@@ -149,7 +136,6 @@
                     <div class="quickLinks">
                         <div class="quicklink"><a href="index.html"><h2>Home</h2></a></div>
                         <div class="quicklink"><a href="More About us.html"><h2>About us</h2></a></div>
-                        <div class="quicklink"><a href="services.html"><h2>Services</h2></a></div>
                         <div class="quicklink"><a href="Contact us.html"><h2>Contact us</h2></a></div>
                         <div class="quicklink"><a href="https://docs.google.com/forms/d/e/1FAIpQLSereP1AmJaoTMy2EbO7mPomHT6OBSC2QyHBrgsJ2MgDM94lzA/viewform?usp=sf_link"><h2>Join the Community.</h2></a></div>
                     </div>
@@ -162,14 +148,7 @@
         </section>
 
 
-        <script>
-                    let subMenu = document.getElementById("subMenu")
-            
-                function toggleMenu(){
-                        subMenu.classList.toggle("open-menu");
-                }
-
-        </script>
+        <script src="Contact us.js"></script>
 
     </section>
 </body>

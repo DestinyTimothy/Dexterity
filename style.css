@@ -12,29 +12,21 @@
 /* ------------------------------------ */  
 
 
-body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
+body {
+    background-color:   #111111;    
+
+}         /*BODY BACKGROUND*/
 
 
-
-#preloader {
-    background: black url(images/preloader.gif) no-repeat center center;
-    background-size: 50%;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-    margin-top: -10px;
-}
 
 .home-page-bg {
+    border-radius: 30px;
     min-height: 100vh;
     width: 100%;
-    background-image: url(images/14a07bea2682a6de8b60549511ee2e14.jpg);
+    background-image: url(images/glossy-abstract-3840x2160-9602.jpg);
     background-position: center;
-    background-size: auto;
+    background-size: cover;
 }
-
-
 
 
 .header{
@@ -42,12 +34,28 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
     justify-content: space-between;
     border-radius: 30px;
     box-shadow: 0  10px 25px  4px rgba(0, 0, 0, 0.397);
-    width: 98%;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: flyin-header 0.7s ease-out forwards;
+
 }
 
 .main {
-    margin: 10px;   
+    margin: 10px;
 }
+
+@keyframes flyin-header{
+    0% { 
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
 
 
 /* this is for the back button, the menu buttons */
@@ -132,8 +140,8 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
 }
 
 .text_img {
-    padding-bottom: 200px;
-    padding-top: 20px;
+    padding-bottom: 170px;
+    padding-top: 0px;
 }
 
 #break {
@@ -142,13 +150,25 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
 
 /* DEXTERITY */
 
-#Dexterity {
-    font-family: "Zilla Slab", serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 130px;
-    pointer-events: none;
+#Dexterity img{
+    padding-top: 44px;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: flyin-dexterity 0.9s ease-out forwards;
 }
+
+
+@keyframes flyin-dexterity{
+    0% { 
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 .text_img .dexterity h1{
     padding-top: 30px; 
@@ -157,20 +177,50 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
     font-weight: 300;
     font-style: normal;
     font-size: 70px;
-    color: rgb(25, 26, 26);
+    color: white;
     pointer-events: none;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: flyin-welcome 0.7s ease-out forwards;
 }
+
+
+@keyframes flyin-welcome{
+    0% { 
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 .text_img .intro_text h1 {
   margin: 40px 0px;
-  color: black;
+  color: white;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 19px;
   pointer-events: none;
+  opacity: 0;
+  transform: translateY(100px);
+  animation: flyin-motto 1.3s ease-out forwards;
+}
 
+
+@keyframes flyin-motto{
+  0% { 
+      opacity: 0;
+      transform: translateY(100px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
 .intro_text a{
@@ -193,15 +243,19 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
     font-size: 18px;
     color: white;
     padding: 10px 20px;
-    background-color: rgb(50, 51, 51);
+    background: linear-gradient(to right, purple, rgb(25, 0, 255), rgb(128, 0, 0));
     border-radius: 10px;
+    background-size: 200% 100%;
 }
 
 #buttons a:hover {
-    color: black;
-    border: 1px solid black;
-    background-color: rgba(0, 0, 255, 0);
-    transition: 0.5s;
+    animation: more 3s ease infinite;
+}
+
+@keyframes more{
+    0% { background-position: 0% 50%;}
+    50% { background-position: 100% 100%;}
+    100% { background-position: 0% 50%;}
 }
 
 
@@ -215,6 +269,21 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
     transform: rotateX(0deg) rotateY(0deg);
     perspective: 1000px;
     transform-style: preserve-3d;
+    opacity: 0;
+    animation: grow 1s ease-out forwards;
+}
+
+
+@keyframes grow{
+    0% { 
+        opacity: 0;
+        width: 0;;
+    }
+    100% {
+        opacity: 1;
+        width: 430px;
+        
+    }
 }
 
 #phone_sample2{display: none;}
@@ -266,6 +335,7 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
 .p-s-l {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 100px;
 }
 
 .p-s-l a{
@@ -325,82 +395,121 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
     transform: translateX(0);
 }
 
-/* ==================== COMMUNITY BLOCK===================== */
 
-.comm-block {
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
+
+/* ----------------- smileys ad -----------------*/
+.smileys {
+    background-color: white;
+    margin:0 -10px;
 }
 
-#comm-block-img {
-    padding: 150px 0 100px 0;
-    display: flex;
-    justify-content: center;
-}
-
-.comm-text {
-    width: 700px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.about-challenge p{
-    font-weight: 350;
-    font-size: 19px;
-    padding-bottom: 50px;
-}
-
-.winner-details {
-    color: white;
-    background-color: rgb(35, 36, 36);
-    border-radius: 30px;
-}
-
-.winner-details img {
-    border-radius: 30px;
-    border: 3px solid #089bd9;
-}
-
-.winner-details h3{
-    font-weight: 500;
-    font-size: 25px;
-    text-align: center;
-}
-
-.winner-profile {
+#ad {
+    margin-top: 140px;
+    padding-top: 140px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 30px;
-    
+    background-color: white;
+    color: rgb(35, 36, 36);
+    padding-bottom: 140px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 9%;
+
 }
 
-.winner-points ul li{
-    padding: 7px 0 0 0;
+
+
+.image_container img {
+    width: 400px;
+    box-shadow: 0px  5px 22px 3px rgba(0, 0, 0, 0.164); 
+    border-radius: 20px;
+    display: block;
 }
 
-.winner-points ul{
-    padding: 0 0 0 10px;
+
+.image_container {
+    position: relative;
+    display: inline-block;
+    margin:0 auto;
+    opacity: 0; /* Start hidden */
+    transform: translateY(170px); /* Start below initial position */
+    transition: all 0.8s ease-out; /* Smooth animation */
 }
 
-/* DEMARCATION */
-
-#demarcation {
-    display: none;
+.image_container.fly-up {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Fly up to its original position */
 }
 
+
+
+
+
+.smileys-text {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 50px;
+    background: linear-gradient(to right, purple, blue, cyan);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#ad p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 19px;
+    padding: 40px 80px 40px 0px;
+}
+
+
+
+#ad a {
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding: 10px 20px;
+    background: linear-gradient(to right, rgb(17, 1, 156), rgb(0, 217, 255), purple);
+    border-radius: 10px;
+    background-size: 200% 100%;
+    transition: 0.4s;
+    top: 0;
+}
+
+#ad a:hover {
+    animation: join 2s ease;
+    font-size: 19px;
+}
+
+@keyframes join{
+    0% { background-position: 0% 50%;}
+    50% { background-position: 100% 100%;}
+    100% { background-position: 0% 50%;}
+}
+
+
+
+
+
+
+
+/* ----------------- buy the devs a coffee -----------------*/
 
 
 /* ----------------- FOOTER -----------------*/
 
 
 .footer {
-    margin-top: 20px;
+    margin-top: -200px;
     background-color: rgb(35, 36, 36);
     color: white;
     margin-left: -10px;
     margin-right: -10px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
 }
 .footer .footer-text h1{
     font-family: "Zilla Slab", serif;
@@ -463,29 +572,54 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
 /* size of the icons on the footer */
 
 .fa-instagram {font-size: 20px;}
-.fa-facebook {font-size: 20px;}
+.fa-telegram {font-size: 20px;}
 .fa-whatsapp {font-size: 20px;}
 .fa-envelope {font-size: 20px;}
  
 /* MEDIA QUERY */
 
 
-@media screen and (max-width: 1300px){
-    #Dexterity {
-        font-family: "Zilla Slab", serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 110px;
+@media screen and (max-width: 1200px){
+    
+    .front_page {
+        margin-left: 40px;
+        margin-right: 40px;
     }
     
     .text_img .dexterity h1{
-        font-size: 70px;
+        font-size: 60px;
+    }
+    
+    #Dexterity img{
+        width: 500px;
     }
     
     #phone_sample1 {
-        width: 400px;
-        padding: 30px 0px;
+        width: 0;
+        margin-top: 30px;
+        position: relative;
+        transition: all 0.6s ease-out;
+        transform: rotateX(0deg) rotateY(0deg);
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        opacity: 0;
+        animation: grow 1s ease-out forwards;
+
     }
+
+
+    @keyframes grow{
+        0% { 
+            opacity: 0;
+            width: 0;;
+        }
+        100% {
+            opacity: 1;
+            width: 380px;
+
+        }
+    }
+
 
     .fa-bars{
         font-size: 25px;
@@ -511,11 +645,11 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
 }
 
 
-@media screen and (max-width: 1100px){
-    #Dexterity {
-        font-size: 110px;
+
+@media screen and (max-width: 1070px){
+    #Dexterity img{
+        width: 550px
     }
-    
     .text_img .dexterity h1{
         font-size: 60px;
     }
@@ -534,9 +668,20 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
     #phone_sample1 {
         display: block;
         margin: 0 auto;
-        width: 450px;
         padding: 30px 0px;
     }
+    
+    @keyframes grow{
+    0% { 
+        opacity: 0;
+        width: 0;;
+    }
+    100% {
+        opacity: 1;
+        width: 470px;
+        
+    }
+}
     
     #phone_sample2 {
         display: none;
@@ -597,14 +742,35 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
     
 /*   ================= Community Block ==================   */
     
-    #comm-block-img img{
-        width: 600px
+     #ad {
+        padding-top: 200px;
+        display: block;
+        width: 77vw;
+        text-align: center;
+        margin: 0 auto;
     }
+    
+    #smileysFlyer2{
+        display: block;
+    }
+    
 
+    .image_container img {
+        margin-bottom: 70px;
+    }
+    
+    #ad p {
+        font-size: 16px;
+        padding: 40px 0px;
+    }
+    #ad h1{
+        font-size: 50px;
+    }
+    
 /*   Footer   */
     
     .footer {
-        margin-top: 200px;
+        margin-top: -200px;
     }
     
     .footer .footer-text {
@@ -633,9 +799,6 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
 
 
 @media screen and (max-width: 800px){
-    #Dexterity {
-        font-size: 100px;
-    }
     
     .text_img .dexterity h1{
         font-size: 60px;
@@ -738,11 +901,6 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
         padding: 10px 0 0 0;
     }
     
-    #preloader {
-        background-size: 100%;
-    }
-    
-    
     /* =========== M E N U ===========*/
 
     .menu a {
@@ -769,9 +927,9 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
 
     /* ----------------------------------- */
     
-    #Dexterity {
-        font-size:18vw;
-        width: 100%;
+    #Dexterity img{
+        padding-top: 30px;
+        width: 80vw;
     }
     
     .text_img .dexterity h1{
@@ -785,19 +943,7 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
         font-weight: 500;
         margin: 15px 0 60px 0;
     }
-    
-    #phone_sample1 {
-        width: 95%;
-    }
-    
-    
-    .home-page-bg {
-        min-height: 100vh;
-        width: 100%;
-        background-image: url(images/14a07bea2682a6de8b60549511ee2e14.jpg);
-        background-position: center;
-        background-size: contain;
-    }
+
 
     
 /*    ========= THE BUTTON ========  */
@@ -815,6 +961,10 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
     
     
 /*   =========== THE CARDS ==========   */
+    
+    .p-s-l {
+        padding-bottom: 100px;
+    }
     
     .card  {
         margin: 80px 15px;
@@ -855,42 +1005,27 @@ body { background-color:  #ffffff;}         /*BODY BACKGROUND*/
 
         /*   ================= Community Block ==================   */
     
-    #comm-block-img {
-        padding: 50px 0px;
+    
+    #ad h1{
+        font-size: 7vw;
     }
     
-    #comm-block-img img{
-        width: 320px
+    #ad img{
+        width: 74vw;
     }
     
-    .comm-text {
-        width: 320px;
-    }
     
-    .winner-details img{
-        width: 150px;
-        border-radius: 10px;
-        border: 2px solid skyblue;
-    }
     
-    .winner-details h3{
-        font-size: 16px;
-    }         
-    
-    .about-challenge p{
-        font-weight: 350;
-        font-size: 16px;
-        padding-bottom: 50px;
+    @keyframes grow{
+    0% { 
+        opacity: 0;
+        width: 0;;
     }
-    
-    .winner-details {
-        border-radius: 12px;
+    100% {
+        opacity: 1;
+        width: 90vw;
     }
-    
-    .winner-points ul{
-        font-size: 14px
-    }
-
+}
 /* F000000000000000000000000TER */
 
     .footer .footer-text h1{
