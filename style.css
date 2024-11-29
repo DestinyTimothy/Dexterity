@@ -23,7 +23,7 @@ body {
     border-radius: 30px;
     min-height: 100vh;
     width: 100%;
-    background-image: url(images/glossy-abstract-3840x2160-9602.jpg);
+    background-image: url(images/glossy-abstract-3840x2160-9602.webp);
     background-position: center;
     background-size: cover;
 }
@@ -330,6 +330,64 @@ body {
 /* ------------------------------------------------------------------------- */
 
 
+/* ----------------------------------- About Dexterity -------------------------------------- */
+
+#intro-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#about-dexterity{
+    color: white;
+    text-align: center;
+    width: 60vw;
+}
+
+#about-dexterity h1{
+    font-family: "Zilla Slab", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    margin-top: 150px;
+}
+
+#about-dexterity p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+/* ----------------------------------- Dexteritys Vision-------------------------------------- */
+
+#vision-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#vision-dexterity{
+    color: white;
+    text-align: center;
+    width: 60vw;
+}
+
+#vision-dexterity h1{
+    font-family: "Zilla Slab", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    margin-top: 150px;
+}
+
+#vision-dexterity p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 20px 0;
+}
+
 /* ----------- CARDS --------------*/
 
 .p-s-l {
@@ -615,7 +673,7 @@ body {
         }
         100% {
             opacity: 1;
-            width: 380px;
+            width: 340px;
 
         }
     }
@@ -678,7 +736,7 @@ body {
     }
     100% {
         opacity: 1;
-        width: 470px;
+        width: 50vw;
         
     }
 }
@@ -689,7 +747,9 @@ body {
     
 /*     ========== THE BUTTONS ========== */
     
-
+    #vision-wrapper {
+        padding-bottom: 100px;
+    }
     
     #buttons a {
         font-size: 16px;
@@ -801,7 +861,11 @@ body {
 @media screen and (max-width: 800px){
     
     .text_img .dexterity h1{
-        font-size: 60px;
+        font-size: 30px;
+    }
+    
+    #Dexterity img {
+        width: 60vw;
     }
     .links {
         display: block;
@@ -845,46 +909,9 @@ body {
 
     /*   ================= Community Block ==================   */
     
-    #comm-block-img img{
-        width: 500px
+    #about-dexterity h1 {
+        font-size: 7vw;
     }
-    
-    .comm-text {
-        width: 500px;
-    }
-    
-    .winner-details img{
-        width: 160px;
-        border-radius: 30px;
-    }
-    
-    .winner-details h3{
-        font-size: 20px;
-    } 
-    
-        
-    .winner-profile {
-        display: block;
-        padding: 20px; 
-    }
-    
-    .winner-points ul{
-        text-align: left;
-    }
-    
-    .winner-points ul li{
-        padding: 20px 0 0 0;
-    }
-
-    .winner-points ul{
-        padding: 0 0 0 20px;
-    }
-        /* DEMARCATION */
-
-    #demarcation {
-        display: block;
-    }
-}
 
 
 @media screen and (max-width: 600px){
@@ -946,17 +973,35 @@ body {
 
 
     
-/*    ========= THE BUTTON ========  */
+/*    ========= INTRO DEXTERITY ========  */
 
-    
-    #buttons a {
-        font-size: 3.4vw;
-        padding: 10px;
-        font-weight: 600;
-        background-color: rgb(41, 40, 40);
+    #about-dexterity{
+        width: 80vw;
     }
-    
 
+    #about-dexterity h1{
+        font-size: 9vw;
+        margin-top: 150px;
+    }
+
+    #about-dexterity p{
+        font-size: 15px;
+        padding: 20px 0;
+    }
+
+    #vision-dexterity{
+        width: 80vw;
+    }
+
+    #vision-dexterity h1{
+        font-size: 9vw;
+        margin-top: 0px;
+    }
+
+    #vision-dexterity p{
+        font-size: 15px;
+        padding: 20px 0;
+    }
 
     
     
@@ -1012,6 +1057,10 @@ body {
     
     #ad img{
         width: 74vw;
+    }
+    
+    #ad p{
+        font-size: 15px;
     }
     
     

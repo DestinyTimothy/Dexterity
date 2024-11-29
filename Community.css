@@ -831,137 +831,137 @@ body {
 
     /* =========== M E N U ===========*/
 
-.menu a {
-    font-size: 12px;
-}
+    .menu a {
+        font-size: 12px;
+    }
 
-.menu_option{
-    padding: 10px 15px;
-}
+    .menu_option{
+        padding: 10px 15px;
+    }
 
 
     /* ----------------------------------- */
     
-.the-body {
-    text-align: center;
-    padding: 40px 25px 200px 25px;
-    background-position: center;
-    background-size: auto;
-}
+    .the-body {
+        text-align: center;
+        padding: 40px 25px 200px 25px;
+        background-position: center;
+        background-size: auto;
+    }
 
-#servicesWeOffer{
-    font-size: 40px;
-}
+    #servicesWeOffer{
+        font-size: 40px;
+    }
 
 /* ================== Reviews ====================== */    
 
-.review-section h3{
-    font-weight: 700;
-    font-size: 4.7vw;
-}
+    .review-section h3{
+        font-weight: 700;
+        font-size: 4.7vw;
+    }
 
-.cover {
-    display: flex;
-    justify-content: center;
-}
+    .cover {
+        display: flex;
+        justify-content: center;
+    }
 
-#review-cards {
-    width: 100%;
-    height: auto;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-}
+    #review-cards {
+        width: 100%;
+        height: auto;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
 
-.review p{
-    font-size: 3.5vw;
-    padding: 10px 0;
-}
+    .review p{
+        font-size: 3.5vw;
+        padding: 10px 0;
+    }
 
-.review {
-    position: relative;
-    width: 70vw;
-    height: 220px;
-    margin: 80px auto;
-}
+    .review {
+        position: relative;
+        width: 70vw;
+        height: 220px;
+        margin: 80px auto;
+    }
 
-.review img {
-    width: 80px; 
-    border: 3px solid blue;
-}
+    .review img {
+        width: 80px; 
+        border: 3px solid blue;
+    }
 
-/* ================== smileys ====================== */    
+    /* ================== smileys ====================== */    
 
 
-#ad {
-    margin-top: 20px;
-    padding-top: 20px;
-    display: block;
-    padding-bottom: 40px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-}
+    #ad {
+        margin-top: 20px;
+        padding-top: 20px;
+        display: block;
+        padding-bottom: 40px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
 
-#ad img{
-    width: 80vw;
-    margin-bottom: 40px;
-    margin-top: 40px;
-}
+    #ad img{
+        width: 80vw;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
 
-#ad h1 {
-    font-size: 7vw;
-}
+    #ad h1 {
+        font-size: 7vw;
+    }
 
-#ad p{
-    font-size: 3.4vw;
-}
+    #ad p{
+        font-size: 4.2vw;
+    }
 
-#ad a{
-    font-size: 4vw;
-}
+    #ad a{
+        font-size: 4.4vw;
+    }
 
-#ig-post h3{
-    font-size: 9vw;
-}
+    #ig-post h3{
+        font-size: 9vw;
+    }
 
-/* ================== COMMUNITY  CALLS====================== */    
+    /* ================== COMMUNITY  CALLS====================== */    
 
-#comm-calls{
-    display: block;
-}
-#comm-calls h1{
-    font-size: 7vw;
-}
-#comm-calls p{
-    font-size: 3.4vw;
-    text-align: center;
-    padding: 50px 0px 50px 0px;
-}
-#comm-calls img{
-    width: 60vw;
-    margin-bottom: 40px
-}
+    #comm-calls{
+        display: block;
+    }
+    #comm-calls h1{
+        font-size: 7vw;
+    }
+    #comm-calls p{
+        font-size: 4.2vw;
+        text-align: center;
+        padding: 50px 0px 50px 0px;
+    }
+    #comm-calls img{
+        width: 60vw;
+        margin-bottom: 40px
+    }
 
-/* ================== COMMUNITY ====================== */    
+    /* ================== COMMUNITY ====================== */    
 
-.comm-mem-counter h3{
-    font-size: 7vw;
-}
-.comm-mem-counter h4 {
-    font-size: 4vw;
-}
-#join-btn a{
-    font-size: 5.5vw;
-}
-    
+    .comm-mem-counter h3{
+        font-size: 7vw;
+    }
+    .comm-mem-counter h4 {
+        font-size: 4.3vw;
+    }
+    #join-btn a{
+        font-size: 5.5vw;
+    }
 
-/* F000000000000000000000000TER */
 
-.footer .footer-text h1{
-    font-size: 27px;
-}
-.footer-text h2 {
-    font-size: 14px;
-}
+    /* F000000000000000000000000TER */
+
+    .footer .footer-text h1{
+        font-size: 27px;
+    }
+    .footer-text h2 {
+        font-size: 14px;
+    }
 }
