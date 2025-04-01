@@ -18,6 +18,10 @@ body {
 }         /*BODY BACKGROUND*/
 
 
+section.header i{ /* chimobi */
+    cursor: pointer;
+}
+
 
 .home-page-bg {
     border-radius: 30px;
@@ -734,7 +738,7 @@ body {
     @keyframes grow{
     0% { 
         opacity: 0;
-        width: 0;;
+        width: 0;
     }
     100% {
         opacity: 1;
@@ -914,6 +918,7 @@ body {
     #about-dexterity h1 {
         font-size: 7vw;
     }
+}    
 
 
 @media screen and (max-width: 600px){
@@ -1087,3 +1092,4 @@ body {
     }
 
 }
+
