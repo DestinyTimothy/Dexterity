@@ -590,10 +590,12 @@ body {
     margin-top: 150px; 
     margin-bottom: -200px; 
     font-size: 17px;
+    padding-bottom: 1em;
 }
 
 .footer .footer-text {
     margin: 200px 100px;
+    margin-bottom: 0;
 }
 
 .footer .upperhalf {
