@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <!-- Standard Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title -->
+    <title>Support Dexterity | A Community Through Tech</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Fredoka & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Link to the NEW stylesheet for this page -->
+    <link rel="stylesheet" href="donate_style.css">
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header Section (Consistent) -->
+    <header class="py-6 px-4 sm:px-8 lg:px-16 fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 shadow-sm">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="new_index.html" class="flex items-center space-x-2">
+                <img src="../images/thenewdexteritylogo.png" alt="Dexterity Logo" class="w-40">
+            </a>
+            <button id="menu-btn" class="hamburger z-50" aria-label="Open Menu">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Fullscreen Menu (Consistent) -->
+    <nav id="fullscreen-menu" class="fullscreen-nav">
+        <div class="nav-content">
+            <a href="../index.html" class="nav-link">HOME</a>
+            <a href="../about/index.html" class="nav-link">ABOUT</a>
+            <a href="../community/index.html" class="nav-link">COMMUNITY</a>
+            <a href="index.html" class="nav-link">DONATE</a>
+            <a href="https://forms.gle/ahZHKpUVsTjjEYCP7" target="_blank" class="nav-join-button">
+                Join Us!
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content for the Donate Page -->
+    <main>
+        <!-- Hero Section -->
+        <section class="relative pt-40 pb-20 px-4 text-center overflow-hidden">
+            <div class="absolute inset-0 bg-white z-0">
+                <div class="absolute top-0 -left-24 w-72 h-72 bg-blue-200 rounded-full opacity-50 mix-blend-multiply filter blur-3xl animate-blob"></div>
+                <div class="absolute bottom-0 -right-24 w-72 h-72 bg-green-200 rounded-full opacity-50 mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
+            </div>
+            <div class="container mx-auto relative z-10">
+                <h1 class="text-5xl md:text-7xl font-fredoka font-bold leading-tight fade-in-up">Support Our Community</h1>
+                <p class="mt-8 max-w-3xl mx-auto text-xl text-gray-700 leading-relaxed fade-in-up" style="transition-delay: 150ms;">
+                    Dexterity is volunteer-driven. Your contribution helps us sustain our vibrant, human-first space and allows us to keep creating the community we all deserve.
+                </p>
+            </div>
+        </section>
+
+        <!-- Donation Form Section -->
+        <section class="py-24 px-4">
+            <div class="container mx-auto max-w-2xl">
+                <div class="bg-white p-8 sm:p-12 rounded-3xl shadow-xl fade-in-up">
+                    <h2 class="text-3xl font-fredoka font-bold text-center mb-4">Make a Donation</h2>
+                    
+                    <!-- Currency Switcher -->
+                    <div class="flex justify-center items-center space-x-4 mb-8">
+                        <span class="font-semibold text-lg text-gray-500">USD</span>
+                        <label class="currency-toggle">
+                            <input type="checkbox" id="currency-switch">
+                            <span class="slider"></span>
+                        </label>
+                        <span class="font-semibold text-lg text-gray-500">NGN</span>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-4 mb-6">
+                        <button class="donation-amount-btn" data-amount-usd="10" data-amount-ngn="15000">$10</button>
+                        <button class="donation-amount-btn" data-amount-usd="25" data-amount-ngn="37500">$25</button>
+                        <button class="donation-amount-btn" data-amount-usd="50" data-amount-ngn="75000">$50</button>
+                    </div>
+                    <div class="relative mb-6">
+                        <span id="currency-symbol" class="absolute left-4 top-1/2 -translate-y-1/2 text-2xl font-bold text-gray-400">$</span>
+                        <input type="number" id="custom-amount" placeholder="Custom Amount" class="custom-amount-input">
+                    </div>
+                    <a href="mailto:dexterity.email.1@gmail.com?subject=I%20Want%20to%20Donate%20to%20Dexterity" id="donate-now-btn" class="donate-button">
+                        Donate Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Donate Section -->
+        <section class="py-24 px-4 bg-gray-50">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-fredoka font-bold fade-in-up">Where Your Support Goes</h2>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="activity-card fade-in-up" style="transition-delay: 150ms;">
+                        <div class="activity-icon bg-blue-100 text-blue-500">🎉</div>
+                        <h3 class="text-2xl font-fredoka font-semibold mb-2">Community Events</h3>
+                        <p class="text-gray-600">Funding our fun social hours, creative mixers, workshops, and yearly festival.</p>
+                    </div>
+                    <div class="activity-card fade-in-up" style="transition-delay: 300ms;">
+                        <div class="activity-icon bg-green-100 text-green-500">🛠️</div>
+                        <h3 class="text-2xl font-fredoka font-semibold mb-2">Tools & Platforms</h3>
+                        <p class="text-gray-600">Paying for the software and platforms that keep our community connected and creating.</p>
+                    </div>
+                    <div class="activity-card fade-in-up" style="transition-delay: 450ms;">
+                        <div class="activity-icon bg-yellow-100 text-yellow-500">🏆</div>
+                        <h3 class="text-2xl font-fredoka font-semibold mb-2">Member Support</h3>
+                        <p class="text-gray-600">Providing resources, support, and prizes for challenges and community champions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Ways to Give Section -->
+         <section class="py-24 px-4 bg-white">
+            <div class="container mx-auto max-w-2xl text-center">
+                <h2 class="text-4xl md:text-5xl font-fredoka font-bold fade-in-up">Other Ways to Give</h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto fade-in-up" style="transition-delay: 150ms;">We appreciate all forms of support. Here are a few other ways you can contribute to our mission.</p>
+                <div class="mt-12 text-left">
+                    <div class="bg-gray-50 p-8 rounded-2xl fade-in-up" style="transition-delay: 200ms;">
+                        <h3 class="text-2xl font-fredoka font-semibold mb-3">Bank Transfer</h3>
+                        <p class="text-gray-600">For direct transfers, please use the details below. This method helps us avoid processing fees.</p>
+                        <div class="mt-4 bg-white p-4 rounded-lg text-gray-700">
+                            <strong>Bank:</strong> Placeholder Bank Inc.<br>
+                            <strong>Account:</strong> 1234567890<br>
+                            <strong>Name:</strong> Dexterity Community
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Consistent) -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto py-12 px-4">
+             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h4 class="font-fredoka text-xl font-semibold mb-4">Dexterity</h4>
+                    <p class="text-gray-400">A human-first community, powered by tech.</p>
+                </div>
+                <div>
+                    <h4 class="font-fredoka text-xl font-semibold mb-4">Explore</h4>
+                    <ul class="space-y-2">
+                         <li><a href="../about/" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="../community/index.html" class="text-gray-400 hover:text-white transition">Community</a></li>
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Donate</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-fredoka text-xl font-semibold mb-4">Connect</h4>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="https://chat.whatsapp.com/DD8RFM7lj9tDAfXqR7skkL?mode=ems_copy_c" target="_blank" class="text-gray-400 hover:text-white transition"><i data-feather="message-square"></i></a>
+                        <a href="https://www.instagram.com/dexterity.ig?igsh=OHB0cmpjeTlxemp5" target="_blank" class="text-gray-400 hover:text-white transition"><i data-feather="instagram"></i></a>
+                        <a href="https://t.me/Dexterity_Telegram" target="_blank" class="text-gray-400 hover:text-white transition"><i data-feather="send"></i></a>
+                        <a href="https://x.com/Dexterityonx?t=FFr_RZPC85UEtoHZoe1cxw&s=09" target="_blank" class="text-gray-400 hover:text-white transition"><i data-feather="twitter"></i></a>
+                        <a href="mailto:dexterity.email.1@gmail.com" class="text-gray-400 hover:text-white transition"><i data-feather="mail"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500">
+                <p>&copy; <span id="year"></span> Dexterity. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Link to the NEW JavaScript file for this page -->
+    <script src="donate_script.js"></script>
+</body>
+</html>
+

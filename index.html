@@ -1,215 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
+    <!-- Standard Meta Tags for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    
+    <!-- Title of the webpage -->
+    <title>Dexterity: A Community Through Tech</title>
+    
+    <!-- Tailwind CSS from CDN for rapid UI development -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Fredoka & Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <title>Dexterity</title>
-
+    <!-- Feather Icons for lightweight and simple icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Link to the external custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-gray-50">
 
-    <!-- PRE-LOADER 
-    <div id="preloader"></div>-->
+    <!-- Header Section: Contains the logo and the new dynamic menu button. -->
+    <header class="py-6 px-4 sm:px-8 lg:px-16 fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 shadow-sm">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo and Community Name -->
+            <a href="#" class="flex items-center space-x-2">
+                <img src="images/thenewdexteritylogo.png" alt="Dexterity Logo" class="w-40 logo-animate">
+            </a>
+            <!-- Hamburger Menu Button (Replaces "Join Us") -->
+            <button id="menu-btn" class="hamburger z-50" aria-label="Open Menu">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+        </div>
+    </header>
 
-    <section class="main">
+    <!-- Fullscreen Menu -->
+    <nav id="fullscreen-menu" class="fullscreen-nav">
+        <div class="nav-content">
+            <a href="index.html" class="nav-link">HOME</a>
+            <a href="about/index.html" class="nav-link">ABOUT</a>
+            <a href="community/index.html" class="nav-link">COMMUNITY</a>
+            <a href="donations/index.html" class="nav-link">DONATE</a>
+            <a href="https://forms.gle/ahZHKpUVsTjjEYCP7" target="_blank" class="nav-join-button">
+                Join Us!
+            </a>
+        </div>
+    </nav>
 
-        <section class="home-page-bg">
-
-            <section class="fixedHead">
-                <section class="header" id="dynamicHeader">
-                    <i class="fa fa-bars" onclick="toggleMenu()"></i>
-                    <a href="index.html"><img src="images/dextr.png" alt="button" id="dextr"></a>
-                </section>
-
-                <section class="menu menuAnimation" id="subMenu">
-                    <div class="menu-box">
-                        <div class="menu_option">
-                            <div class="home">
-                                <a href="index.html">
-                                    <h1 class="option">Home</h1>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="menu_option">
-                            <a href="#about-dexterity">
-                                <h1 class="option">About us</h1>
-                            </a>
-                        </div>
-        
-
-                        <div class="menu_option">
-                            <a href="Community.html">
-                                <h1 class="option">Our Community</h1>
-                            </a>
-                        </div>
-
-                        <div class="menu_option">
-                            <a href="#ad">
-                                <h1 class="option">Smileys</h1>
-                            </a>
-                        </div>
-
-                        <div class="menu_option">
-                            <a href="Contact us.html">
-                                <h1 class="option">Contact us</h1>
-                            </a>
-                        </div>
-
-                    </div>
-                </section>
-            </section>
-    
-            <section class="front_page">
-                
-                    <section>
-                        <div class="text_img">
-                            <div class="dexterity"><h1>Welcome To</h1>
-                                <span id="Dexterity"><img src="images/Dexterity.png" alt="Dexterity"></span>
-                            </div>
-                            <div class="intro_text">
-                                <h1>
-                                    A Tech Community driven by<span id="break"><br></span> Young Minds                          
-                                </h1>
-                            </div>
-                        </div>
-                    </section>
+    <!-- Main Content of the Page -->
+    <main>
+        <!-- Hero Section: The first thing users see. Big, bold, and engaging. -->
+        <section id="hero" class="relative min-h-screen flex items-center justify-center text-center pt-24 pb-12 px-4 overflow-hidden">
+            <!-- Background with decorative, animated blobs for a playful feel -->
+            <div class="absolute inset-0 bg-white z-0">
+                <div class="absolute top-0 -left-24 w-72 h-72 bg-blue-200 rounded-full opacity-50 mix-blend-multiply filter blur-3xl animate-blob"></div>
+                <div class="absolute top-20 -right-24 w-72 h-72 bg-green-200 rounded-full opacity-50 mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
+                 <div class="absolute bottom-0 left-20 w-72 h-72 bg-purple-200 rounded-full opacity-50 mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
+            </div>
             
-                    <section>
-                        <div class="sample_images">
-                            <div class="tilt-box-wrap">
-                                    <span class="t_over"></span>
-                                    <span class="t_over"></span>
-                                    <span class="t_over"></span>
-                                    <span class="t_over"></span>
-                                    <span class="t_over"></span>
-                                    <span class="t_over"></span>
-                                    <span class="t_over"></span>
-                                    <span class="t_over"></span>
-                                    <span class="t_over"></span>
-                                    <img src="images/dextr sample collage for phone.png" id="phone_sample1">
-                            </div>
+            <!-- Hero Content: Main tagline and call-to-action -->
+            <div class="relative z-10 max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold font-fredoka leading-tight tracking-tighter">
+                    <span class="fade-in-up">A Community</span>
+                    <span class="gradient-text fade-in-up" style="transition-delay: 150ms;">Through Tech,</span>
+                    <br>
+                    <span class="fade-in-up" style="transition-delay: 300ms;">The community we deserve.</span>
+                </h1>
+                
+                <div class="mt-12 fade-in-up" style="transition-delay: 450ms;">
+                    <a href="https://forms.gle/ahZHKpUVsTjjEYCP7" target="_blank" class="font-fredoka text-lg text-white font-semibold py-4 px-10 rounded-full bg-gradient-to-r from-[--dx-blue] to-[--dx-green] hover:scale-105 transition-transform duration-300 shadow-xl hover:shadow-2xl inline-block">
+                        Join the Movement
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Snapshot Section: A short, powerful statement about the community's philosophy. -->
+        <section id="about-snapshot" class="py-20 px-4">
+            <div class="container mx-auto text-center max-w-3xl">
+                <h2 class="text-2xl md:text-3xl font-fredoka leading-relaxed text-gray-700 fade-in-up">
+                    Not a tech community. A <span class="gradient-text">People-first</span> space where creatives use tech to connect, collaborate, and belong.
+                </h2>
+            </div>
+        </section>
+
+        <!-- Community in Action Section: Showcases member stories in a fun, interactive carousel. -->
+        <section id="community-in-action" class="py-24 bg-white overflow-hidden">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-fredoka font-bold fade-in-up">Community in Action</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto fade-in-up" style="transition-delay: 150ms;">Real stories from real members. See what we're building, together.</p>
+                </div>
+
+                <!-- This container will be filled with cards by JavaScript -->
+                <div class="carousel-container relative w-full max-w-6xl mx-auto h-[300px] sm:h-[400px] flex items-center justify-center fade-in-up" style="transition-delay: 300ms;">
+                    <!-- Cards are dynamically injected here -->
+                </div>
+            </div>
+        </section>
+
+        <div class="mt-12 fade-in-up" style="transition-delay: 450ms;">
+            <center><a href="community/index.html" target="_blank" class="font-fredoka text-lg text-white font-semibold py-4 px-10 rounded-full bg-gradient-to-r from-[--dx-blue] to-[--dx-green] hover:scale-105 transition-transform duration-300 shadow-xl hover:shadow-2xl inline-block">
+                Our Community
+            </a></center>
+        </div>
+
+        <!-- Why Join? Section: Highlights the four core benefits of the community. -->
+        <section id="why-join" class="py-24 px-4">
+            <div class="container mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-fredoka font-bold fade-in-up">Why Join Dexterity?</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto fade-in-up" style="transition-delay: 150ms;">We're flipping the script on what a "tech community" means.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Card 1: Belonging -->
+                    <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 fade-in-up" style="transition-delay: 200ms;">
+                        <div class="w-20 h-20 mb-6 rounded-2xl flex items-center justify-center bg-blue-100">
+                             <span alt="Belonging Icon" class="rounded-2xl text-4xl">🤝</span>
                         </div>
-                    </section>
-    
-            </section>
-
-        </section>
-
-
-        <section>
-            <div id="intro-wrapper">
-                <div id="about-dexterity">
-                    <h1>What is Dexterity?</h1>
-                    <p>Simply put, we’re a vibrant community of young creative minds. But Dexterity? Oh, it’s so much more—it’s a movement proclaiming loud and clear that Tech belongs to the youth! 🚀
-    
-                        We’ve built a safe, inspiring space where creatives like you—no matter your field—can connect, collaborate on exciting projects, and sharpen those teamwork skills. Whether you're networking with seasoned pros or just getting started, there’s a place for you here. Come learn, grow, and thrive with us! 💡✨</p>
-                </div>
-            </div>
-            <div>
-                <div class="p-s-l">
-
-                    <div class="card card-left">
-                        <a href="Community.html">
-                            <h1>Collaborate.</h1> 
-                            <h2>Collaborate with fellow creatives on exciting new projects. Whether you're a writer, artist, designer, or developer, There's a spot on our team for you!</h2>
-                            <img src="images/Peep Illustrations.jpg" alt="community">
-                        </a>
+                        <h3 class="text-2xl font-fredoka font-semibold mb-3">Belonging</h3>
+                        <p class="text-gray-600">Connect as humans, not just as profiles. We focus on socializing over networking, sharing personal stories, and celebrating every member's journey.</p>
                     </div>
 
-                    <div class="card card-right">
-                        <a href="Community.html">
-                            <h1>Network.</h1>
-                            <h2>Supercharge your connections! Our community is designed to help you build meaningful relationships, and level up your network. We're just chill guys fr.</h2>
-                            <img src="images/b50d55c343a9f0dfba41b769df6656d4.jpg" alt="plant">
-                        </a>
+                    <!-- Card 2: Collaboration -->
+                    <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 fade-in-up" style="transition-delay: 350ms;">
+                        <div class="w-20 h-20 mb-6 rounded-2xl flex items-center justify-center bg-green-100">
+                            <span alt="Collaboration Icon" class="rounded-2xl text-4xl">🎨</span>
+                        </div>
+                        <h3 class="text-2xl font-fredoka font-semibold mb-3">Collaboration</h3>
+                        <p class="text-gray-600">Join creative mixers where developers, writers, and designers team up for fun. Here, cross-creative projects come to life without pressure.</p>
                     </div>
 
-
-
-                    <div class="card card-left">
-                        <a href="Community.html">
-                            <h1>Learn.</h1>
-                            <h2> Get access to Dexterity-only deals on a wide range of tech courses. With this and many other activities, everyday is an opportunity for you to learn at Dexterity.</h2>
-                            <img src="images/548881c6738bad9ba6ca457271c605c5.jpg" alt="handshake">
-                        </a>
+                    <!-- Card 3: Creativity -->
+                    <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 fade-in-up" style="transition-delay: 500ms;">
+                         <div class="w-20 h-20 mb-6 rounded-2xl flex items-center justify-center bg-yellow-100">
+                             <span alt="Collaboration Icon" class="rounded-2xl text-4xl">💡</span>
+                        </div>
+                        <h3 class="text-2xl font-fredoka font-semibold mb-3">Creativity</h3>
+                        <p class="text-gray-600">Unleash your potential in a space that values play. From AI art jams to digital storytelling, we use tech as a canvas for imagination.</p>
                     </div>
 
-                </div>
-            </div>
-            <div id="vision-wrapper">
-                <div id="vision-dexterity">
-                    <h1>Our Vision</h1>
-                    <p>Every young person is filled with energy and passion. At Dexterity, we believe that when this energy is directed purposefully, it can be transformed into a powerful force for meaningful change in the world. Technology, as a dynamic and ever-evolving medium, offers an incredible avenue for this transformation.
-    
-                        Through our tech community, we provide the guidance, resources, and collaborative opportunities needed to channel this passion into impactful projects. By connecting with like-minded individuals, engaging in skill-building experiences, and working on innovative solutions, our members can turn their energy into real-world change, driving progress and making a lasting difference.</p>
+                    <!-- Card 4: Fun -->
+                    <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 fade-in-up" style="transition-delay: 650ms;">
+                        <div class="w-20 h-20 mb-6 rounded-2xl flex items-center justify-center bg-red-100">
+                           <span alt="Collaboration Icon" class="rounded-2xl text-4xl">🎉</span>
+                        </div>
+                        <h3 class="text-2xl font-fredoka font-semibold mb-3">Fun</h3>
+                        <p class="text-gray-600">It's not all about code. Join our social hours, game nights, and share in community inside-jokes. Because building connections should be enjoyable.</p>
+                    </div>
                 </div>
             </div>
         </section>
+    </main>
 
-
-        <section class="smileys">
-            <div id="ad">
-                <div class="image_container">
-                    <img src="images/Smileys Flyer.webp" alt="flyer advertising Smileys">
-                </div>
+    <!-- Footer Section: Contains contact info, social links, and copyright. -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto py-12 px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <!-- About Column -->
                 <div>
-                    <h1 class="smileys-text">Community project: Smileys</h1>
-                    <p>We're building a platform that allows children and young adults living with sickle cell anaemia to safely communicate with each other, share their experiences and have one-on-one conversations with doctors concerning their health. The mental health of people with chronic illness in Africa is heavily overlooked, With this platform, We hope to create a safe space where everyone living with chronic illnesses  can empathize with each other, Starting with Sickle Cell.</p>
-                    <a href="Community.html">Our Community</a>
+                    <h4 class="font-fredoka text-xl font-semibold mb-4">Dexterity</h4>
+                    <p class="text-gray-400">A human-first community, powered by tech. We're building the creative space we deserve.</p>
                 </div>
-            </div>
-        </section>
-
-
-
-        
-        <section class="footer" id="footer">
-            <div class="footer-text">
-
-                <div class="upperhalf">
-                    <h1> Follow our Socials.</h1>
-                    <h2>Join our wide community of creative minds from across Africa. A safe space to learn, network and grow.</h2>
-                    <div class="links">
-                        <div id="link"><a href="https://chat.whatsapp.com/Iw9uMpHeZYzAW0weDP5sbi"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></div>
-                        <div id="link"><a href="https://www.instagram.com/dexterity.ig/profilecard/?igsh=OHB0cmpjeTlxemp5"><i class="fa-brands fa-instagram"> </i> Instagram</a></div>
-                        <div id="link"><a href="https://t.me/Dexterity_Telegram"><i class="fa-brands fa-telegram"></i> Telegram</a></div>
-                        <div id="link"><a href="https://x.com/Dexterityonx"><i class="fa-brands fa-x-twitter"></i> X (Twitter)</a></div>
-                        <div id="link"><a href="Contact us.html"><i class="fa-regular fa-envelope"> </i> E-mail</a></div>
+                <!-- Quick Links Column -->
+                <div>
+                    <h4 class="font-fredoka text-xl font-semibold mb-4">Explore</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about/index.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="community/index.html" class="text-gray-400 hover:text-white transition">Community</a></li>
+                        <li><a href="#why-join" class="text-gray-400 hover:text-white transition">Join</a></li>
+                    </ul>
+                </div>
+                <!-- Social Media Column -->
+                <div>
+                    <h4 class="font-fredoka text-xl font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="https://chat.whatsapp.com/DD8RFM7lj9tDAfXqR7skkL?mode=ems_copy_c" target="_blank" class="text-gray-400 hover:text-white transition"><i data-feather="message-square"></i></a>
+                        <a href="https://www.instagram.com/dexterity.ig?igsh=OHB0cmpjeTlxemp5" target="_blank" class="text-gray-400 hover:text-white transition"><i data-feather="instagram"></i></a>
+                        <a href="https://t.me/Dexterity_Telegram" target="_blank" class="text-gray-400 hover:text-white transition"><i data-feather="send"></i></a>
+                        <a href="https://x.com/Dexterityonx?t=FFr_RZPC85UEtoHZoe1cxw&s=09" target="_blank" class="text-gray-400 hover:text-white transition"><i data-feather="twitter"></i></a>
+                        <a href="mailto:dexterity.email.1@gmail.com" class="text-gray-400 hover:text-white transition"><i data-feather="mail"></i></a>
                     </div>
                 </div>
-
-                <hr>
-
-                <div class="lowerhalf">
-                    
-                    <h1>Quick Links.</h1>
-                    <div class="quickLinks">
-                        <div class="quicklink"><a href="index.html"><h2>Home</h2></a></div>
-                        <div class="quicklink"><a href="#about-dexterity"><h2>About us</h2></a></div>
-                        <div class="quicklink"><a href="Contact us.html"><h2>Contact us</h2></a></div>
-                        <div class="quicklink"><a href="https://docs.google.com/forms/d/e/1FAIpQLSereP1AmJaoTMy2EbO7mPomHT6OBSC2QyHBrgsJ2MgDM94lzA/viewform?usp=sf_link"><h2>Join the Community</h2></a></div>
-                    </div>
-
-                </div>
-
-
-
-                <p>© 2024 - Dexterity - All rights reserved</p>
             </div>
-        </section>
+            <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500">
+                <p>&copy; <span id="year"></span> Dexterity. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-    </section>
-    
-    <script src="Main.js"></script>
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>

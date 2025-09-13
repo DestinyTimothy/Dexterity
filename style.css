@@ -1,1087 +1,281 @@
-* {
-    margin: 0;
+/* Custom Stylesheet for Dexterity
+  This file contains all custom CSS that isn't handled by Tailwind CSS.
+*/
+
+/* CSS Variables (Custom Properties)
+  These variables define the core color palette of the site, making it easy to 
+  maintain brand consistency. They are based on the logo you provided.
+*/
+:root {
+    --dx-blue: #00A9E2;
+    --dx-green: #6CC24A;
+    --dx-dark: #1A1A1A;     /* For primary text */
+    --dx-light: #ffffff;    /* For backgrounds on colored sections */
+    --dx-bg: #F8F9FA;       /* Main page background color */
+}
+
+/* Global Body Styles
+  Sets the default font, background color, and text color for the entire page.
+  Also prevents horizontal scrolling for a cleaner experience on all devices.
+*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--dx-bg);
+    color: var(--dx-dark);
+    overflow-x: hidden;
+}
+
+/* This class is added by JavaScript to prevent the page from scrolling when the menu is open */
+body.nav-open {
+    overflow: hidden;
+}
+
+/* Custom Font Application
+  Applies the 'Fredoka' font to all heading elements and any element with the
+  .font-fredoka class for a playful, branded look.
+*/
+h1, h2, h3, .font-fredoka {
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* Gradient Text Utility
+  This class applies the brand's blue-to-green gradient to any text.
+  It's a key part of the visual identity.
+*/
+.gradient-text {
+    background: linear-gradient(90deg, var(--dx-blue), var(--dx-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+/* Page Load Logo Animation
+  This keyframe animation makes the logo "swirl" into view when the page first loads.
+  It adds a dynamic and engaging introduction.
+*/
+@keyframes swirl-in {
+    0% {
+        transform: scale(0.5) rotate(-180deg);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+/* Applies the swirl-in animation to the logo */
+.logo-animate {
+    animation: swirl-in 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* "Squaircle" Card Styles for the "Community in Action" Section
+  This creates the unique, playful, rounded-square shape for the member cards.
+*/
+.squaircle-card {
+    aspect-ratio: 1 / 1; /* Ensures the card is always a perfect square */
+    border-radius: 35%; /* This value creates the "squaircle" shape */
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s;
+    position: relative;
+    overflow: hidden; /* Hides parts of the image that go outside the rounded corners */
+}
+.squaircle-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the card without stretching */
+    transition: transform 0.4s ease;
+}
+/* Dark overlay at the bottom of the card to make text readable */
+.squaircle-card .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+/* The "fun fact" text that appears on hover */
+.squaircle-card .fun-fact {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    opacity: 0; /* Hidden by default */
+    transform: scale(0.9);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Carousel Hover Effects
+  These rules create the 3D pop-out effect when a user hovers over a card.
+*/
+/* When hovering over the whole container, slightly shrink all cards */
+.carousel-container:hover .squaircle-card {
+    transform: scale(0.95) !important; /* !important is used to override inline styles from JS */
+}
+/* When hovering over a SPECIFIC card, make it larger and pop forward */
+.carousel-container .squaircle-card:hover {
+    transform: scale(1.1) translateY(-10px) !important;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+/* Zoom the image inside the hovered card */
+.carousel-container .squaircle-card:hover img {
+    transform: scale(1.1);
+}
+/* Hide the default overlay on hover */
+.carousel-container .squaircle-card:hover .overlay {
+    opacity: 0;
+}
+/* Show the fun fact on hover */
+.carousel-container .squaircle-card:hover .fun-fact {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Scroll-triggered Animations
+  These classes control the fade-in-from-bottom effect for sections as you scroll.
+*/
+/* Initial state of the elements: hidden and slightly lower */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+/* The state when the element becomes visible in the viewport */
+.fade-in-up.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =================================================================== */
+/* START: New Header Menu Styles                                       */
+/* =================================================================== */
+
+/* Hamburger Menu Button */
+.hamburger {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 32px;
+    height: 32px;
     padding: 0;
 }
 
-
-
-
-/* ---------MAIN-------COLORS------------ */
-.header { background-color: rgb(50, 51, 51);}      /*HEADER*/
-.text_img .dexterity h1{ color:  black; }   /*DEXTERITY*/
-/* ------------------------------------ */  
-
-
-body {
-    background-color:   #111111;    
-
-}         /*BODY BACKGROUND*/
-
-
-
-.home-page-bg {
-    border-radius: 30px;
-    min-height: 100vh;
-    width: 100%;
-    background-image: url(images/glossy-abstract-3840x2160-9602.webp);
-    background-position: center;
-    background-size: cover;
+.hamburger .line {
+    width: 32px;
+    height: 3px;
+    background: var(--dx-dark);
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
 }
 
-
-.header{
-    display: flex;
-    justify-content: space-between;
-    border-radius: 30px;
-    box-shadow: 0  10px 25px  4px rgba(0, 0, 0, 0.397);
+/* Animation for the hamburger icon turning into an 'X' */
+.hamburger.active .line-1 {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+.hamburger.active .line-2 {
     opacity: 0;
-    transform: translateY(100px);
-    animation: flyin-header 0.7s ease-out forwards;
-
+}
+.hamburger.active .line-3 {
+    transform: rotate(-45deg) translate(7px, -7px);
 }
 
-.main {
-    margin: 10px;
-}
-
-@keyframes flyin-header{
-    0% { 
-        opacity: 0;
-        transform: translateY(-100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-
-
-
-/* this is for the back button, the menu buttons */
-.fa-bars{
-    color: white;
-    font-size: 30px;
-    margin: 25px 0 0 50px;
-}
-
-.header #dextr{
-    width: 130px;
-    height:40px;
-    margin: 20px 40px 20px 200px;
-}
-
-/* =========== M E N U ===========*/
-
-.menu a {
-    text-decoration: none;
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;    
-    font-size: 20px;
-    border-radius: 20px;
-}
-
-/* ---------------------------------*/
-.home h1{
-    background-color: white;
-    border-radius: 15px;
-    color: rgb(50,51,51);
-}
-/* ---------------------------------*/
-
-.menu h1{
-    padding: 10px 20px;
-    text-align: center;
-} 
-
-.menu h1:hover{
-    background-color: gray;
-    border-radius: 15px;
-} 
-
-.menu_option{
-        padding: 10px 30px;
-}
-
-.menu {
-    z-index: 100;
-    background-color: rgb(50, 51, 51);
-    position: absolute;
-    border-radius: 30px;
-    margin-top:  10px;
-    display: none;
-}
-
-.menu.open-menu{
-    display: block;
-    animation: dropdown 0.5s ease-in-out;
-}
-
-@keyframes dropdown {
-    0%{
-        transform: translateX(-80px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-/* ------------------------------------------------------------------------------------------------------------------------ */
-
-.front_page {
-    display: flex;
-    justify-content: space-between;
-    margin:30px 80px 30px 90px;
-}
-
-.text_img {
-    padding-bottom: 170px;
-    padding-top: 0px;
-}
-
-#break {
-    display: none;
-}
-
-/* DEXTERITY */
-
-#Dexterity img{
-    padding-top: 44px;
-    opacity: 0;
-    transform: translateY(100px);
-    animation: flyin-dexterity 0.9s ease-out forwards;
-}
-
-
-@keyframes flyin-dexterity{
-    0% { 
-        opacity: 0;
-        transform: translateY(100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-.text_img .dexterity h1{
-    padding-top: 30px; 
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 70px;
-    color: white;
-    pointer-events: none;
-    opacity: 0;
-    transform: translateY(100px);
-    animation: flyin-welcome 0.7s ease-out forwards;
-}
-
-
-@keyframes flyin-welcome{
-    0% { 
-        opacity: 0;
-        transform: translateY(100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-.text_img .intro_text h1 {
-  margin: 40px 0px;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 19px;
-  pointer-events: none;
-  opacity: 0;
-  transform: translateY(100px);
-  animation: flyin-motto 1.3s ease-out forwards;
-}
-
-
-@keyframes flyin-motto{
-  0% { 
-      opacity: 0;
-      transform: translateY(100px);
-  }
-  100% {
-      opacity: 1;
-      transform: translateY(0);
-  }
-}
-
-.intro_text a{
-    color: white;
-}
-
-
-/* ========= THE BUTTONS ========= */
-
-#buttons {
- margin: 30px 0px;
-}
-
-#buttons a {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-    padding: 10px 20px;
-    background: linear-gradient(to right, purple, rgb(25, 0, 255), rgb(128, 0, 0));
-    border-radius: 10px;
-    background-size: 200% 100%;
-}
-
-#buttons a:hover {
-    animation: more 3s ease infinite;
-}
-
-@keyframes more{
-    0% { background-position: 0% 50%;}
-    50% { background-position: 100% 100%;}
-    100% { background-position: 0% 50%;}
-}
-
-
-/* THIS IS FOR THE TILTING IMAGE SAMPLE */
-
-#phone_sample1 {
-    width: 430px;
-    margin-top: 30px;
-    position: relative;
-    transition: all 0.6s ease-out;
-    transform: rotateX(0deg) rotateY(0deg);
-    perspective: 1000px;
-    transform-style: preserve-3d;
-    opacity: 0;
-    animation: grow 1s ease-out forwards;
-}
-
-
-@keyframes grow{
-    0% { 
-        opacity: 0;
-        width: 0;;
-    }
-    100% {
-        opacity: 1;
-        width: 430px;
-        
-    }
-}
-
-#phone_sample2{display: none;}
-
-.tilt-box-wrap {
-    position: relative;
-    transition: all 0.6s ease-out;
-    perspective: 1000px;
-}
-
-.tilt-box-wrap:hover{
-    transition:all 0.3s linear ;
-    transform: scale(1.1);
-}
-
-.t_over{
-    width: 33.333%;
-    height: 33.333%;
-    position: absolute;
-    z-index: 1;
-}
-
-/* 3D hover effect */
-
-.t_over:nth-child(1){ left: 0; top: 0; }
-.t_over:nth-child(2){ left: 33.333%; top: 0; }
-.t_over:nth-child(3){ left: 66.666%; top: 0; }
-.t_over:nth-child(4){ left: 0; top: 33.333%; }
-.t_over:nth-child(5){ left: 33.333%; top: 33.333%; }
-.t_over:nth-child(6){ left: 66.666%; top: 33.333%; }
-.t_over:nth-child(7){ left: 0; top: 66.666%; }
-.t_over:nth-child(8){ left: 33.333%; top: 66.666%; }
-.t_over:nth-child(9){ left: 66.666%; top: 66.666%; }
-
-.t_over:nth-child(1):hover ~ #phone_sample1{transform: rotateX(-20deg) rotateY(20deg)}
-.t_over:nth-child(2):hover ~ #phone_sample1{transform: rotateX(-20deg) rotateY(0deg)}
-.t_over:nth-child(3):hover ~ #phone_sample1{transform: rotateX(-20deg) rotateY(-20deg)}
-.t_over:nth-child(4):hover ~ #phone_sample1{transform: rotateX(0deg) rotateY(20deg)}
-.t_over:nth-child(5):hover ~ #phone_sample1{transform: rotateX(0deg) rotateY(0deg)}
-.t_over:nth-child(6):hover ~ #phone_sample1{transform: rotateX(0deg) rotateY(-20deg)}
-.t_over:nth-child(7):hover ~ #phone_sample1{transform: rotateX(20deg) rotateY(20deg)}
-.t_over:nth-child(8):hover ~ #phone_sample1{transform: rotateX(20deg) rotateY(0deg)}
-.t_over:nth-child(9):hover ~ #phone_sample1{transform: rotateX(20deg) rotateY(-20deg)}
-/* ------------------------------------------------------------------------- */
-
-
-/* ----------------------------------- About Dexterity -------------------------------------- */
-
-#intro-wrapper {
-    display: flex;
-    justify-content: center;
-}
-
-#about-dexterity{
-    color: white;
-    text-align: center;
-    width: 60vw;
-}
-
-#about-dexterity h1{
-    font-family: "Zilla Slab", serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 50px;
-    margin-top: 150px;
-}
-
-#about-dexterity p{
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-size: 18px;
-    padding: 20px 0;
-}
-
-/* ----------------------------------- Dexteritys Vision-------------------------------------- */
-
-#vision-wrapper {
-    display: flex;
-    justify-content: center;
-}
-
-#vision-dexterity{
-    color: white;
-    text-align: center;
-    width: 60vw;
-}
-
-#vision-dexterity h1{
-    font-family: "Zilla Slab", serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 50px;
-    margin-top: 150px;
-}
-
-#vision-dexterity p{
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-size: 18px;
-    padding: 20px 0;
-}
-
-/* ----------- CARDS --------------*/
-
-.p-s-l {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 100px;
-}
-
-.p-s-l a{
-    text-decoration: none;
-    color: white;
-}
-
-.p-s-l h1{
-    font-size: 30px;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: bolder;
-    padding: 30px 0 0 30px;
-}
-
-.p-s-l h2{
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 19px;
-    padding: 30px;
-    color: white;
-}
-
-.p-s-l img {
-    display: block;
-    width: 90%;
-    margin: 0 auto;
-    height: 230px;
-    border-radius: 15px;
-}
-
-.card  {
-    margin: 0px 20px;
-    padding: 0 0 20px 0;
-    background-color: rgb(35, 36, 36);
-    border-radius: 17px;
-    box-shadow: 5px  8px 15px 3px rgba(0, 0, 0, 0.397); 
-    opacity: 0;
-    transform: translateX(0);
-    transition: transform 1s ease, opacity 1s ease;
-}
-
-
-.card-left {
-    transform: translateX(7%);
-}
-
-.card-right {
-    transform: translateX(7%);
-}
-
-.card.visible {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-
-
-/* ----------------- smileys ad -----------------*/
-.smileys {
-    background-color: white;
-    margin:0 -10px;
-}
-
-#ad {
-    margin-top: 140px;
-    padding-top: 140px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: white;
-    color: rgb(35, 36, 36);
-    padding-bottom: 140px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 9%;
-
-}
-
-
-
-.image_container img {
-    width: 400px;
-    box-shadow: 0px  5px 22px 3px rgba(0, 0, 0, 0.164); 
-    border-radius: 20px;
-    display: block;
-}
-
-
-.image_container {
-    position: relative;
-    display: inline-block;
-    margin:0 auto;
-    opacity: 0; /* Start hidden */
-    transform: translateY(170px); /* Start below initial position */
-    transition: all 0.8s ease-out; /* Smooth animation */
-}
-
-.image_container.fly-up {
-    opacity: 1; /* Fade in */
-    transform: translateY(0); /* Fly up to its original position */
-}
-
-
-
-
-
-.smileys-text {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-size: 50px;
-    background: linear-gradient(to right, purple, blue, cyan);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-#ad p {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-size: 19px;
-    padding: 40px 80px 40px 0px;
-}
-
-
-
-#ad a {
-    position: relative;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-    padding: 10px 20px;
-    background: linear-gradient(to right, rgb(17, 1, 156), rgb(0, 217, 255), purple);
-    border-radius: 10px;
-    background-size: 200% 100%;
-    transition: 0.4s;
+/* Fullscreen Navigation Overlay */
+.fullscreen-nav {
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--dx-blue), var(--dx-green));
+    z-index: 40; /* Sits below the header (z-50) but above everything else */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Hidden by default */
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(1.1);
+    transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-#ad a:hover {
-    animation: join 2s ease;
-    font-size: 19px;
+/* State when the menu is open */
+.fullscreen-nav.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
 }
 
-@keyframes join{
-    0% { background-position: 0% 50%;}
-    50% { background-position: 100% 100%;}
-    100% { background-position: 0% 50%;}
-}
-
-
-
-
-
-
-
-/* ----------------- buy the devs a coffee -----------------*/
-
-
-/* ----------------- FOOTER -----------------*/
-
-
-.footer {
-    margin-top: -200px;
-    background-color: rgb(35, 36, 36);
-    color: white;
-    margin-left: -10px;
-    margin-right: -10px;
-}
-.footer .footer-text h1{
-    font-family: "Zilla Slab", serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 50px;
-    padding-top: 30px;
-}
-
-.footer-text h2 {
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-
-}
-
-.footer-text p{
+.fullscreen-nav .nav-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
     text-align: center;
-    margin-top: 150px; 
-    margin-bottom: -200px; 
-    font-size: 17px;
 }
 
-.footer .footer-text {
-    margin: 200px 100px;
-}
-
-.footer .upperhalf {
-    padding-bottom: 30px;
-}
-
-
-#link {
-    padding: 10px 0;
-}
-
-
-.links {
-    padding-top: 70px;
-}
-
-
-.links a{
-    font-family: "Montserrat", sans-serif;
-    font-weight: bolder;
+.fullscreen-nav .nav-link {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2.5rem; /* Large, readable text */
+    color: var(--dx-light);
     text-decoration: none;
-    color: white;
-    font-size: 17px;
+    font-weight: 600;
+    /* Hidden for animation */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: color 0.3s, transform 0.5s, opacity 0.5s;
 }
 
-.quicklink a{
-    color: white;
+/* The state of the links when the menu is open */
+.fullscreen-nav.open .nav-link {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.quicklink {
-    padding: 10px 0 0 0;
+/* Staggered animation for links appearing one after the other */
+.fullscreen-nav.open .nav-link:nth-child(1) { transition-delay: 0.2s; }
+.fullscreen-nav.open .nav-link:nth-child(2) { transition-delay: 0.3s; }
+.fullscreen-nav.open .nav-link:nth-child(3) { transition-delay: 0.4s; }
+.fullscreen-nav.open .nav-join-button { transition-delay: 0.5s; } /* The button appears last */
+
+.fullscreen-nav .nav-link:hover {
+    transform: scale(1.1); /* Fun hover effect */
 }
 
-/* size of the icons on the footer */
-
-.fa-instagram {font-size: 20px;}
-.fa-telegram {font-size: 20px;}
-.fa-whatsapp {font-size: 20px;}
-.fa-envelope {font-size: 20px;}
- 
-/* MEDIA QUERY */
-
-
-@media screen and (max-width: 1200px){
-    
-    .front_page {
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-    
-    .text_img .dexterity h1{
-        font-size: 60px;
-    }
-    
-    #Dexterity img{
-        width: 500px;
-    }
-    
-    #phone_sample1 {
-        width: 0;
-        margin-top: 30px;
-        position: relative;
-        transition: all 0.6s ease-out;
-        transform: rotateX(0deg) rotateY(0deg);
-        perspective: 1000px;
-        transform-style: preserve-3d;
-        opacity: 0;
-        animation: grow 1s ease-out forwards;
-
-    }
-
-
-    @keyframes grow{
-        0% { 
-            opacity: 0;
-            width: 0;;
-        }
-        100% {
-            opacity: 1;
-            width: 340px;
-
-        }
-    }
-
-
-    .fa-bars{
-        font-size: 25px;
-        margin: 22px 0 0 50px;
-    }
-    
-    .header #dextr{
-        width: 80px;
-        height:27px;
-        margin: 20px 50px 20px 0;
-    }
-
-    
-    #buttons a {
-        font-size: 16px;
-    }
-    
-    .btn a{
-        font-size: 22px;
-        margin: 50px 430px;
-    }
-
+/* The "Join Us" button inside the menu */
+.fullscreen-nav .nav-join-button {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--dx-blue);
+    background-color: var(--dx-light);
+    padding: 1rem 2.5rem;
+    border-radius: 9999px;
+    margin-top: 1rem;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.3s, background-color 0.3s, opacity 0.5s;
 }
 
-
-
-@media screen and (max-width: 1070px){
-    #Dexterity img{
-        width: 550px
-    }
-    .text_img .dexterity h1{
-        font-size: 60px;
-    }
-    
-    .text_img {
-        padding-top: 50px;
-        text-align: center;
-        padding-bottom: 0px;
-    }
-
-    .front_page {
-        display: block;
-        margin: 0 auto;
-    }
-    
-    #phone_sample1 {
-        display: block;
-        margin: 0 auto;
-        padding: 30px 0px;
-    }
-    
-    @keyframes grow{
-    0% { 
-        opacity: 0;
-        width: 0;;
-    }
-    100% {
-        opacity: 1;
-        width: 50vw;
-        
-    }
-}
-    
-    #phone_sample2 {
-        display: none;
-    }
-    
-/*     ========== THE BUTTONS ========== */
-    
-    #vision-wrapper {
-        padding-bottom: 100px;
-    }
-    
-    #buttons a {
-        font-size: 16px;
-    }
-    
-    .p-s-l {
-        display: block;
-        margin: 0 auto;
-    }
-    
-    .p-s-l img {
-
-        width: 87%;
-        height: 250px;
-        border-radius: 15px;
-    }
-    
-    .card  {
-        margin: 50px 200px;
-       transition: transform 0.5s ease, opacity 0.5s ease;
-
-    }
-    
-
-    .card-left {
-        transform: translateX(-30%);
-    }
-
-    .card-right {
-        transform: translateX(30%);
-    }
-
-    .card.visible {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    
-    
-/*   Services we Offer    */
-    
-    .btn a{
-        font-size: 18px;
-        margin: 50px 310px;
-    }
-    
-    #se-we-off h1{
-        font-size: 40px;
-        padding: 80px 0;
-    }
-    
-/*   ================= Community Block ==================   */
-    
-     #ad {
-        padding-top: 200px;
-        display: block;
-        width: 77vw;
-        text-align: center;
-        margin: 0 auto;
-    }
-    
-    #smileysFlyer2{
-        display: block;
-    }
-    
-
-    .image_container img {
-        margin-bottom: 70px;
-    }
-    
-    #ad p {
-        font-size: 16px;
-        padding: 40px 0px;
-    }
-    #ad h1{
-        font-size: 50px;
-    }
-    
-/*   Footer   */
-    
-    .footer {
-        margin-top: -200px;
-    }
-    
-    .footer .footer-text {
-        margin: 200px 50px;
-    }
-    .footer .footer-text h1{
-        font-size: 40px;
-    }
-    .footer-text h2 {
-        font-size: 16px;
-    }
-    .links a{
-        font-size: 15px;
-    }
-
-    .footer-text p{
-        font-size: 13px;
-    }
-    
-    .fa-instagram {font-size: 20px;}
-    .fa-facebook {font-size: 20px;}
-    .fa-whatsapp {font-size: 20px;}
-    .fa-envelope {font-size: 20px;}
- 
+.fullscreen-nav.open .nav-join-button {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-
-@media screen and (max-width: 800px){
-    
-    .text_img .dexterity h1{
-        font-size: 30px;
-    }
-    
-    #Dexterity img {
-        width: 60vw;
-    }
-    .links {
-        display: block;
-        padding-top: 70px;
-    }
-        
-    .p-s-l img {
-        width: 87%;
-        height: 250px;
-        border-radius: 15px;
-    }
-    
-    .card  {
-        margin: 50px 100px;
-    }
-    
-    /*   Services we Offer    */
-    
-    .btn a{
-        font-size: 18px;
-        margin: 50px 230px;
-    }
-    
-    #se-we-off h1{
-        font-size: 40px;
-        padding: 80px 0;
-    }
-
-    .card-left {
-        transform: translateX(-18%);
-    }
-
-    .card-right {
-        transform: translateX(18%);
-    }
-
-    .card.visible {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-    /*   ================= Community Block ==================   */
-    
-    #about-dexterity h1 {
-        font-size: 7vw;
-    }
-
-
-@media screen and (max-width: 600px){
-
-    
-    #break {
-        display: block;
-        line-height: 0px;
-
-    }
-    
-    .text_img {
-        text-align: center;
-        padding: 10px 0 0 0;
-    }
-    
-    /* =========== M E N U ===========*/
-
-    .menu a {
-        font-size: 15px;
-    }
-    
-    .menu_option{
-        padding: 10px 15px;
-    }
-
-    /* ------------ the header ------------- */
-
-    .fa-bars{
-        font-size: 20px;
-        margin: auto 30px;
-    }
-    
-    .header #dextr{
-        width: 70px;
-        height:24px;
-        padding-top: 2px;
-        margin: 10px 25px 10px 0;
-    }
-
-    /* ----------------------------------- */
-    
-    #Dexterity img{
-        padding-top: 30px;
-        width: 80vw;
-    }
-    
-    .text_img .dexterity h1{
-        font-size: 6vw;
-        font-weight: 400;
-    }
-    
-    .text_img .intro_text h1 {
-        font-size: 3.4vw;
-        line-height: 17px;
-        font-weight: 500;
-        margin: 15px 0 60px 0;
-    }
-
-
-    
-/*    ========= INTRO DEXTERITY ========  */
-
-    #about-dexterity{
-        width: 80vw;
-    }
-
-    #about-dexterity h1{
-        font-size: 9vw;
-        margin-top: 150px;
-    }
-
-    #about-dexterity p{
-        font-size: 15px;
-        padding: 20px 0;
-    }
-
-    #vision-dexterity{
-        width: 80vw;
-    }
-
-    #vision-dexterity h1{
-        font-size: 9vw;
-        margin-top: 0px;
-    }
-
-    #vision-dexterity p{
-        font-size: 15px;
-        padding: 20px 0;
-    }
-
-    
-    
-/*   =========== THE CARDS ==========   */
-    
-    .p-s-l {
-        padding-bottom: 100px;
-    }
-    
-    .card  {
-        margin: 80px 15px;
-    }
- 
-    .p-s-l img {
-        height: 180px;
-        border-radius: 11px;
-    }
-    
-    .p-s-l h1{
-        font-size: 25px;
-    }
-    
-    .p-s-l h2{
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 300;
-        font-style: normal;
-        padding: 30px;
-        font-size: 15.3px;
-    }
-    
-    
-    .card-left {
-        transform: translateX(-18%);
-    }
-
-    .card-right {
-        transform: translateX(6%);
-    }
-
-    .card.visible {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-
-        /*   ================= Community Block ==================   */
-    
-    
-    #ad h1{
-        font-size: 7vw;
-    }
-    
-    #ad img{
-        width: 74vw;
-    }
-    
-    #ad p{
-        font-size: 15px;
-    }
-    
-    
-    
-    @keyframes grow{
-    0% { 
-        opacity: 0;
-        width: 0;;
-    }
-    100% {
-        opacity: 1;
-        width: 90vw;
-    }
-}
-/* F000000000000000000000000TER */
-
-    .footer .footer-text h1{
-        font-size: 27px;
-    }
-    .footer-text h2 {
-        font-size: 14px;
-    }
-
+.fullscreen-nav .nav-join-button:hover {
+    transform: scale(1.05);
 }

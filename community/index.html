@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <!-- Standard Meta Tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the webpage -->
+    <title>Our Community | Dexterity</title>
+    
+    <!-- Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Fredoka & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Swiper.js for the advanced carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Feather Icons for lightweight and simple icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Link to the NEW external custom stylesheet for this page -->
+    <link rel="stylesheet" href="community_style.css">
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header Section (Consistent with other pages) -->
+    <header class="py-6 px-4 sm:px-8 lg:px-16 fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 shadow-sm">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="new_index.html" class="flex items-center space-x-2">
+                <img src="../images/thenewdexteritylogo.png" alt="Dexterity Logo" class="w-40">
+            </a>
+            <button id="menu-btn" class="hamburger z-50" aria-label="Open Menu">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Fullscreen Menu (Consistent with other pages) -->
+    <nav id="fullscreen-menu" class="fullscreen-nav">
+        <div class="nav-content">
+            <a href="../index.html" class="nav-link">HOME</a>
+            <a href="../about/index.html" class="nav-link">ABOUT</a>
+            <a href="index.html" class="nav-link">COMMUNITY</a>
+            <a href="../donations/index.html" class="nav-link">DONATE</a>
+            <a href="https://forms.gle/ahZHKpUVsTjjEYCP7" target="_blank" class="nav-join-button">
+                Join Us!
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content for the Community Page -->
+    <main>
+        <!-- Hero Section -->
+        <section class="relative pt-40 pb-20 px-4 text-center overflow-hidden">
+            <div class="absolute inset-0 bg-white z-0">
+                <div class="absolute -top-12 -left-24 w-80 h-80 bg-green-200 rounded-full opacity-50 mix-blend-multiply filter blur-3xl animate-blob"></div>
+                <div class="absolute -bottom-12 -right-24 w-80 h-80 bg-blue-200 rounded-full opacity-50 mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
+            </div>
+            <div class="container mx-auto relative z-10">
+                <h1 class="text-5xl md:text-7xl font-fredoka font-bold leading-tight fade-in-up">Our Community</h1>
+                <p class="mt-8 max-w-3xl mx-auto text-xl text-gray-700 leading-relaxed fade-in-up" style="transition-delay: 150ms;">
+                    Welcome to our space! Here, tech is the bridge, not the destination. We focus on socialising, belonging, and bonding—connecting not just to trade skills, but to actually know and grow with one another.
+                </p>
+            </div>
+        </section>
+
+        <!-- Community Spotlight Section -->
+        <section id="spotlight" class="py-24 overflow-hidden">
+            <div class="container mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-fredoka font-bold fade-in-up">Community Spotlight</h2>
+                </div>
+                <!-- Swiper Carousel -->
+                <div class="swiper-container spotlight-swiper fade-in-up" style="transition-delay: 150ms;">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 (Video) -->
+                        <div class="swiper-slide spotlight-slide">
+                            <img class="spotlight-media" src="../images/communitypic1.jpg" alt="Community event">
+                        </div>
+                        <!-- Slide 2 (Image) -->
+                        <div class="swiper-slide spotlight-slide">
+                            <img class="spotlight-media" src="../images/communitypic2.jpg" alt="Community event">
+                        </div>
+                        <!-- More Slides -->
+                        <div class="swiper-slide spotlight-slide">
+                            <img class="spotlight-media" src="../images/communitypic3.jpg" alt="Community workshop">
+                        </div>
+                        <div class="swiper-slide spotlight-slide">
+                            <img class="spotlight-media" src="../images/communitypic4.jpg" alt="Community members collaborating">
+                        </div>
+                        <div class="swiper-slide spotlight-slide">
+                            <img class="spotlight-media" src="../images/communitypic5.jpg" alt="Community social gathering">
+                        </div>
+                        <div class="swiper-slide spotlight-slide">
+                            <img class="spotlight-media" src="../images/communitypic6.jpg" alt="Team working on a project">
+                        </div>
+                         <div class="swiper-slide spotlight-slide">
+                            <img class="spotlight-media" src="../images/communitypic7.jpg" alt="Presentation at a community meetup">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Calls Section -->
+        <section class="py-24 px-4 bg-white">
+            <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left fade-in-up">
+                    <h2 class="text-4xl md:text-5xl font-fredoka font-bold">Our Community Calls</h2>
+                    <p class="mt-6 text-lg text-gray-600 leading-relaxed">
+                        Join us every Saturday at 8 PM when we talk about the most unhinged, fun, and entertaining topics in and outside tech. It's the perfect way to unwind and connect.
+                    </p>
+                </div>
+                <div class="fade-in-up" style="transition-delay: 150ms;">
+                    <img src="https://placehold.co/600x400/DBEAFE/3B82F6?text=Illustration+Here" alt="Illustration of people on a video call" class="rounded-3xl shadow-xl w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Subgroups Section -->
+        <section class="py-24 px-4">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-fredoka font-bold fade-in-up">Find Your Niche</h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto fade-in-up" style="transition-delay: 150ms;">
+                    Dexterity isn't one-size-fits-all. Our subgroups are smaller, interest-based spaces where you can connect with members who share your specific passions.
+                </p>
+                <div class="mt-12 flex flex-wrap justify-center gap-4 fade-in-up" style="transition-delay: 300ms;">
+                    <div class="subgroup-card">👨‍💻 Developers</div>
+                    <div class="subgroup-card">🎨 Designers</div>
+                    <div class="subgroup-card">✍️ Writers</div>
+                    <div class="subgroup-card">🖼️ Artists</div>
+                    <div class="subgroup-card">🎮 Gamers</div>
+                    <div class="subgroup-card">🎬 Content Creators</div>
+                    <div class="subgroup-card">📸 Photo Dump</div>
+                    <div class="subgroup-card">✅ Daily Check-in</div>
+                    <div class="subgroup-card">🎵 Music</div>
+                    <div class="subgroup-card">...and more!</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Activities Section -->
+        <section class="py-24 px-4 bg-white">
+            <div class="container mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-fredoka font-bold fade-in-up">More Ways to Connect</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="activity-card fade-in-up" style="transition-delay: 150ms;">
+                        <div class="activity-icon bg-blue-100 text-blue-500">🚀</div>
+                        <h3 class="text-2xl font-fredoka font-semibold mb-2">Build Parties</h3>
+                        <p class="text-gray-600">Casual sessions where we team up to create something small and fun for the joy of making.</p>
+                    </div>
+                    <div class="activity-card fade-in-up" style="transition-delay: 300ms;">
+                        <div class="activity-icon bg-green-100 text-green-500">🎧</div>
+                        <h3 class="text-2xl font-fredoka font-semibold mb-2">Community Playlists</h3>
+                        <p class="text-gray-600">We build and share collaborative playlists on Spotify. Discover new music and share your favorites!</p>
+                    </div>
+                    <div class="activity-card fade-in-up" style="transition-delay: 450ms;">
+                        <div class="activity-icon bg-yellow-100 text-yellow-500">🤝</div>
+                        <h3 class="text-2xl font-fredoka font-semibold mb-2">Buddy System</h3>
+                        <p class="text-gray-600">Get paired with someone from a different creative field to learn from each other and collaborate.</p>
+                    </div>
+                    <div class="activity-card fade-in-up" style="transition-delay: 600ms;">
+                        <div class="activity-icon bg-red-100 text-red-500">📊</div>
+                        <h3 class="text-2xl font-fredoka font-semibold mb-2">Weekly Polls</h3>
+                        <p class="text-gray-600">From "This or That" to meme contests, we keep the fun going with lighthearted polls and games.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Consistent) -->
+    <footer class="bg-gray-800 text-white">
+        <!-- Footer content from previous pages goes here -->
+        <div class="container mx-auto py-12 px-4">
+             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h4 class="font-fredoka text-xl font-semibold mb-4">Dexterity</h4>
+                    <p class="text-gray-400">A human-first community, powered by tech.</p>
+                </div>
+                <div>
+                    <h4 class="font-fredoka text-xl font-semibold mb-4">Explore</h4>
+                    <ul class="space-y-2">
+                         <li><a href="../about/index.html" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Community</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-fredoka text-xl font-semibold mb-4">Connect</h4>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="https://chat.whatsapp.com/DD8RFM7lj9tDAfXqR7skkL?mode=ems_copy_c" target="_blank" class="text-gray-400 hover:text-white transition"><i data-feather="message-square"></i></a>
+                        <a href="https://www.instagram.com/dexterity.ig?igsh=OHB0cmpjeTlxemp5" target="_blank" class="text-gray-400 hover:text-white transition"><i data-feather="instagram"></i></a>
+                        <a href="https://t.me/Dexterity_Telegram" target="_blank" class="text-gray-400 hover:text-white transition"><i data-feather="send"></i></a>
+                        <a href="https://x.com/Dexterityonx?t=FFr_RZPC85UEtoHZoe1cxw&s=09" target="_blank" class="text-gray-400 hover:text-white transition"><i data-feather="twitter"></i></a>
+                        <a href="mailto:dexterity.email.1@gmail.com" class="text-gray-400 hover:text-white transition"><i data-feather="mail"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500">
+                <p>&copy; <span id="year"></span> Dexterity. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Background Audio -->
+    <audio id="background-music" loop>
+        <source src="https://cdn.pixabay.com/download/audio/2022/08/04/audio_2d02518b2c.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Mute Button 
+    <button id="mute-btn" class="mute-button" aria-label="Toggle Music">
+        <i data-feather="volume-2"></i>
+    </button>
+    -->
+    
+    <!-- Swiper.js Script -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Link to the NEW external JavaScript file -->
+    <script src="community_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <!-- Standard Meta Tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the webpage -->
+    <title>About Dexterity | A Community Through Tech</title>
+    
+    <!-- Tailwind CSS from CDN for rapid UI development -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Fredoka & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Feather Icons for lightweight and simple icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Link to the NEW external custom stylesheet for this page -->
+    <link rel="stylesheet" href="about_style.css">
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header Section (Consistent with homepage) -->
+    <header class="py-6 px-4 sm:px-8 lg:px-16 fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 shadow-sm">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo - links back to the homepage -->
+            <a href="new_index.html" class="flex items-center space-x-2">
+                <img src="../images/thenewdexteritylogo.png" alt="Dexterity Logo" class="w-40">
+            </a>
+            <!-- Hamburger Menu Button -->
+            <button id="menu-btn" class="hamburger z-50" aria-label="Open Menu">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Fullscreen Menu (Consistent with homepage) -->
+    <nav id="fullscreen-menu" class="fullscreen-nav">
+        <div class="nav-content">
+            <a href="../index.html" class="nav-link">HOME</a>
+            <a href="index.html" class="nav-link">ABOUT</a>
+            <a href="../community/index.html" class="nav-link">COMMUNITY</a>
+            <a href="../donations/index.html" class="nav-link">DONATE</a>
+            <a href="https://forms.gle/ahZHKpUVsTjjEYCP7" target="_blank" class="nav-join-button">
+                Join Us!
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content for the About Page -->
+    <main>
+        <!-- Manifesto Section -->
+        <section class="relative pt-40 pb-20 px-4 text-center overflow-hidden">
+             <!-- Background Blobs -->
+            <div class="absolute inset-0 bg-white z-0">
+                <div class="absolute top-0 -left-24 w-72 h-72 bg-blue-200 rounded-full opacity-50 mix-blend-multiply filter blur-3xl animate-blob"></div>
+                <div class="absolute bottom-0 -right-24 w-72 h-72 bg-green-200 rounded-full opacity-50 mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
+            </div>
+            <div class="container mx-auto relative z-10">
+                <h1 class="text-5xl md:text-7xl font-fredoka font-bold leading-tight fade-in-up">Our Manifesto</h1>
+                <p class="mt-8 max-w-3xl mx-auto text-xl md:text-2xl text-gray-700 leading-relaxed fade-in-up" style="transition-delay: 150ms;">
+                    Dexterity is not a "tech community."<br>
+                    It's a <span class="gradient-text font-semibold">People-first community</span> that uses technology as a tool to bring people together, foster creativity, and build meaningful connections.
+                </p>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section class="py-24 px-4 bg-gray-50">
+            <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left fade-in-up">
+                    <h2 class="text-4xl md:text-5xl font-fredoka font-bold">Our Story</h2>
+                    <p class="mt-6 text-lg text-gray-600 leading-relaxed">
+                        On June 1st, 2024, Dexterity began as a community for developers and designers. But as we grew, we realized something deeper: creativity isn’t confined to code or design—it lives in everyone. Whether you're an artist, a writer, a gamer, a content creator, or just someone with a curious mind, you belong here. Because creativity is personal, subjective, and beautifully diverse.
+ Dexterity is now a people-first community. A space where connection matters more than credentials. Where you’re seen not just for what you do, but for who you are.
+Dexterity is a fandom for creative nerds. A decentralized, inclusive culture. A place to build, share, laugh, and grow. It’s not just a community—it’s the community we deserve.
+                    </p>
+                </div>
+                <div class="relative w-full h-80 lg:h-96 fade-in-up" style="transition-delay: 150ms;">
+                    <!-- Fun, abstract shapes for visual interest -->
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-green-300 rounded-full opacity-80 filter blur-xl"></div>
+                    <div class="absolute top-1/2 left-1/2 -translate-x-2/3 -translate-y-1/3 w-64 h-64 bg-blue-300 rounded-2xl opacity-80 filter blur-xl transform rotate-12"></div>
+                    <p class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-fredoka text-3xl text-white font-bold text-center">The Community<br>We Deserve</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Difference Section -->
+        <section class="py-24 px-4 bg-white">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-fredoka font-bold fade-in-up">What Makes Us Different?</h2>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Difference 1 -->
+                    <div class="p-8 fade-in-up" style="transition-delay: 150ms;">
+                        <h3 class="text-2xl font-fredoka font-semibold mb-3">Socialising > Networking</h3>
+                        <p class="text-gray-600">We flip the script. Instead of events focused on selling yourself, we create experiences for genuine bonding and friendship.</p>
+                    </div>
+                    <!-- Difference 2 -->
+                    <div class="p-8 border-y-2 md:border-y-0 md:border-x-2 border-gray-100 fade-in-up" style="transition-delay: 300ms;">
+                        <h3 class="text-2xl font-fredoka font-semibold mb-3">People > Products</h3>
+                        <p class="text-gray-600">Your personal journey matters more than your portfolio. We celebrate the person behind the screen, their stories, and their growth.</p>
+                    </div>
+                    <!-- Difference 3 -->
+                    <div class="p-8 fade-in-up" style="transition-delay: 450ms;">
+                        <h3 class="text-2xl font-fredoka font-semibold mb-3">Creativity > Code</h3>
+                        <p class="text-gray-600">Tech is our tool, not our identity. We unite developers, designers, writers, and animators to create for fun, not just for function.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Team Section -->
+        <section class="py-24 px-4 bg-gray-50">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-fredoka font-bold fade-in-up">Meet the Core Team</h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto fade-in-up" style="transition-delay: 150ms;">The passionate individuals guiding the community vision.</p>
+                <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+                    
+                    <!-- Team Member 1: Destiny Timothy -->
+                    <a href="https://www.linkedin.com/in/destiny-timothy?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="team-card fade-in-up" style="transition-delay: 200ms;">
+                        <div class="team-card-image-wrapper">
+                             <img src="../images/DestinyTimothy.jpg" alt="Destiny Timothy" class="team-card-image border-blue-400">
+                        </div>
+                        <h3 class="text-2xl font-fredoka font-semibold mt-6">Destiny Timothy</h3>
+                        <p class="gradient-text font-semibold">Founder of Dexterity</p>
+                    </a>
+
+                    <!-- Team Member 2: Ehiosa Osawe -->
+                    <a href="https://www.instagram.com/_ehiosa?igsh=MWE2YjlkdDE3ZzB1ZQ==" class="team-card fade-in-up" style="transition-delay: 350ms;">
+                         <div class="team-card-image-wrapper">
+                             <img src="../images/ehiosaosawe.jpg" alt="Ehiosa Osawe" class="team-card-image border-green-400">
+                        </div>
+                        <h3 class="text-2xl font-fredoka font-semibold mt-6">Ehiosa Osawe</h3>
+                        <p class="gradient-text font-semibold">Community Lead / Social Media Manager</p>
+                    </a>
+
+                    <!-- Team Member 3: Ochepo Peter -->
+                    <a href="https://tiktok.com/@build_with_ocheps" class="team-card fade-in-up" style="transition-delay: 500ms;">
+                         <div class="team-card-image-wrapper">
+                             <img src="../images/ochepopeter.jpg" alt="Ochepo Peter" class="team-card-image border-yellow-400">
+                        </div>
+                        <h3 class="text-2xl font-fredoka font-semibold mt-6">Ochepo Peter</h3>
+                        <p class="gradient-text font-semibold">Community Manager</p>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section (Consistent with homepage) -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto py-12 px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <!-- About Column -->
+                <div>
+                    <h4 class="font-fredoka text-xl font-semibold mb-4">Dexterity</h4>
+                    <p class="text-gray-400">A human-first community, powered by tech. We're building the creative space we deserve.</p>
+                </div>
+                <!-- Quick Links Column -->
+                <div>
+                    <h4 class="font-fredoka text-xl font-semibold mb-4">Explore</h4>
+                    <ul class="space-y-2">
+                         <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="../community/index.html" class="text-gray-400 hover:text-white transition">Communtiy</a></li>
+                        <li><a href="#why-join" class="text-gray-400 hover:text-white transition">Join</a></li>
+                    </ul>
+                </div>
+                <!-- Social Media Column -->
+                <div>
+                    <h4 class="font-fredoka text-xl font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="https://chat.whatsapp.com/DD8RFM7lj9tDAfXqR7skkL?mode=ems_copy_c" target="_blank" class="text-gray-400 hover:text-white transition"><i data-feather="message-square"></i></a>
+                        <a href="https://www.instagram.com/dexterity.ig?igsh=OHB0cmpjeTlxemp5" target="_blank" class="text-gray-400 hover:text-white transition"><i data-feather="instagram"></i></a>
+                        <a href="https://t.me/Dexterity_Telegram" target="_blank" class="text-gray-400 hover:text-white transition"><i data-feather="send"></i></a>
+                        <a href="https://x.com/Dexterityonx?t=FFr_RZPC85UEtoHZoe1cxw&s=09" target="_blank" class="text-gray-400 hover:text-white transition"><i data-feather="twitter"></i></a>
+                        <a href="mailto:dexterity.email.1@gmail.com" class="text-gray-400 hover:text-white transition"><i data-feather="mail"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500">
+                <p>&copy; <span id="year"></span> Dexterity. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to the NEW external JavaScript file -->
+    <script src="about_script.js"></script>
+</body>
+</html>
