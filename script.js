@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // An array of member objects. This holds the data for each card.
     // It's easy to add, remove, or change members here.
     const members = [
-        { name: 'Phire D', role: 'Musician', img: 'images/PhireD.jpg', fact: 'Hes a Genuis, and not just musically', borderColor: 'border-blue-400' },
-        { name: 'XENOSWZ', role: 'Visual Designer', img: 'images/XENOSWZ.jpg', fact: 'I design with one of the least recomended design softwares', borderColor: 'border-green-400' },
-        { name: 'Ken', role: 'Creative Writer', img: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=400&auto-format&fit=crop', fact: 'Has written over 50 short stories.', borderColor: 'border-yellow-400' },
-        { name: 'Priya', role: 'Frontend Dev', img: 'https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?q=80&w=400&auto-format&fit=crop', fact: 'Builds mechanical keyboards from scratch.', borderColor: 'border-red-400' }
+        { name: 'Phire D', role: 'Musician', img: 'images/PhireD.jpg', fact: 'Im a Genuis, and not just musically', borderColor: 'border-blue-400' },
+        { name: 'XENOSWZ', role: 'Visual Designer', img: 'images/XENOSWZ.jpg', fact: 'I design with weird design softwares', borderColor: 'border-green-400' },
+        { name: 'Daniel', role: 'Developer', img: 'images/danielsamuel.jpg', fact: 'i love anime and tech, Im a tech-taku', borderColor: 'border-yellow-400' },
+        { name: 'Bukola', role: 'Writer', img: 'images/bukola.jpg', fact: 'I love learning new things (im NOT a nerd)', borderColor: 'border-red-400' }
     ];
 
     // Function to create the HTML for the cards and add them to the DOM.

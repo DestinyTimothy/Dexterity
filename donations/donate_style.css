@@ -197,3 +197,15 @@ h1, h2, h3, .font-fredoka { font-family: 'Fredoka', sans-serif; }
     font-size: 2.5rem;
 }
 
+/* =================================================================== */
+/* Responsiveness Fix for Donation Buttons                             */
+/* =================================================================== */
+
+/* On very small screens (less than 380px wide), reduce font size to prevent overflow */
+@media (max-width: 380px) {
+    .donation-amount-btn {
+        font-size: 1rem; /* Adjust font size */
+        padding: 1rem 0.5rem; /* Adjust padding */
+    }
+}
+
